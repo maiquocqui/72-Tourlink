@@ -1,0 +1,187 @@
+
+.booking-page
+	.tour-info
+		+bor-rad(5px)
+		border: 1px solid darken($white,10%)
+		padding: 10px
+		margin-bottom: 20px
+		figure
+			+flexbox
+			.tour-img
+				display: block
+				width: 40%
+			figcaption
+				width: 60%
+				padding-left: 15px
+				.tour-name
+					+fs(16rem)
+					line-height: 1.5
+					text-transform: uppercase
+					font-weight: 500
+					margin-bottom: 10px
+					a
+						color: $main
+				.tour-destination
+					+fs(14rem)
+					// font-weight: 500
+					margin-bottom: 5px
+					color: darken($white,40%)
+					&:before
+						content: '\f124'
+						margin-right: 5px
+						color: $blue
+				time
+					display: block
+					+fs(14rem)
+					// font-weight: 500
+					color: darken($white,40%)
+					margin-bottom: 15px
+					&:before
+						content: '\f017'
+						margin-right: 5px
+						color: $blue
+				.tour-price
+					.group
+						+flexbox
+						margin-bottom: 5px
+						.label
+							width: 100px
+							// +fs(14rem)
+						.value
+							width: calc(100% - 100px)
+							// +fs(14rem)
+							font-weight: 500
+							color: $blue
+.booking-info
+	.tour-form
+		.form-group
+			border-bottom: 1px solid darken($white,10%)
+			padding-bottom: 10px
+			margin-bottom: 10px
+			&:last-child
+				padding-bottom: 0
+				border: none
+				margin-bottom: 0
+			label
+				+fs(14rem)
+				font-weight: 500
+				margin-bottom: 10px
+			input, select, textarea
+				width: 100%
+				+bor-rad(3px)
+				+fs(14rem)
+				padding: 10px 15px
+				border: 1px solid darken($white,10%)
+				&::-webkit-input-placeholder
+					color: $main
+					opacity: 0.5
+			select
+				padding: 9px 15px
+			.radio
+				label
+					font-weight: normal
+					+fs(13rem)
+					margin: 0
+					color: darken($white,40%)
+					&:hover
+						color: $main
+				input
+					&:checked
+						+ label
+							color: $blue
+							font-weight: 500
+			.group
+				+flexbox
+				justify-content: space-between
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+				.label
+					+fs(13rem)
+					+flexbox
+					align-items: center
+					align-content: center
+					width: 100px
+				.input-number
+					+flexbox
+					.btn-spin
+						width: 30px
+						height: 30px
+						+fs(18rem)
+						line-height: 30px
+						text-align: center
+						border: 1px solid darken($white,10%)
+						+bor-rad(5px)
+						cursor: pointer
+						&:hover
+							border-color: darken($white,20%)
+							background: darken($white,5%)
+					input
+						width: 40px
+						line-height: 30px
+						+fs(16rem)
+						font-weight: 600
+						color: $blue
+						margin: 0
+						border: none
+						padding: 0
+						text-align: center
+				.price
+					// width: calc(100% - 100px - 100px)
+					text-align: right
+					flex: 0 0 auto
+					width: auto
+					max-width: none
+					+flexbox
+					align-items: center
+					align-content: center
+					justify-content: flex-end
+					strong
+						margin-left: 10px
+						color: $blue
+						font-weight: 500
+.client-info
+	+bor-rad(5px)
+	border: 1px solid darken($white,10%)
+	padding: 10px
+	margin-bottom: 20px
+	.client-form
+		.module-title
+			+fs(16rem)
+			font-weight: 600
+			margin-bottom: 10px
+		.form-wrap
+			padding: 10px 15px
+			margin-bottom: 15px
+			+bor-rad(5px)
+			border: 1px solid darken($white,10%)
+			background: darken($white,3%)
+			.row
+				margin: 0px -10px
+			.col-12
+				padding: 0px 10px
+		.form-group
+			margin-bottom: 10px
+			label
+				+fs(13rem)
+				margin-bottom: 3px
+			.value
+				font-weight: 500
+			input, select, textarea
+				width: 100%
+				+bor-rad(3px)
+				+fs(14rem)
+				padding: 10px 15px
+				border: 1px solid darken($white,10%)
+				&::-webkit-input-placeholder
+					color: $main
+					opacity: 0.5
+			select
+				padding: 9px 15px
+			ul
+				+flexbox
+				flex-wrap: wrap
+				li
+					width: 50%
+					label
+						+fs(14rem)

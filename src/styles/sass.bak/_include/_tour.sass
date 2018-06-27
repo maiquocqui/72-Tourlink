@@ -1,0 +1,680 @@
+.search-tour
+	.form-group
+		margin-bottom: 0
+.tour-page
+	padding: 30px 0
+	// border-top: 1px solid darken($white,10%)
+	+placelist
+	.tour-list
+		margin-bottom: 20px
+		article
+			margin-bottom: 30px
+		.tour-card
+			// height: 100%
+			figure
+				// height: 100%
+				border: 1px solid darken($white,10%)
+				+bor-rad(5px)
+				overflow: hidden
+				+transition(all,0.3s)
+				.tour-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					padding: 20px 25px
+					.tour-name
+						font-weight: 600
+						a
+							color: $main
+							display: block
+							+tof(18rem,1.4,2)
+							&:hover
+								color: $blue
+					time
+						display: block
+						color: darken($white,40%)
+						+fs(12rem)
+						font-weight: 600
+						margin-bottom: 5px
+						&:before
+							content: '\f017'
+							margin-right: 5px
+					.tour-review
+						color: $amber
+						margin-bottom: 10px
+						.fa
+							+ .fa
+								margin-left: 3px
+					.tour-price
+						margin-bottom: 5px
+						.new
+							display: inline-block
+							vertical-align: bottom
+							+fs(22rem)
+							font-weight: 600
+							color: $blue
+							margin-right: 10px
+							line-height: 16px
+						.old
+							display: inline-block
+							vertical-align: bottom
+							color: darken($white,20%)
+							text-decoration: line-through
+							line-height: 12px
+							font-weight: 500
+				&:hover
+					box-shadow: 0 20px 30px -10px color-rgba($black,0.2)
+					margin-top: -5px
+					figcaption
+						.tour-name
+							a
+								color: $blue
+	.btn-wrap
+		text-align: center
+		.btn-viewmore
+			display: inline-block
+			line-height: 40px
+			+bor-rad(5px)
+			border: 1px solid darken($white,10%)
+			color: $main
+			padding: 0px 20px
+			&:after
+				content: '\f105'
+				margin-left: 5px
+			&:hover
+				color: $white
+				border-color: $blue
+				background: $blue
+	.price-table
+		border: 1px solid darken($white,10%)
+		width: 100%
+		+bor-rad(5px)
+		th, td
+			padding: 10px
+			+fs(14rem)
+			&:first-child
+				width: 40%
+		th
+			font-weight: 500
+			border-bottom: 2px solid $blue
+			background: lighten($blue,40%)
+		.price
+			font-weight: 600
+			color: lighten($red,10%)
+		
+	.tour-detail-list
+		.tour-card
+			margin-bottom: 20px
+			figure
+				+flexbox
+				padding: 10px
+				+bor-rad(3px)
+				border: 1px solid darken($white,10%)
+				+transition(all,0.3s)
+				&:hover
+					box-shadow: 0 10px 20px -10px color-rgba($black,0.3)
+					figcaption
+						.tour-name
+							a
+								color: $blue
+				.tour-img
+					display: block
+					width: 40%
+					img
+						width: 100%
+				figcaption
+					width: 60%
+					+pos(rel,null)
+					padding-left: 20px
+					.tour-name
+						+fs(16rem)
+						font-weight: 500
+						line-height: 1.4
+						text-transform: capitalize
+						margin-bottom: 10px
+						a
+							color: $main
+					.tour-destination
+						+fs(14rem)
+						// font-weight: 500
+						color: darken($white,60%)
+						&:before
+							content: '\f124'
+							margin-right: 5px
+							color: $blue
+					time
+						display: block
+						+fs(14rem)
+						// font-weight: 500
+						color: darken($white,60%)
+						margin-bottom: 15px
+						&:before
+							content: '\f017'
+							margin-right: 5px
+							color: $blue
+					.tour-des
+						+fs(14rem)
+						color: darken($white,40%)
+						margin-bottom: 10px
+					.tour-price
+						.old
+							display: inline-block
+							text-decoration: line-through
+							color: darken($white,40%)
+							+fs(14rem)
+							font-weight: 500
+						.new
+							display: inline-block
+							+fs(20rem)
+							font-weight: 600
+							color: lighten($red,10%)
+							margin-right: 10px
+					.link
+						color: $blue
+						font-weight: 500
+						+pos(abs, null 5px 5px null)
+						line-height: 1
+						&:hover
+							color: lighten($red,10%)
+							letter-spacing: 1px
+						&:after
+							content: '\f105'
+							margin-left: 5px
+	.tour-detail
+		padding-bottom: 15px
+		border-bottom: 1px solid darken($white,10%)
+		margin-bottom: 20px
+		.tour-name
+			+fs(24rem)
+			font-weight: 500
+			line-height: 1.4
+			margin-bottom: 10px
+		.tour-destination
+			display: inline-block
+			vertical-align: middle
+			// +fs(14rem)
+			font-weight: 500
+			color: darken($white,60%)
+			margin-right: 20px
+			&:before
+				content: '\f124'
+				margin-right: 5px
+				color: $blue
+		time
+			display: inline-block
+			vertical-align: middle
+			// +fs(14rem)
+			font-weight: 500
+			color: darken($white,60%)
+			&:before
+				content: '\f017'
+				margin-right: 5px
+				color: $blue
+	.tour-slide
+		margin-bottom: 20px
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			width: 40px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			color: $main
+			background: color-rgba($white,0.5)
+			&:before
+				content: ''
+				+fs(28rem)
+			&:hover
+				background: $white
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		.slick-dots
+			+pos(abs, null 0 10px 0)
+			text-align: center
+			li
+				display: inline-block
+				background: $white
+				width: 10px
+				height: 10px
+				+bor-rad(50px)
+				opacity: 0.8
+				box-shadow: 0 3px 3px color-rgba($black,0.3)
+				+ li
+					margin-left: 10px
+				&.slick-active
+					background: $blue
+					opacity: 1
+				button
+					display: none
+.tourpage-info
+	margin: 30px 0
+	+bor-rad(5px)
+	border: 1px solid darken($white,10%)
+	background: darken($white,3%)
+	padding: 10px 0
+	.group
+		padding: 5px 10px
+		+flexbox
+		.label
+			+fs(14rem)
+			width: 110px
+			margin-bottom: 5px
+		.value
+			width: calc(100% - 110px)
+			text-align: right
+			+fs(14rem)
+			font-weight: 500
+			// padding-left: 20px
+	.tour-price
+		// padding: 0px 10px
+		.value
+			+fs(18rem)
+			color: lighten($red,10%)
+		.new
+			+fs(18rem)
+			font-weight: 600
+			color: lighten($red,10%)
+	.btn-support
+		color: $blue
+		text-align: center
+		display: block
+		margin-bottom: 10px
+		&:hover
+			color: $red
+	.btn-book
+		display: block
+		background: $blue
+		color: $white
+		text-align: center
+		padding: 6px 0
+		margin: 0px 10px
+		line-height: 1.5
+		font-weight: 500
+		+fs(14rem)
+		+bor-rad(3px)
+		&:hover
+			background: darken($blue,10%)
+.modal
+	.modal-title
+		font-weight: 500
+		color: $blue
+		+fs(16rem)
+	.modal-dialog
+		max-width: 1000px
+		.calendar
+			+pos(rel,null)
+			.prev
+				+pos(abs, 10px null null 0)
+			.next
+				+pos(abs, 10px 0 null null)
+			.month
+				text-align: center
+				+fs(18rem)
+				font-weight: 500
+			.selectbox
+				+flexbox
+				justify-content: center
+				select
+					border: 1px solid darken($white,10%)
+					+bor-rad(3px)
+					+fs(13rem)
+					color: darken($white,60%)
+					+ select
+						margin-left: 5px
+			.date-in-month
+				width: 100%
+				th, td
+					&:first-child
+						color: lighten($red,20%)
+					&:last-child
+						color: $blue
+				th
+					width: calc(100% / 7)
+					text-align: center
+					padding: 10px 0
+					+fs(14rem)
+					font-weight: 600
+					border-bottom: 1px solid darken($white,10%)
+				td
+					width: calc(100% / 7)
+					+fs(12rem)
+					padding: 5px
+					height: 60px
+					+bor-rad(3px)
+					color: darken($white,40%)
+					cursor: pointer
+					&.disable
+						cursor: unset
+					.price
+						color: $black
+						font-weight: 500
+						margin-top: 5px
+					&:hover
+						background: lighten($blue,45)
+					&.active
+						font-weight: 500
+						background: lighten($blue,40%)
+						color: $blue
+						.price
+							font-weight: 500
+		.row
+			margin: 0px -10px
+		.col-12
+			padding: 0px 10px
+		.filter-range
+			// width: 100%
+			margin: 0px 10px
+			+pos(rel,null)
+			&:before, &:after
+				content: ''
+				display: table
+				width: 100%
+				clear: both
+			#slider-range
+				width: 100%
+				height: 4px
+				background: darken($white,10%)
+				margin: 7px 0
+				+pos(rel,null)
+				+transition(all,0s)
+			.ui-widget-header
+				background: $blue
+				position: absolute
+				z-index: 1
+				display: block
+				top: 0px
+				height: 4px
+				+transition(all,0s)
+			.ui-slider-handle
+				position: absolute
+				z-index: 2
+				cursor: default
+				touch-action: none
+				top: 2px
+				margin-left: -0.6em
+				left: 15%
+				width: 14px
+				height: 14px
+				+bor-rad(50%)
+				background: $white
+				border: 2px solid $blue
+				z-index: 1
+				cursor: pointer
+				+transition(all,0s)
+				+transform(translateY(-50%))
+				&:hover
+					background: $blue
+			.min, .max
+				width: 16px
+				height: 16px
+				background: darken($white,60%)
+				box-shadow: 0px 0px 5px -1px rgba(0,0,0,.7)
+				z-index: 1
+				cursor: pointer
+				+transition(all,0.5s)
+				+transform(translateY(-50%))
+				&:hover
+					background: $main
+			.min
+				+pos(abs, 50% null null 0)
+			.max 
+				+pos(abs, 50% 0 null null)
+		.price-range
+			// text-transform: uppercase
+			+fs(13rem)
+			// font-weight: bold
+			margin-left: -10px
+		.min-input, .max-input
+			display: inline-block
+			margin: 0 5px
+			font-weight: 500
+			+fs(14rem)
+			color: $blue
+		.booking-info
+			.module-title
+				+fs(16rem)
+				font-weight: 600
+				margin-bottom: 10px
+			.form-group
+				+flexbox
+				flex-wrap: wrap
+				margin-bottom: 10px
+				label
+					width: 100%
+					+flexbox
+					align-items: center
+					align-content: center
+					+fs(14rem)
+					margin-bottom: 5px
+					a
+						color: $main
+						&:after
+							content: '\f105'
+							margin-left: 10px
+						&:hover
+							color: $blue
+				input, select, textarea
+					// width: calc(100% - 80px)
+					width: 100%
+					border: 1px solid darken($white,10%)
+					padding: 7px 10px
+					+bor-rad(5px)
+				.datetime
+					width: 100%
+					select
+						width: 70px
+						margin: 0px 10px
+						&:first-child
+							margin-left: 0
+						&:last-child
+							width: 80px
+			.info-table
+				border-top: 1px solid darken($white,10%)
+				border-left: 1px solid darken($white,10%)
+				width: 100%
+				margin-bottom: 20px
+				th, td
+					border-right: 1px solid darken($white,10%)
+					border-bottom: 1px solid darken($white,10%)
+					padding: 10px
+					+fs(14rem)
+					vertical-align: top
+				th
+					font-weight: 500
+					background: darken($white,3%)
+			.total-money
+				margin-bottom: 30px
+				text-align: right
+				strong
+					color: lighten($red,10%)
+					+fs(18rem)
+		
+		.frm-btn
+			text-align: right
+			+ .total-money
+				margin-top: 10px
+		input[type='submit']
+			display: inline-block
+			line-height: 36px
+			padding: 0px 20px
+			+bor-rad(5px)
+			background: $blue
+			border: none
+			color: $white
+			// text-transform: uppercase
+			&:hover
+				background: darken($blue,10%)
+		.total-money
+			margin-bottom: 10px
+			text-align: right
+			strong
+				color: lighten($red,10%)
+				+fs(18rem)
+		.btn-wrap
+			padding: 0px 15px
+			margin-bottom: 20px
+			text-align: center
+			// .btn-back
+			// 	float: left
+			// 	color: $blue
+			// 	+fs(14rem)
+			// 	// font-weight: 600
+			// 	line-height: 40px
+			// 	&:hover
+			// 		color: $red
+			// 	&:before
+			// 		content: '\f104'
+			// 		margin-right: 5px
+			.btn-continue
+				display: inline-block
+				// float: left
+				+bor-rad(5px)
+				line-height: 40px
+				padding: 0px 25px
+				color: $white
+				background: $blue
+				// font-weight: 600
+				&:hover
+					background: darken($blue,10%)
+				&:after
+					content: '\f105'
+					margin-left: 5px
+.other-tour
+	.title
+		+fs(18rem)
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 15px
+	.tour-list
+		margin-bottom: 20px
+		article
+			margin-bottom: 30px
+		.tour-card
+			// height: 100%
+			figure
+				// height: 100%
+				border: 1px solid darken($white,10%)
+				+bor-rad(5px)
+				overflow: hidden
+				+transition(all,0.3s)
+				.tour-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					padding: 20px 25px
+					.tour-name
+						font-weight: 600
+						a
+							color: $main
+							display: block
+							+tof(18rem,1.4,2)
+							&:hover
+								color: $blue
+					time
+						display: block
+						color: darken($white,40%)
+						+fs(12rem)
+						font-weight: 600
+						margin-bottom: 5px
+						&:before
+							content: '\f017'
+							margin-right: 5px
+					.tour-review
+						color: $amber
+						margin-bottom: 10px
+						.fa
+							+ .fa
+								margin-left: 3px
+					.tour-price
+						margin-bottom: 5px
+						.new
+							display: inline-block
+							vertical-align: bottom
+							+fs(22rem)
+							font-weight: 600
+							color: $blue
+							margin-right: 10px
+							line-height: 16px
+						.old
+							display: inline-block
+							vertical-align: bottom
+							color: darken($white,20%)
+							text-decoration: line-through
+							line-height: 12px
+							font-weight: 500
+				&:hover
+					box-shadow: 0 20px 30px -10px color-rgba($black,0.2)
+					margin-top: -5px
+					figcaption
+						.tour-name
+							a
+								color: $blue
+
+.sidebar-banner
+	a
+		display: block
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		+fs(18rem)
+		font-weight: 600
+		text-transform: uppercase
+		color: darken($white,60%)
+		height: 350px
+		background: darken($white,10%)
+		margin-bottom: 20px
+
+
+.test
+	figure
+		+pos(rel,null)
+		overflow: hidden
+		.test-img
+			display: block
+		.name
+			+pos(abs, null 15px 15px 15px)
+			font-weight: 500
+			+fs(18rem)
+			color: $white
+			+transition(all,0.2s)
+		figcaption
+			.test-overlay
+				+pos(abs, 0 null 0 0)
+				right: 0
+				background: color-rgba($blue,0.8)
+				+transform(translateY(100%))
+				+transition(all,0.5s)
+			.test-info
+				+pos(abs, null 0 0 0)
+				padding: 15px
+				+transform(translateY(100%))
+				+transition(all,0.5s)
+				.test-name
+					font-weight: 500
+					+fs(18rem)
+					margin-bottom: 10px
+					a
+						color: $white
+				time
+					color: $white
+				.test-price
+					color: $white
+		&:hover
+			.name
+				opacity: 0
+			.test-overlay, .test-info
+				+transform(translateY(0%))
+.modal-booktour
+	.modal-dialog
+		max-width: 500px

@@ -1,0 +1,25 @@
+section#search.search-panel.search-golf.clearfix
+	.container
+		.searchwrap
+			.row
+				.form-wrap
+					.row
+						.form-group.place
+							label Tên địa điểm...
+							input(type="text" placeholder="")
+						.form-group.date
+							label Ngày chơi
+							input#btn-datepick(type="text" placeholder="" name="daterange")
+							include calendar
+						.form-group.location
+							label Tỉnh / Thành phố
+							select(name="")
+								option Hồ Chí Minh
+						//- .form-group.location
+							label Quận / Huyện
+							select(name="")
+								option Quận 1
+				.form-group.frm-btnwrap
+					label &nbsp;
+					.frm-btn
+						button.searchbutton <i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm

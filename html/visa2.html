@@ -1,0 +1,840 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="theme-color" content="#003767">
+    <title>Tourlink</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/addons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endinject -->
+  </head>
+  <body class="default">
+    <div id="wrapper" class="fullpage">
+      <header>
+        <div class="container">
+          <section class="headertop clearfix">
+            <div class="btn-showmenu d-xl-none"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="overlay"></div>
+            <div class="sitelogo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+            <div class="colright clearfix">
+              <nav class="menu">
+                <ul class="menulink">
+                  <li class="active"><a href="#">Khách sạn</a></li>
+                  <li><a href="#">Sân golf</a></li>
+                  <li><a href="#">Tour</a></li>
+                  <li><a href="#">Vận chuyển</a></li>
+                  <li><a href="#">Visa</a></li>
+                </ul>
+              </nav>
+              <div class="language clearfix">
+                <div class="dropdown"><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/vn.png" alt=""></a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="group">
+                      <div class="group-title">Ngôn ngữ gợi ý</div>
+                      <ul>
+                        <li class="active"><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Việt</div></a></li>
+                      </ul>
+                    </div>
+                    <div class="group">
+                      <div class="group-title">Tất cả ngôn ngữ</div>
+                      <ul>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Việt</div></a></li>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Anh</div></a></li>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Nhật</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="currency clearfix">
+                <div class="dropdown"><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                     
+                    ₫</a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="group">
+                      <div class="group-title">Tiền tệ được đề nghị</div>
+                      <ul>
+                        <li class="active"><a href="#">
+                            <div class="icon label">₫</div>
+                            <div class="text">Việt Nam Đồng</div></a></li>
+                      </ul>
+                    </div>
+                    <div class="group">
+                      <div class="group-title">Tiền tệ phổ biến</div>
+                      <ul>
+                        <li><a href="#">
+                            <div class="icon label">₫</div>
+                            <div class="text">Việt Nam Đồng</div></a></li>
+                      </ul>
+                    </div>
+                    <div class="group">
+                      <div class="group-title">Tất cả các loại tiền tệ</div>
+                      <ul>
+                        <li><a href="#">
+                            <div class="icon label">₫</div>
+                            <div class="text">Việt Nam Đồng</div></a></li>
+                        <li><a href="#">
+                            <div class="icon label">$</div>
+                            <div class="text">Đô la Mỹ</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="login clearfix">
+                <div class="dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Đăng nhập</a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="login-panel clearfix">
+                      <nav class="login-nav clearfix">
+                        <ul>
+                          <li class="active"><a href="dangnhap.html">Đăng nhập</a></li>
+                          <li><a href="dangky.html">Đăng ký</a></li>
+                        </ul>
+                      </nav>
+                      <div class="loginfrm-wrap">
+                        <div class="form-group">
+                          <label><i class="material-icons">email</i></label>
+                          <input placeholder="Địa chỉ email">
+                        </div>
+                        <div class="form-group">
+                          <label><i class="material-icons">lock</i></label>
+                          <input placeholder="Mật khẩu">
+                        </div>
+                        <div class="checkbox remember-pw">
+                          <input id="rememberpw" type="checkbox" name="rmbpw">
+                          <label for="rememberpw">Lưu mật khẩu</label>
+                        </div>
+                        <div class="frm-btn">
+                          <input type="submit" value="Đăng nhập">
+                        </div>
+                        <div class="forget-pw"><a href="#">Quên mật khẩu?</a></div>
+                        <div class="social-login">
+                          <div class="module-title">Đăng nhập bằng</div>
+                          <div class="social-list"><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i>Google</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart clearfix">
+                <div class="cart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng <span class="cart-amount">(2)</span></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <main>
+        <div class="breadcrumb-section">
+          <div class="container">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books"><span itemprop="name">Trang chủ</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books/sciencefiction"><span itemprop="name">Visa</span></a>
+                <meta itemprop="position" content="2">
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="container">
+          <div class="visa-page">
+            <div class="page-group">
+              <div class="page-title">Reservation process</div>
+              <div class="visa-process"> 
+                <ul> 
+                  <li>Fill out the secure online application form</li>
+                  <li>Confirm and pay for service fee</li>
+                  <li>Get visa approval letter via email</li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-group">
+              <div class="page-title">Expected issue date</div>
+              <div class="expected-date">
+                <div class="embassy dropdown"><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-embassy dropdown-toggle">Vietnamese Holidays</a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu date-picker">
+                    <div class="btn-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                    <div class="btn-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                    <div class="month-list">
+                      <div class="item">
+                        <div class="month">11/2017</div>
+                        <table class="date-in-month">
+                          <thead>
+                            <tr>
+                              <th>Su</th>
+                              <th>Mo</th>
+                              <th>Tu</th>
+                              <th>We</th>
+                              <th>Th</th>
+                              <th>Fr</th>
+                              <th>Sa</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                            </tr>
+                            <tr>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                              <td>10</td>
+                              <td>11</td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                            </tr>
+                            <tr>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                              <td>25</td>
+                            </tr>
+                            <tr>
+                              <td>26</td>
+                              <td>27</td>
+                              <td>28</td>
+                              <td>29</td>
+                              <td>30</td>
+                              <td> </td>
+                              <td> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="item">
+                        <div class="month">12/2017</div>
+                        <table class="date-in-month">
+                          <thead>
+                            <tr>
+                              <th>Su</th>
+                              <th>Mo</th>
+                              <th>Tu</th>
+                              <th>We</th>
+                              <th>Th</th>
+                              <th>Fr</th>
+                              <th>Sa</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td class="sp">01</td>
+                              <td>02</td>
+                            </tr>
+                            <tr>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                            </tr>
+                            <tr>
+                              <td>24</td>
+                              <td>25</td>
+                              <td>26</td>
+                              <td>27</td>
+                              <td>28</td>
+                              <td>29</td>
+                              <td>30</td>
+                            </tr>
+                            <tr>
+                              <td>31</td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="item">
+                        <div class="month">01/2018</div>
+                        <table class="date-in-month">
+                          <thead>
+                            <tr>
+                              <th>Su</th>
+                              <th>Mo</th>
+                              <th>Tu</th>
+                              <th>We</th>
+                              <th>Th</th>
+                              <th>Fr</th>
+                              <th>Sa</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> </td>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                            </tr>
+                            <tr>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                            </tr>
+                            <tr>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                              <td>25</td>
+                              <td>26</td>
+                              <td>27</td>
+                            </tr>
+                            <tr>
+                              <td>28</td>
+                              <td>29</td>
+                              <td>30</td>
+                              <td>31</td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table class="embassy-table">
+                  <tr>
+                    <th>Documents to be submitted Date of arrival</th>
+                    <th>Procedures</th>
+                    <th>Issued date</th>
+                  </tr>
+                  <tr>
+                    <td>2017 - 10 - 06 (Fri)</td>
+                    <td>2 nights 3 days</td>
+                    <td>2017 - 10 - 18 (Wed)</td>
+                  </tr>
+                  <tr>
+                    <td>2017 - 10 - 06 (Fri)</td>
+                    <td>1 nights 2 days</td>
+                    <td>2017 - 10 - 18 (Wed)</td>
+                  </tr>
+                  <tr>
+                    <td>2017 - 10 - 06 (Fri)</td>
+                    <td>1 days</td>
+                    <td>2017 - 10 - 18 (Wed)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="page-group">
+              <div class="page-title">Visa Type</div>
+              <div class="visa-form clearfix">
+                <div id="product-tabs" class="visa-type">
+                  <ul class="tabs">
+                    <li> <a href="#tab-b1">Visa Type</a></li>
+                    <li> <a href="#tab-b2">Q&A</a></li>
+                  </ul>
+                  <div id="tab-b1" class="tab-content">
+                    <div class="order-form">
+                      <div class="row">
+                        <div class="col-12 col-lg-6">
+                          <div class="form-wrap">
+                            <table>
+                              <tr>
+                                <td>Visa type</td>
+                                <td>Arrival Visa</td>
+                              </tr>
+                              <tr>
+                                <td>Maximum stay date</td>
+                                <td>Singular - 1 month</td>
+                              </tr>
+                              <tr>
+                                <td>Visa validity period</td>
+                                <td>1 month</td>
+                              </tr>
+                              <tr>
+                                <td>Procedures</td>
+                                <td>1 nights 2 days</td>
+                              </tr>
+                              <tr>
+                                <td>Reservation number</td>
+                                <td>
+                                  <div class="form-group">
+                                    <select name="">
+                                      <option value="">1 person</option>
+                                    </select>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Date of entry</td>
+                                <td> 
+                                  <div class="form-group date">
+                                    <input>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Airport arrival</td>
+                                <td> 
+                                  <div class="form-group">
+                                    <select>
+                                      <option value="">-- Airport --</option>
+                                      <option value="">Tân Sơn Nhất</option>
+                                    </select>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <div class="extra-service">
+                            <div class="small-title">Option 1</div>
+                            <div class="form-group">
+                              <div class="checkbox">
+                                <input id="fasttrack" type="checkbox" name="exservice">
+                                <label for="fasttrack">Fast track</label>
+                              </div>
+                            </div>
+                            <div id="fasttrackinfo" class="form-group">
+                              <textarea name="" cols="30" rows="5" placeholder="Fill in flight info..."></textarea>
+                            </div>
+                            <div class="small-title">Option 2</div>
+                            <div class="form-group"><a href="xe.html" target="_blank">Pickup</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="page-group">
+                      <div class="page-title">Applicant 1</div>
+                      <div class="visa-form clearfix">
+                        <div class="order-form">
+                          <div class="form-wrap row">
+                            <div class="form-group col-12 col-md-6">
+                              <label>First name</label>
+                              <input>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                              <label>Last name</label>
+                              <input>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                              <label>Gender</label>
+                              <ul class="gender">
+                                <li class="radio">
+                                  <input id="male" type="radio" name="gender">
+                                  <label for="male">Male</label>
+                                </li>
+                                <li class="radio">
+                                  <input id="female" type="radio" name="gender">
+                                  <label for="female">Female</label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                              <label>Date of birth</label>
+                              <ul class="date">
+                                <li>
+                                  <select>
+                                    <option>Ngày</option>
+                                  </select>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option>Tháng</option>
+                                  </select>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option>Năm</option>
+                                  </select>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                              <label>Nationality</label>
+                              <select>
+                                <option value="">Viet Nam</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                              <label>Passport number</label>
+                              <input>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="total-amount">Tổng tiền:<strong>10.100.000 đ</strong></div>
+                    <div class="cartbtn-wrap"><a href="#" class="btn-backstep">Back</a><a href="#" class="btn-nextstep">Add to cart</a></div>
+                  </div>
+                  <div id="tab-b2" class="tab-content">
+                    <div class="product-faq">
+                      <table class="qa-table">
+                        <tr>
+                          <th>Number</th>
+                          <th>Chủ đề</th>
+                          <th>Tác giả</th>
+                          <th>Ngày</th>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>1</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>2</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>3</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>4</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>5</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>6</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>7</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>8</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>9</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="qa-title">
+                          <td>10</td>
+                          <td>Thủ tục đặt tour như thế nào?</td>
+                          <td>username@gmail.com</td>
+                          <td>12/12/2016</td>
+                        </tr>
+                        <tr class="qa-answer">
+                          <td colspan="4">
+                            <div class="qa-content">
+                              <div class="author">Admin</div>
+                              <time>13h54 16/11/2017</time>
+                              <div class="content">
+                                <p>Hello </p>
+                                <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                                <p>Thank you .. ^^</p>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                      <div class="btn-wrap"><a href="#!" class="btn-sendmess">Gửi câu hỏi</a></div>
+                      <div class="send-mess">
+                        <div class="module-title">Gửi câu hỏi</div>
+                        <div class="form-wrap">
+                          <div class="form-group">
+                            <textarea name="" cols="30" rows="4" placeholder="Nội dung"></textarea>
+                          </div>
+                          <div class="frm-btn">
+                            <input type="submit" value="Gửi">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="visa-notice content">
+                  <h6> 
+                    <div style="vertical-align: top" class="ic ic32"><img src="img/iconpack/bulb.png" alt=""></div>
+                  </h6>
+                  <ul>
+                    <li>A coppy the passport signed by the applicant (Valid for at least 6 months).<br><br></li>
+                    <li>If your visa type does not macth your purpose of entry, it may be a problem when you are staying in the country.<br><br></li>
+                    <li>Print out the letter and the entry-and-exit form.<br><br></li>
+                    <li>Prepare 2 passport sized photos 4x6cm and an amount of USD for stamping fee ($25 for single entry; $50 for multiple entry visa). $95 USD for 6 months multiple entries visa to less than 1 year multiple entries. $135 for 1 year multiple.<br><br></li>
+                    <li>Put all above mentioned things along with your passport in a package, then show them to visa arrival officer at Vietnam arrival airports.<br>(To save your time at the airports, you are recommended to use our airport fast track service)<br><br></li>
+                    <li>If you apply visa embassy, you must bring the letter to local embassy or agency. At a Vietnam Embassy, the visa procedure will take around few days to process. Visa fees will depend on the type of visa for which you are applying. </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-5">
+              <section class="footer-col clearfix">
+                <div class="sitelogo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+                <div class="about content">Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy, nhưng đa số được biến đổi bằng cách thêm các yếu tố hài hước, các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa.</div>
+                <div class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+              </section>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <section class="footer-col clearfix">
+                <div class="title">Sitemap</div>
+                <nav class="footerlink"><a href="#">Giới thiệu</a><a href="#">Hỗ trợ khách hàng</a><a href="#">Dịch vụ</a><a href="#">Đối tác & khách hàng</a><a href="#">FAQs</a><a href="#">Liên hệ</a></nav>
+              </section>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <section class="footer-col clearfix">
+                <div class="title">Đăng ký nhận bản tin</div>
+                <div class="subscribe">
+                  <div class="module-title">Enter your email address and we’ll send you our regular promotional emails, packed with special offers, great deals, and huge discounts.</div>
+                  <div class="subscribefrm">
+                    <input placeholder="Nhập email...">
+                    <button class="subscribebutton">Gửi</button>
+                  </div>
+                </div>
+              </section>
+              <div class="copyright">© 2017 Tourlink. All rights reserved.</div>
+            </div>
+          </div>
+        </div>
+        <div class="up"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+        <section class="home-partner clearfix">
+          <div class="container">
+            <div class="partner-list">
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/1.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/2.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/3.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/4.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/5.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/6.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/7.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/8.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/1.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/2.png" alt=""></a></div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <!-- inject:js -->
+    <script src="js/addons.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endinject -->
+  </body>
+</html></html>

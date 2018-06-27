@@ -1,0 +1,54 @@
+.contact-page
+	padding: 50px 0
+.contact-map
+	+bor-rad(5px)
+	overflow: hidden
+	border: 1px solid darken($white,10%)
+	margin-bottom: 40px
+.contact-info
+	+bor-rad(5px)
+	background: darken($white,3%)
+	padding: 20px
+	+media-breakpoint-down(xs)
+		margin-bottom: 30px
+	.company
+		+fs(16rem)
+		font-weight: 600
+		color: $blue
+		margin-bottom: 15px
+	ul
+		li
+			+pos(rel,null)
+			padding-left: 25px
+			margin-bottom: 5px
+			.fa
+				+pos(abs,3px null null 0)
+				width: 20px
+				text-align: center
+			a
+				color: $main
+				&:hover
+					color: $blue
+.contact-form
+	.module-title
+		+fs(14rem)
+		margin-bottom: 10px
+	.form-group
+		margin-bottom: 10px
+		input, textarea
+			+bor-rad(5px)
+			border: 1px solid darken($white,15%)
+			width: 100%
+			padding: 10px 15px
+	input[type="reset"]
+		display: none
+	input[type="submit"]
+		+bor-rad(5px)
+		background: $blue
+		color: $white
+		display: inline-block
+		border: none
+		padding: 10px 30px
+		text-transform: uppercase
+		&:hover
+			background: darken($blue,10%)

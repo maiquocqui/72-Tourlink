@@ -1,0 +1,287 @@
+body
+	padding-top: 70px
+	+media-breakpoint-down(lg)
+		padding-top: 50px
+header
+	+pos(fix, 0 0 null 0)
+	z-index: 1000
+	+transition(all,0.3s)
+	background: $white
+	+media-breakpoint-down(lg)
+		box-shadow: 0px 3px 10px color-rgba($black,0.05)
+	.container
+		+media-breakpoint-down(lg)
+			max-width: 100%
+			width: 100%
+	.sitelogo
+		float: left
+		+flexbox
+		height: 70px
+		justify-content: center
+		align-items: center
+		+media-breakpoint-down(lg)
+			height: 50px
+			margin-left: 15px
+		+media-breakpoint-down(xs)
+			margin-left: 10px
+		a
+			display: block
+		img
+			height: 30px
+			+media-breakpoint-down(lg)
+				height: 30px
+			+media-breakpoint-down(xs)
+				height: 26px
+	.colright
+		float: right
+		+flexbox
+		align-items: center
+		align-content: center
+	.btn-showmenu
+		float: left
+		+fs(18rem)
+		+bor-rad(5px)
+		width: 36px
+		height: 36px
+		line-height: 34px
+		text-align: center
+		border: 1px solid darken($white,10%)
+		color: $blue
+		margin: 6px 0
+		+media-breakpoint-down(xs)
+			width: 32px
+			height: 32px
+			line-height: 30px
+			margin: 8px 0
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		z-index: 900
+		background: $black
+		opacity: 0.8
+		display: none
+	.menu
+		float: left
+		height: 70px
+		+flexbox
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 null 0 0)
+			width: 280px
+			height: auto
+			display: block
+			float: none
+			background: $white
+			z-index: 1000
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0))
+		ul.menulink
+			> li
+				float: left
+				+media-breakpoint-down(lg)
+					float: none
+					border-bottom: 1px dashed darken($white,10%)
+				+ li
+					margin-left: 5px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				> a
+					display: block
+					color: darken($white,40%)
+					+fs(14rem)
+					line-height: 20px
+					font-weight: 500
+					padding: 5px 15px
+					+bor-rad(5px)
+					+media-breakpoint-down(lg)
+						padding: 15px 20px
+						+fs(15rem)
+						font-weight: 600
+						text-transform: uppercase
+				&.active
+					> a
+						color: $blue
+	.language, .currency
+		margin-left: 20px
+		float: left
+		height: 70px
+		+flexbox
+		align-items: center
+		align-content: center
+		+pos(rel,null)
+		+media-breakpoint-down(lg)
+			height: 50px
+		+media-breakpoint-down(xs)
+			margin-left: 10px
+		.dropdown
+			.dropdown-toggle
+				display: block
+				line-height: 20px
+				+fs(14rem)
+				font-weight: 500
+				+pos(rel,null)
+				color: darken($white,40%)
+				&:hover
+					color: $blue
+				img
+					height: 20px
+					display: inline-block
+					vertical-align: top
+					margin-right: 3px
+					+media-breakpoint-down(xs)
+						height: 14px
+						vertical-align: middle
+				&:after
+					content: '\f107'
+					border: none
+					width: unset
+					height: unset
+					display: inline-block
+					vertical-align: top
+					font-weight: normal
+			.dropdown-menu
+				max-width: unset
+				min-width: 400px
+				max-height: 80vh
+				overflow: auto
+				padding: 0
+				+media-breakpoint-down(xs)
+					min-width: 300px
+					// position: fixed !important
+					// top: 60px !important
+					// left: 15px !important
+					// right: 15px !important
+					// max-width: 100%
+				.group
+					.group-title
+						background: darken($white,3%)
+						padding: 7px 10px
+						+fs(12rem)
+						font-weight: 600
+						color: darken($white,60%)
+						text-transform: uppercase
+						+media-breakpoint-down(xs)
+							+fs(11rem)
+					ul
+						+flexbox
+						flex-wrap: wrap
+						li
+							width: 50%
+							padding: 5px
+							a
+								+flexbox
+								align-items: flex-start
+								align-content: flex-start
+								+fs(13rem)
+								padding: 5px
+								color: darken($white,40%)
+								+media-breakpoint-down(xs)
+									+fs(10rem)
+								.icon
+									width: 24px
+									+flexbox
+									align-items: center
+									img 
+										width: 100%
+										display: block
+								.label
+									+fs(11rem)
+									font-weight: 600
+									border: 1px solid darken($white,10%)
+									width: 40px
+									background: $white
+									color: $blue
+									justify-content: center
+									+media-breakpoint-down(xs)
+										+fs(10rem)
+										width: 26px
+									+ .text
+										width: calc(100% - 40px)
+								.text
+									padding-left: 5px
+									width: calc(100% - 24px)
+									+flexbox
+									align-items: center
+									align-content: center
+							&:hover
+								a
+									color: $main
+							&.active
+								a
+									background: lighten($blue,45%)
+									color: $blue
+	.cart
+		margin-left: 20px
+		float: left
+		+media-breakpoint-down(xs)
+			margin-left: 10px
+		.cart-toggle
+			color: darken($white,40%)
+			font-weight: 500
+			+fs(14rem)
+			cursor: pointer
+			+transition(all,0.3s)
+			+media-breakpoint-down(xs)
+				+fs(0)
+				.fa
+					+fs(14rem)
+				.cart-amount
+					+fs(14rem)
+			&:hover
+				color: $blue
+			.cart-amount
+				color: $red
+	.login
+		margin-left: 20px
+		float: left
+		height: 70px
+		+flexbox
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(lg)
+			height: 50px
+		+media-breakpoint-down(xs)
+			margin-left: 10px
+		&.active
+			.dropdown-menu
+				display: block
+		.div-login a, .dropdown-toggle
+			display: block
+			color: darken($white,40%)
+			line-height: 20px
+			font-weight: 500
+			+fs(14rem)
+			+media-breakpoint-down(xs)
+				+fs(0)
+				height: 16px
+			&:hover
+				color: $blue
+			&:before
+				content: '\f2be'
+				+fs(18rem)
+				line-height: 1
+				margin-right: 5px
+				font-weight: normal
+				+media-breakpoint-down(xs)
+					+fs(14rem)
+					margin-right: 0
+			&:after
+				display: none
+		.dropdown-menu
+			padding: 0
+			margin: 10px 0 0
+			background: none
+			border: none
+			box-shadow: none
+			left: 50%
+			+transform(translate(-50%,0))
+			.login-panel
+				+media-breakpoint-down(xs)
+					width: 300px
+	+media-breakpoint-up(xl)
+		&.hide
+		&.minimal
+			box-shadow: 0 10px 20px -10px color-rgba($black,0.2)

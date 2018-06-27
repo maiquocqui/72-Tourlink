@@ -1,0 +1,153 @@
+header
+	+pos(abs, 0 0 null 0)
+	z-index: 1000
+	+media-breakpoint-down(lg)
+		+pos(fix, 0 0 null 0)
+		background: $white
+		box-shadow: 0 10px 50px -10px color-rgba($black,0.1)
+	.sitelogo
+		float: left
+		+flexbox
+		height: 100px
+		justify-content: center
+		align-items: center
+		+media-breakpoint-down(lg)
+			height: 60px
+			margin-left: 15px
+		a
+			display: block
+		img
+			+media-breakpoint-down(lg)
+				height: 30px
+	.colright
+		float: right
+		+flexbox
+		align-items: center
+		align-content: center
+		height: 100px
+		+media-breakpoint-down(lg)
+			height: 60px
+		+media-breakpoint-down(xs)
+			padding-right: 15px
+	.support
+	.language
+		margin-left: 30px
+		.dropdown-toggle
+			color: $dblue
+			img
+				vertical-align: top
+			&:after
+				content: '\f0d7'
+				border: none
+				width: unset
+				height: unset
+				+fs(14rem)
+				+pos(abs, 0 -15px null null)
+		.dropdown-menu
+	.currency
+		margin-left: 30px
+		.dropdown-toggle
+			+fs(15rem)
+			text-transform: uppercase
+			color: $dblue
+			font-weight: 800
+			&:after
+				content: '\f0d7'
+				border: none
+				width: unset
+				height: unset
+				+fs(14rem)
+				+pos(abs, 0 -15px null null)
+	.login
+		margin-left: 40px
+		+pos(rel,null)
+		+media-breakpoint-down(xs)
+			padding-left: 0
+			margin: 30px 15px
+		&:before
+			content: ''
+			display: block
+			width: 2px
+			height: 16px
+			background: $dblue
+			+pos(abs, 4px null null -15px)
+		a
+			display: block
+			+fs(15rem)
+			font-weight: 800
+			color: $dblue
+			&:before 
+				content: '\f007'
+				margin-right: 10px
+				display: inline-block
+				vertical-align: middle
+				width: 20px
+				height: 20px
+				line-height: 20px
+				text-align: center
+				+bor-rad(50px)
+				+fs(16rem)
+				overflow: hidden
+				border: 1px solid $dblue
+	.btn-showmenu
+		float: left
+		+fs(18rem)
+		+bor-rad(5px)
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		border: 1px solid $blue
+		color: $blue
+		margin: 10px 0
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		z-index: 900
+		background: $black
+		opacity: 0.8
+		display: none
+	.menu
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 null 0 0)
+			width: 280px
+			background: $white
+			z-index: 1000
+			padding: 15px
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0%))
+		ul.menulink
+			text-align: center
+			> li
+				display: inline-block
+				vertical-align: top
+				+media-breakpoint-down(lg)
+					display: block
+					margin-bottom: 10px
+				+ li
+					margin-left: 20px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				> a
+					display: block
+					padding: 0px 20px
+					line-height: 30px
+					color: $dblue
+					border: 1px solid $dblue
+					+bor-rad(50px)
+					font-weight: 800
+					+media-breakpoint-down(lg)
+						line-height: 1.5
+						padding: 8px 15px
+				&:hover
+					> a
+						background: $white
+				&.active
+					> a
+						background: $dblue
+						color: $white
+.homepage
+	header
+		+pos(rel,null)

@@ -1,0 +1,206 @@
+.car-page
+	padding: 30px 0
+	.car-list
+		margin-bottom: 15px
+		.car
+			margin-bottom: 30px
+			figure
+				+pos(rel,null)
+				+transition(all,0.3s)
+				&:hover
+					margin-top: -5px
+					box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)
+				.car-img
+					+bor-rad(5px)
+					overflow: hidden
+				figcaption
+					.car-name
+						background: color-rgba($blue,0.8)
+						color: $white
+						+fs(16rem)
+						font-weight: 500
+						padding: 10px 30px
+						text-transform: uppercase
+						+pos(abs, null null 30px -10px)
+	.car-detail-list
+		.nav-tabs
+			margin: 0 0 15px
+			padding: 0
+			border: none
+			.nav-link
+				margin: 0
+				padding: 0 30px
+				+bor-rad(50px)
+				border: 1px solid $blue
+				color: $blue
+				font-weight: 500
+				line-height: 36px
+				+ .nav-link
+					margin-left: 10px
+				&.active
+					background: $blue
+					color: $white
+		.car-filter
+			+flexbox
+			flex-wrap: wrap
+		.location-select
+			margin-bottom: 15px
+			+media-breakpoint-down(md)
+				margin-bottom: 5px
+			select
+				+bor-rad(5px)
+				border: 1px solid darken($white,10%)
+				padding: 8px 20px
+		.filter-option
+			padding: 8px 0
+			margin-left: 30px
+			+media-breakpoint-down(md)
+				margin-left: 0
+				margin-bottom: 10px
+			a
+				display: inline-block
+				color: darken($white,60%)
+				padding-left: 20px
+				+pos(rel,null)
+				+fs(14rem)
+				+media-breakpoint-down(md)
+					margin-right: 10px
+				&:hover
+					color: $black
+				&:before
+					content: ''
+					display: block
+					width: 14px
+					height: 14px
+					+bor-rad(30px)
+					border: 1px solid darken($white,20%)
+					+pos(abs, 2px null null 0)
+				&:after
+					content: ''
+					font-family: 'fontawesome'
+					display: block
+					width: 14px
+					height: 14px
+					line-height: 14px
+					text-align: center
+					+bor-rad(30px)
+					color: $red
+					border: 4px solid lighten($red,10%)
+					+pos(abs, 2px null null 0)
+					z-index: 1
+					+transition(all,0.5s)
+					opacity: 0
+				+ a
+					margin-left: 20px
+					+media-breakpoint-down(md)
+						margin-left: 0
+				&.active
+					color: $black
+					&:after
+						opacity: 1
+		.car-table
+			width: 100%
+			+bor-rad(5px)
+			border: 1px solid darken($white,10%)
+			margin-bottom: 30px
+			th, td
+				+fs(13rem)
+				padding: 10px
+				vertical-align: middle
+				&:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+					white-space: nowrap
+				&:last-child
+					text-align: right
+			th
+				font-weight: 500
+				background: lighten($blue,40%)
+				border-bottom: 2px solid $blue
+			td
+				border-bottom: 1px solid darken($white,10%)
+				&.type
+					background: darken($white,5%)
+					font-weight: 500
+				&.money
+					color: $blue
+					font-weight: 500
+				.name
+					font-weight: 500
+				time
+					color: darken($white,40%)
+				.remove
+					+fs(16rem)
+					color: lighten($red,10%)
+				.price
+					display: inline-block
+					vertical-align: middle
+					color: lighten($red,10%)
+					font-weight: 600
+					+fs(14rem)
+				.btn-bookcar
+					display: inline-block
+					vertical-align: middle
+					background: $blue
+					color: $white
+					+fs(13rem)
+					+bor-rad(5px)
+					padding: 5px 15px
+					text-align: center
+					margin-left: 15px
+					&:before
+						content: '\f044'
+						margin-right: 5px
+			tr
+				&:last-child
+					td
+						border-bottom: none
+.modal-bookcar
+	.frm-btn
+		text-align: right
+		+ .total-money
+			margin-top: 10px
+	input[type='submit']
+		display: inline-block
+		line-height: 36px
+		padding: 0px 20px
+		+bor-rad(5px)
+		background: $blue
+		border: none
+		color: $white
+		// text-transform: uppercase
+		&:hover
+			background: darken($blue,10%)
+	.total-money
+		margin-bottom: 10px
+		text-align: right
+		strong
+			color: lighten($red,10%)
+			+fs(18rem)
+	.btn-wrap
+		padding: 0px 15px
+		margin-bottom: 20px
+		text-align: center
+		// .btn-back
+		// 	float: left
+		// 	color: $blue
+		// 	+fs(14rem)
+		// 	// font-weight: 600
+		// 	line-height: 40px
+		// 	&:hover
+		// 		color: $red
+		// 	&:before
+		// 		content: '\f104'
+		// 		margin-right: 5px
+		.btn-continue
+			display: inline-block
+			// float: left
+			+bor-rad(5px)
+			line-height: 40px
+			padding: 0px 25px
+			color: $white
+			background: $blue
+			// font-weight: 600
+			&:hover
+				background: darken($blue,10%)
+			&:after
+				content: '\f105'
+				margin-left: 5px

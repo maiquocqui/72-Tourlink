@@ -1,0 +1,137 @@
+include bookingheader
+
+.container
+	section.booking-step.clearfix
+		.step.finish
+			.number 1
+			.name Chọn tour
+		.step.finish
+			.number 2
+			.name Chi tiết đặt tour
+		.step.active
+			.number 3
+			.name Thông tin thanh toán
+		.step
+			.number 4
+			.name Hoàn tất đặt tour
+	section.booking-page.clearfix
+		h1.page-title Thông tin chi tiết đặt tour
+		.row
+			.col-12.col-lg-8
+				.tour-info.clearfix
+					figure
+						.tour-img
+							img(src="img/tour/japan5.jpg", alt="")
+						figcaption
+							.tour-name
+								a(href="#") Du lịch Nhật Bản (Osaka - Nara - Kyoto - Nagoya - Núi Phú Sỹ - Tokyo)
+							.tour-destination TP.Hồ Chí Minh - Japan
+							time 6 ngày 5 đêm
+							.tour-price
+								.group
+									.label Người lớn
+									.value 42.000.000đ
+								.group
+									.label Trẻ em
+									.value 30.000.000đ
+								.group
+									.label Em bé
+									.value 15.000.000đ
+				.booking-payment.clearfix
+					.form-title Phương thức thanh toán
+					.method-list
+						.payment-method.radio
+							input#ttnh(type="radio", name="rd1" checked)
+							label(for="ttnh")
+								.method-info
+									.method-img
+										img(src="img/cart/icon1.png", alt="")
+									.method-detail
+										.method-name Thanh toán tiền mặt khi nhận phòng
+										.method-des Quý khách sẽ thanh toán bằng tiền mặt hoặc thẻ khi Cánh Cam giao hàng cho quý khách
+								.method-content
+									.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+						.payment-method.radio
+							input#ttatm(type="radio", name="rd1")
+							label(for="ttatm")
+								.method-info
+									.method-img
+										img(src="img/cart/icon2.png", alt="")
+									.method-detail
+										.method-name Thanh toán bằng thẻ ATM
+										.method-des Thẻ ATM của bạn cần đăng ký sử dụng dịch vụ Internet Banking.
+											br
+											|Bạn sẽ được chuyển tới Napas để thanh toán
+								.method-content
+									.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+						.payment-method.radio
+							input#ttqt(type="radio", name="rd1")
+							label(for="ttqt")
+								.method-info
+									.method-img
+										img(src="img/cart/icon3.png", alt="")
+									.method-detail
+										.method-name Thanh toán bằng thẻ thanh toán quốc tế
+										.method-des Hỗ trợ Credit và Debit.
+											br
+											|Bạn sẽ được chuyển tới OnePay để thanh toán.
+								.method-content
+									.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+						//- .payment-method.radio
+							input#tttg(type="radio", name="rd1")
+							label(for="tttg")
+								.method-info
+									.method-img
+										img(src="img/cart/icon4.png", alt="")
+									.method-detail
+										.method-name Thanh toán trả góp
+										.method-des Hỗ trợ Credit.
+											br
+											|Bạn sẽ được chuyển đến OnePay để thanh toán
+								.method-content
+									.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+					.payment-agree.checkbox
+						input#agree(type="checkbox", name="agree")
+						label(for="agree") Tôi đồng ý với chính sách bảo mật và điều khoản chung cho đặt phòng
+				.btn-wrap
+					a.btn-back(href="#") Quay lại
+					a.btn-continue(href="#") Tiếp tục
+			.col-12.col-lg-4
+				section.booking-info.clearfix
+					.tour-form.clearfix
+						.form-group
+							label(for="") Thời gian đi
+							input(type="text" value="30/11/2017 - 05/12/2017" disabled)
+						.form-group
+							label(for="") Số lượng hành khách
+							.group
+								.label Người lớn
+								//- .value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price <strong>1</strong> x <strong>42.000.000đ</strong>
+							.group
+								.label Trẻ em
+								//- .value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price <strong>1</strong> x <strong>35.000.000đ</strong>
+							.group
+								.label Em bé
+								//- .value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price <strong>1</strong> x <strong>15.000.000đ</strong>
+
+				section.booking-amount.clearfix
+					.group.total-amount
+						.label Giá tiền
+							.des Giá đã bao gồm phí dịch vụ 5%, thuế 10%
+						.value 5.175.000 đ
+include bookingfooter

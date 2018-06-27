@@ -1,0 +1,421 @@
+main
+	// +pos(rel,null)
+	// z-index: 10
+
+.banner-caption
+	+pos(rel,null)
+	z-index: 10
+	text-align: center
+	text-shadow: 0 3px 6px color-rgba($black,0.3)
+	.big
+		+fs(36rem)
+		font-weight: 700
+		line-height: 1.3
+		color: $white
+		+media-breakpoint-down(md)
+			+fs(32rem)
+		+media-breakpoint-down(sm)
+			+fs(30rem)
+		+media-breakpoint-down(xs)
+			+fs(28rem)
+	.small
+		+fs(24rem)
+		color: $white
+		line-height: 1.5
+		margin-bottom: 20px
+		+media-breakpoint-down(sm)
+			+fs(20rem)
+		+media-breakpoint-down(xs)
+			+fs(16rem)
+.home-search
+	+pos(rel,null)
+	z-index: 10
+	.searchwrap
+		width: 65%
+		margin: 0 auto
+		+media-breakpoint-down(sm)
+			width: 100%
+		.searchbox
+			+flexbox
+			padding: 0px 00px
+			+bor-rad(50px)
+			border: 2px solid $white
+			box-shadow: 0 3px 10px color-rgba($black,0.2)
+			input
+				line-height: 40px
+				border: none
+				background: none
+				padding: 0px 30px
+				width: calc(100% - 60px)
+				color: $white
+				&::-webkit-input-placeholder
+					color: $white
+					opacity: 0.8
+				+media-breakpoint-down(xs)
+					// width: calc(100% - 86px)
+			.searchbutton
+				+fs(15rem)
+				color: $white
+				font-weight: 500
+				line-height: 40px
+				width: 60px
+				text-align: center
+				+media-breakpoint-down(xs)
+					+fs(14rem)
+					font-weight: 600
+				.fa
+					// margin-right: 10px
+
+.home-title
+	+fs(30rem)
+	color: $main
+	margin-bottom: 30px
+	line-height: 1.5
+	+media-breakpoint-down(md)
+		+fs(24rem)
+	+media-breakpoint-down(xs)
+		+fs(20rem)
+	strong
+		font-weight: 700
+		color: $dblue
+
+.page-title
+	+fs(18rem)
+	text-transform: uppercase
+	font-weight: 700
+	border-left: 4px solid $blue
+	line-height: 1
+	padding-left: 10px
+	margin-bottom: 20px
+
+.post-title
+	+fs(16rem)
+	font-weight: 700
+	margin: 20px 0px
+
+.title-wrap
+	.home-title
+		float: left
+	.btn-viewmore
+		display: block
+		float: right
+		+fs(16rem)
+		font-weight: 300
+		color: $white
+		line-height: 40px
+		+bor-rad(50px)
+		background: $blue
+		padding: 0px 25px
+		+media-breakpoint-down(md)
+			+fs(14rem)
+			line-height: 36px
+		+media-breakpoint-down(xs)
+			// float: left
+			// margin-top: -20px
+			// margin-bottom: 30px
+			line-height: 2.3
+			padding: 0
+			color: $dblue
+			background: none
+		&:after
+			content: '\f0da'
+			margin-left: 10px
+		&:hover
+			background: $dblue
+.home-section
+	padding: 40px 0
+	background: $white
+	+pos(rel,null)
+	z-index: 1
+	+media-breakpoint-down(md)
+		padding: 20px 0
+.home-intro
+	// max-width: 1350px
+	margin: 0 auto
+	background: $white
+	// padding-top: 60px
+	// +bor-rad(5px)
+	+media-breakpoint-down(md)
+		padding-top: 20px
+		+bor-rad(0)
+	.intro-wrap
+		border-bottom: 1px solid darken($white,20%)
+	.home-booking-step
+		.step
+			+flexbox
+			flex-wrap: wrap
+			margin-bottom: 60px
+			+media-breakpoint-down(md)
+				justify-content: center
+			+media-breakpoint-down(xs)
+				margin-bottom: 30px
+				justify-content: flex-start
+			.number
+				width: 60px
+				height: 60px
+				line-height: 60px
+				+bor-rad(50px)
+				color: $white
+				background: $blue
+				font-family: 'arial'
+				text-align: center
+				+fs(40rem)
+				font-weight: 600
+				+pos(abs, 0 null null 0)
+				+media-breakpoint-down(md)
+					width: 24px
+					height: 24px
+					line-height: 24px
+					+fs(16rem)
+					+pos(static,unset)
+					display: inline-block
+					vertical-align: middle
+					margin-right: 10px
+			.caption
+				// padding-left: 25px
+				// width: calc(100% - 60px)
+				padding-left: 80px
+				+pos(rel,null)
+				+media-breakpoint-down(md)
+					padding-left: 0
+					width: 100%
+					text-align: center
+					// padding-top: 20px
+				+media-breakpoint-down(xs)
+					text-align: left
+				.name
+					line-height: 60px
+					+fs(18rem)
+					font-weight: 600
+					color: $main
+					// +pos(rel,null)
+					span 
+						font-weight: 800
+					+media-breakpoint-down(md)
+						line-height: 1.5
+						margin-bottom: 10px
+				.des
+					+fs(16rem)
+					color: darken($white,60%)
+					+media-breakpoint-down(md)
+						+fs(14rem)
+
+.home-hotsale
+	.hotel-list
+		.hotel-card
+			padding: 1px
+			figure
+				.hotel-img
+					display: block
+					+pos(rel,null)
+					overflow: hidden
+					&:after
+						content: ''
+						display: block
+						width: 0
+						height: 0
+						border-left: 25px solid transparent
+						border-right: 25px solid transparent
+						border-bottom: 25px solid darken($white,8%)
+						+pos(abs, null null 0 50%)
+						+transform(translateX(-50%)translateY(100%))
+						z-index: 5
+						+transition(all,0.5s)
+					img
+						width: 100%
+						height: 280px
+						object-fit: cover
+						-o-object-fit: cover
+						-ms-object-fit: cover
+						-moz-object-fit: cover
+						-webkit-object-fit: cover
+						+transition(all,0.5s)
+						+media-breakpoint-down(lg)
+							height: 220px
+						+media-breakpoint-down(md)
+							height: 170px
+						+media-breakpoint-down(sm)
+							height: auto
+					.promotion
+						+pos(abs, calc(100% + 50%) null null 50%)
+						+transform(translateX(-50%)translateY(-50%))
+						width: 140px
+						height: 140px
+						+bor-rad(100px)
+						color: $dblue
+						background: color-rgba($white,0.9)
+						+flexbox
+						justify-content: center
+						align-items: center
+						align-content: center
+						flex-wrap: wrap
+						text-align: center
+						+transition(all,0.5s)
+						+media-breakpoint-down(lg)
+							width: 100px
+							height: 100px
+						+media-breakpoint-down(md)
+							width: 80px
+							height: 80px
+						&.sale
+							span
+								+fs(13rem)
+								display: block
+								width: 100%
+								line-height: 1
+							strong 
+								display: block
+								line-height: 1
+								width: 100%
+								+fs(36rem)
+								font-weight: 700
+								+media-breakpoint-down(lg)
+									+fs(28rem)
+								+media-breakpoint-down(md)
+									+fs(20rem)
+				figcaption
+					background: darken($white,8%)
+					padding: 30px
+					+media-breakpoint-down(lg)
+						padding: 15px
+					.hotel-name
+						+fs(19rem)
+						line-height: 1.3
+						font-weight: 600
+						margin-bottom: 15px
+						height: calc((1.1875rem*1.3*2) + (0.8125rem*1.3*1) + 5px)
+						-webkit-line-clamp: 2
+						-webkit-box-orient: vertical
+						overflow: hidden
+						text-overflow: ellipsis
+						+media-breakpoint-down(lg)
+							+fs(16rem)
+							height: calc((1rem*1.3*2) + (0.8125rem*1.3*1) + 5px)
+						a
+							color: $main
+					.hotel-des
+						+fs(13rem)
+						font-weight: 500
+						line-height: 1.3
+						margin-top: 5px
+					.hotel-price
+						&:before
+							content: ''
+							display: block
+							width: 30px
+							height: 4px
+							background: $dblue
+							margin-bottom: 15px
+						.old
+							+fs(13rem)
+							font-weight: 500
+							+media-breakpoint-down(lg)
+								+fs(12rem)
+						.new
+							+fs(25rem)
+							font-weight: 700
+							+media-breakpoint-down(lg)
+								+fs(18rem)
+							span
+								+fs(13rem)
+								font-weight: 600
+								+media-breakpoint-down(lg)
+									+fs(12rem)
+				&:hover
+					.hotel-img
+						&:after
+							+transform(translateX(-50%)translateY(0))
+						img
+							filter: brightness(70%)
+						.promotion
+							top: 50%
+					figcaption
+						.hotel-name
+							a
+								color: $dblue
+
+.home-place
+	.place-wrap
+		+pos(rel,null)
+		// background: lighten($blue,30%)
+		overflow: hidden
+		.background
+			+pos(abs, 0 null 0 0)
+			right: 0
+			opacity: 0
+			filter: blur(0px)
+	.home-place-slide
+		+pos(rel,null)
+		z-index: 10
+		overflow: hidden
+		.row
+			margin: 0px -1px
+		.place-card
+			padding: 0 1px
+			background: $white
+			figure
+				.place-img
+					display: block
+					img 
+						width: 100%
+				figcaption
+					padding: 20px 30px
+					background: darken($white,8%)
+					+media-breakpoint-down(lg)
+						padding: 10px 15px
+					.place-name
+						+fs(18rem)
+						font-weight: 600
+						+media-breakpoint-down(lg)
+							+fs(14rem)
+						a
+							color: $main
+.home-news
+	.news-list
+		.news-card
+			+media-breakpoint-down(xs)
+				margin-bottom: 15px
+			figure
+				.news-img
+					display: block
+					img 
+						width: 100%
+				figcaption
+					padding: 20px 0
+					.news-cate
+						margin-bottom: 10px
+						a
+							display: block
+							color: $main
+							+fs(13rem)
+					.news-name
+						margin-bottom: 15px
+						+media-breakpoint-down(xs)
+							margin-bottom: 5px
+						a
+							display: block
+							+fs(19rem)
+							line-height: 1.3
+							font-weight: 600
+							margin-bottom: 15px
+							height: 1.1875rem*1.3*3
+							-webkit-line-clamp: 3
+							-webkit-box-orient: vertical
+							overflow: hidden
+							text-overflow: ellipsis
+							color: $main
+							+media-breakpoint-down(lg)
+								+fs(16rem)
+								height: 1rem*1.3*3
+							+media-breakpoint-down(xs)
+								+fs(14rem)
+								height: unset
+								margin-bottom: 5px
+					time
+						color: darken($white,40%)
+						+fs(13rem)
+				&:hover
+					figcaption
+						.news-name
+							a
+								color: $dblue

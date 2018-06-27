@@ -1,0 +1,125 @@
+.bookingpage
+	padding-top: 0
+.cart-table
+	+bor-rad(5px)
+	border: 1px solid darken($white,10%)
+	margin-bottom: 30px
+	th, td
+		+fs(13rem)
+		padding: 10px
+		vertical-align: middle
+		&:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+			white-space: nowrap
+	th
+		font-weight: 500
+		background: lighten($blue,40%)
+		border-bottom: 2px solid $blue
+	td
+		border-bottom: 1px solid darken($white,10%)
+		&.type
+			background: darken($white,5%)
+			font-weight: 500
+		&.money
+			color: $blue
+			font-weight: 500
+		.name
+			font-weight: 500
+		time
+			color: darken($white,40%)
+		.remove
+			+fs(16rem)
+			color: lighten($red,10%)
+	tr
+		&:last-child
+			td
+				border-bottom: none
+.cart-page
+	.mini-cart
+		+pos(rel,null)
+	.btn-edit
+		+pos(abs, 0 0 null null)
+		+fs(14rem)
+		color: $blue
+		&:before
+			content: '\f040'
+			margin-right: 5px
+	.cart-form
+		margin-bottom: 20px
+		.form-group
+			+flexbox
+			label
+				width: 150px
+				+fs(14rem)
+				+flexbox
+				align-items: center
+				align-content: center
+			.input-name
+				width: calc(100% - 150px)
+			input, textarea, select
+				width: calc(100% - 150px)
+				padding: 10px 15px
+				border: 1px solid darken($white,10%)
+				+bor-rad(3px)
+				+fs(14rem)
+			
+			ul
+				width: calc(100% - 150px + 20px)
+				padding: 8px 0
+				+flexbox
+				align-items: center
+				margin: 0px -10px
+				li
+					flex: 1
+					padding: 0px 10px
+					select
+						width: 100%
+			.value
+				width: calc(100% - 150px)
+				font-weight: 500
+				+fs(14rem)
+				span
+					font-weight: 500
+	.total-amount
+		text-align: right
+		margin-bottom: 30px
+		strong 
+			+fs(20rem)
+			font-weight: 600
+			color: $red
+			margin-left: 10px
+	.btn-wrap
+		margin-bottom: 20px
+		+flexbox
+		justify-content: center
+		.btn-back
+			// float: left
+			+fs(14rem)
+			font-weight: 500
+			background: darken($white,5%)
+			color: $main
+			line-height: 40px
+			padding: 0px 20px
+			+bor-rad(5px)
+			&:hover
+				background: darken($white,15%)
+		.btn-continue
+			// float: right
+			margin-left: 20px
+			+fs(14rem)
+			font-weight: 500
+			background: $blue
+			color: $white
+			line-height: 40px
+			padding: 0px 40px
+			+bor-rad(5px)
+			&:hover
+				background: darken($blue,10%)
+	.method-list
+		margin-bottom: 15px
+	.payment-agree
+		margin-bottom: 30px
+	.cart-success
+		text-align: center
+		margin-bottom: 30px
+		font-weight: 500
+		

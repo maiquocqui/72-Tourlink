@@ -1,0 +1,67 @@
+.banner-wrap
+	+pos(rel,null)
+	padding: 150px 0
+	+media-breakpoint-down(xs)
+		padding: 100px 0
+	&:before
+		// content: ''
+		// +pos(abs, 0 0 null 0)
+		// height: 150px
+		// background: linear-gradient(color-rgba($white,1),color-rgba($white,0))
+		// z-index: 1
+	&:after
+		// content: ''
+		// +pos(abs, null 0 0 0)
+		// height: 150px
+		// background: linear-gradient(color-rgba($white,0),color-rgba($white,1))
+		// z-index: 1
+	.banner
+		+pos(abs, 50% 0 null 0)
+		+transform(translateY(-50%))
+		+media-breakpoint-down(lg)
+			filter: brightness(80%)
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			opacity: 0
+			&:before 
+				content: ''
+				+fs(28rem)
+		.slick-prev
+			left: 30px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 30px
+			&:before
+				content: '\f105'
+		.slick-dots
+			text-align: center
+			+pos(abs, null 0 20px 0)
+			+media-breakpoint-down(lg)
+				opacity: 0
+			li
+				display: inline-block
+				width: 12px
+				height: 12px
+				+bor-rad(50px)
+				border: 2px solid $white
+				background: none
+				+ li
+					margin-left: 8px
+				&.slick-active
+					background: $dblue
+				button
+					display: none
+		.item
+			.banner-img
+				img
+					width: 100%
+					height: 800px
+					object-fit: cover
+					filter: brightness(90%)
+					+media-breakpoint-down(sm)
+					+media-breakpoint-down(xs)
+						height: 400px

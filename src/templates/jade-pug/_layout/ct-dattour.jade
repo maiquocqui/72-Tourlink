@@ -1,0 +1,168 @@
+include bookingheader
+
+.container
+	section.booking-step.clearfix
+		.step.finish
+			.number 1
+			.name Chọn tour
+		.step.active
+			.number 2
+			.name Chi tiết đặt tour
+		.step
+			.number 3
+			.name Thông tin thanh toán
+		.step
+			.number 4
+			.name Hoàn tất đặt tour
+	section.booking-page.clearfix
+		h1.page-title Thông tin chi tiết đặt tour
+		.row
+			.col-12.col-lg-8
+				.tour-info.clearfix
+					figure
+						.tour-img
+							img(src="img/tour/japan5.jpg", alt="")
+						figcaption
+							.tour-name
+								a(href="#") Du lịch Nhật Bản (Osaka - Nara - Kyoto - Nagoya - Núi Phú Sỹ - Tokyo)
+							.tour-destination TP.Hồ Chí Minh - Japan
+							time 6 ngày 5 đêm
+							.tour-price
+								.group
+									.label Người lớn
+									.value 42.000.000đ
+								.group
+									.label Trẻ em
+									.value 30.000.000đ
+								.group
+									.label Em bé
+									.value 15.000.000đ
+				.client-info.clearfix
+					.client-form.clearfix
+						.module-title Thông tin liên hệ
+						.form-wrap.clearfix
+							.row
+								.form-group.col-12.col-md-6
+									label Họ & tên
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Số điện thoại
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Email
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Địa chỉ
+									input(type="text")
+						.module-title Thông tin hành khách #1
+						.form-wrap.clearfix
+							.row
+								.form-group.col-12.col-md-6
+									label Họ & tên
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Số điện thoại
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Quốc tịch
+									select(name="")
+										option Việt Nam
+								.form-group.col-12.col-md-6
+									label Passport
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Địa chỉ
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Giới tính
+									select(name="")
+										option Nam
+						.module-title Thông tin hành khách #2
+						.form-wrap.clearfix
+							.row
+								.form-group.col-12.col-md-6
+									label Họ & tên
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Số điện thoại
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Quốc tịch
+									select(name="")
+										option Việt Nam
+								.form-group.col-12.col-md-6
+									label Passport
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Địa chỉ
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label Giới tính
+									select(name="")
+										option Nam
+
+				//- .hotel-feature.clearfix
+					.hotel-rating Xuất sắc 
+						strong 8.3
+					.hotel-service
+						.title Các dịch vụ bạn yêu thích
+						ul
+							li Cách bãi biển 100 m
+							li miễn phí wifi tất cả các phòng
+							li dịch vụ phòng hàng ngày
+							li quầy bar
+							li quán bar cạnh hồ bơi
+							li phòng sauna
+							li bể bơi sân thượng
+							li tiệc bể bơi
+							li dịch vụ cafe ăn sáng
+				.btn-wrap.clearfix
+					a.btn-continue(href="#") Tiếp tục
+			.col-12.col-lg-4
+				section.booking-info.clearfix
+					.tour-form.clearfix
+						.form-group
+							label(for="") Chọn thời gian đi
+							ul
+								li.radio
+									input#time1(type="radio", name="time")
+									label(for="time1") 30/11/2017 - 05/12/2017
+								li.radio
+									input#time2(type="radio", name="time")
+									label(for="time2") 01/12/2017 - 06/12/2017
+						.form-group
+							label(for="") Số lượng hành khách
+							.group
+								.label Người lớn
+								.value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price x 
+									strong 42.000.000đ
+							.group
+								.label Trẻ em
+								.value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price x 
+									strong 30.000.000đ
+							.group
+								.label Em bé
+								.value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price x 
+									strong 15.000.000đ
+
+				section.booking-amount.clearfix
+					.group.total-amount
+						.label Giá tiền
+							.des Giá đã bao gồm phí dịch vụ 5%, thuế 10%
+						.value 5.175.000 đ
+include bookingfooter

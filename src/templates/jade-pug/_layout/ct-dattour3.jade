@@ -1,0 +1,141 @@
+include bookingheader
+
+.container
+	section.booking-step.clearfix
+		.step.finish
+			.number 1
+			.name Chọn tour
+		.step.finish
+			.number 2
+			.name Chi tiết đặt tour
+		.step.finish
+			.number 3
+			.name Thông tin thanh toán
+		.step.active
+			.number 4
+			.name Hoàn tất đặt tour
+	section.booking-success
+		.alert.alert-success <i class="fa fa-check-circle" aria-hidden="true"></i> Đặt tour thành công
+	section.booking-page.clearfix
+		h1.page-title Thông tin chi tiết đặt tour
+		.row
+			.col-12.col-lg-8
+				.tour-info.clearfix
+					figure
+						.tour-img
+							img(src="img/tour/japan5.jpg", alt="")
+						figcaption
+							.tour-name
+								a(href="#") Du lịch Nhật Bản (Osaka - Nara - Kyoto - Nagoya - Núi Phú Sỹ - Tokyo)
+							.tour-destination TP.Hồ Chí Minh - Japan
+							time 6 ngày 5 đêm
+							.tour-price
+								.group
+									.label Người lớn
+									.value 42.000.000đ
+								.group
+									.label Trẻ em
+									.value 30.000.000đ
+								.group
+									.label Em bé
+									.value 15.000.000đ
+				.client-info.clearfix
+					.client-form.clearfix
+						.module-title Thông tin liên hệ
+						.form-wrap.clearfix
+							.row
+								.form-group.col-12.col-md-6
+									label  Họ tên
+									.value Nguyễn Văn A
+								.form-group.col-12.col-md-6
+									label Số điện thoại
+									.value 0981 543 543
+								.form-group.col-12.col-md-6
+									label Email
+									.value nguyenvana@gmail.com
+								.form-group.col-12.col-md-6
+									label Địa chỉ
+									.value 156 Nguyễn Văn Thủ
+						.module-title Thông tin hành khách #1
+						.form-wrap.clearfix
+							.row
+								.form-group.col-12.col-md-6
+									label Họ & tên
+									.value Nguyễn Văn B
+								.form-group.col-12.col-md-6
+									label Số điện thoại
+									.value 0981 543 543
+								.form-group.col-12.col-md-6
+									label Quốc tịch
+									.value Việt Nam
+								.form-group.col-12.col-md-6
+									label Passport
+									.value 215 404 678
+								.form-group.col-12.col-md-6
+									label Địa chỉ
+									.value 156 Nguyễn Văn Thủ p.Đakao q.1
+								.form-group.col-12.col-md-6
+									label Giới tính
+									.value Nam
+						.module-title Thông tin hành khách #2
+						.form-wrap.clearfix
+							.row
+								.form-group.col-12.col-md-6
+									label Họ & tên
+									.value Nguyễn Văn B
+								.form-group.col-12.col-md-6
+									label Số điện thoại
+									.value 0981 543 543
+								.form-group.col-12.col-md-6
+									label Quốc tịch
+									.value Việt Nam
+								.form-group.col-12.col-md-6
+									label Passport
+									.value 215 404 678
+								.form-group.col-12.col-md-6
+									label Địa chỉ
+									.value 156 Nguyễn Văn Thủ p.Đakao q.1
+								.form-group.col-12.col-md-6
+									label Giới tính
+									.value Nam
+			.col-12.col-lg-4
+				section.booking-info.clearfix
+					.tour-form.clearfix
+						.form-group
+							label(for="") Thời gian đi
+							input(type="text" value="30/11/2017 - 05/12/2017" disabled)
+						.form-group
+							label(for="") Số lượng hành khách
+							.group
+								.label Người lớn
+								//- .value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price <strong>1</strong> x <strong>42.000.000đ</strong>
+							.group
+								.label Trẻ em
+								//- .value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price <strong>1</strong> x <strong>35.000.000đ</strong>
+							.group
+								.label Em bé
+								//- .value
+									.input-number
+										.btn-spin.btn-dec -
+										input(type="text" value="1")
+										.btn-spin.btn-inc +
+								.price <strong>1</strong> x <strong>15.000.000đ</strong>
+
+				section.booking-amount.clearfix
+					.group
+						.payment-method Thanh toán VISA qua internet banking
+					.group.total-amount
+						.label Giá tiền
+							.des Giá đã bao gồm phí dịch vụ 5%, thuế 10%
+						.value 5.175.000 đ
+include bookingfooter

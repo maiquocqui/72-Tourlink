@@ -1,0 +1,48 @@
+
+.date-picker
+	width: 732px
+	height: 286px
+	.calendar 
+		max-width: unset
+		+bor-rad(5px)
+		th, td
+			padding: 5px 10px
+			border: none
+			+bor-rad(0)
+			+fs(14rem)
+			vertical-align: middle
+			&:first-child
+				color: lighten($red,20%)
+			&:last-child
+				color: $blue
+		th
+			// background: darken($white,3%)
+			border-bottom: 1px solid darken($white,10%)
+			font-weight: 700
+			color: $blue
+			text-transform: uppercase
+			&:first-child
+				color: lighten($red,20%)
+			&:last-child
+				color: $blue
+			&.prev, &.next, &.month
+				background: $white
+				color: $main
+				padding: 15px 10px
+				border: none
+				text-transform: uppercase
+			&.month
+				+fs(18rem)
+			&.prev, &.next
+				color: darken($white,40%)
+				&:hover
+					color: $blue
+		td
+			+bor-rad(5px)
+			&:first-child
+				color: lighten($red,20%)
+			&:last-child
+				color: $blue
+			&.active
+				background: $blue
+				font-weight: 700

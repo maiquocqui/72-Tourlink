@@ -1,0 +1,130 @@
+.container
+	.visa-step
+		.step.finish
+			.number 1
+			.name Reservation process
+		.step.finish
+			.number 2
+			.name Expected issue date
+		.step.finish
+			.number 3
+			.name Visa Type
+		.step.active
+			.number 4
+			.name Booking detail
+	.visa-page
+		.page-title Booking detail
+		.visa-form.clearfix
+			//- .small-title <i class="fa fa-th-list" aria-hidden="true"></i> Visa type
+			.visa-type
+				a.active(href="#") Tourist Visa
+				//- a(href="#") Commercial Visa
+				//- a(href="#") Arrival Visa (Sightseeing)
+				//- a(href="#") Arrival Visa (Commercial)
+				//- a(href="#") Invitation Holder
+			.order-form
+				.row
+					.col-12.col-lg-6
+						.form-wrap
+							table
+								tr
+									td Visa type
+									td Tourist Visa
+								tr
+									td Object
+									td Common general
+								tr
+									td Maximum stay date
+									td Singular - 30 days
+								tr
+									td Visa validity period
+									td 1 month
+								tr
+									td Procedures
+									td 1 nights 2 days
+								tr
+									td Reservation number
+									td
+										select(name="")
+											option(value="") 1 person
+								tr
+									td Price (per person)
+									td 
+										.total $120
+								tr
+									td Expected departure
+									td 
+										.date
+											input(type="text")
+								tr
+									td Airport arrival
+									td 
+										select
+											option(value="") -- Airport --
+											option(value="") Tân Sơn Nhất
+							//- .frm-btn
+								a.btn-book(href="#") Booking
+					.col-12.col-lg-6
+						.extra-service
+							.small-title Extra service
+							ul.service
+								li
+									.checkbox
+										input#fasttrack(type="checkbox", name="exservice")
+										label(for="fasttrack") Fast track
+									.form-group#fasttrackinfo
+										textarea(name="", cols="30", rows="5" placeholder="Fill in flight info...")
+								li
+									.checkbox
+										input#pickup(type="checkbox", name="pickup")
+										label(for="pickup") Pick up
+									.form-group#pickupinfo
+										textarea(name="", cols="30", rows="5" placeholder="Fill in some info...")
+							.total-amount Total: 
+								strong $240
+		.cart-payment.clearfix
+			h3.page-title Payment method
+			.method-list
+				.payment-method.radio
+					input#ttnh(type="radio", name="rd1" checked)
+					label(for="ttnh")
+						.method-info
+							.method-img
+								img(src="img/cart/icon1.png", alt="")
+							.method-detail
+								.method-name Thanh toán tiền mặt tại TourLink
+								.method-des Quý khách sẽ thanh toán bằng tiền mặt hoặc thẻ khi Cánh Cam giao hàng cho quý khách
+						.method-content
+							.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+				.payment-method.radio
+					input#ttatm(type="radio", name="rd1")
+					label(for="ttatm")
+						.method-info
+							.method-img
+								img(src="img/cart/icon2.png", alt="")
+							.method-detail
+								.method-name Thanh toán bằng thẻ ATM
+								.method-des Thẻ ATM của bạn cần đăng ký sử dụng dịch vụ Internet Banking.
+									br
+									|Bạn sẽ được chuyển tới Napas để thanh toán
+						.method-content
+							.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+				.payment-method.radio
+					input#ttqt(type="radio", name="rd1")
+					label(for="ttqt")
+						.method-info
+							.method-img
+								img(src="img/cart/icon3.png", alt="")
+							.method-detail
+								.method-name Thanh toán bằng thẻ thanh toán quốc tế
+								.method-des Hỗ trợ Credit và Debit.
+									br
+									|Bạn sẽ được chuyển tới OnePay để thanh toán.
+						.method-content
+							.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi atque, modi iusto autem enim est, quidem eveniet delectus fugiat tenetur saepe tempora vitae, porro voluptas numquam soluta impedit consectetur quas libero recusandae maiores. Expedita nobis magnam quis sed facere, quibusdam corporis sunt dolorem a alias libero aliquam excepturi repellat.
+			.payment-agree.checkbox
+				input#agree(type="checkbox", name="agree")
+				label(for="agree") Tôi đồng ý với chính sách bảo mật và điều khoản chung của Tourlink
+		.cartbtn-wrap
+			a.btn-backstep(href="#") Back
+			a.btn-nextstep(href="#") Booking

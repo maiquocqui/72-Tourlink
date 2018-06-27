@@ -1,0 +1,56 @@
+section#search.search-panel.search-tour.clearfix
+	.container
+		.searchwrap
+			.row
+				.form-wrap
+					.row
+						.form-group.place
+							label Điểm đến...
+							input(type="text" placeholder="")
+						.form-group.date
+							label Ngày đi
+							input#btn-datepick(type="text" placeholder="" name="daterange")
+							include calendar
+						//- .form-group.date
+							label Ngày về
+							input(type="text" placeholder="" name="daterange")
+						.form-group.advance
+							label Số người đi
+							input#advance-search(type="text" placeholder="" name="advance")
+							.dropdown-menu.advance-search
+								//- .group
+									label Phòng
+									.input-number
+										.btn-spin.btn-dec -
+										input#phong(type="text" value="0")
+										.btn-spin.btn-inc +
+								.group
+									label Người lớn
+									.input
+										.input-number
+											.btn-spin.btn-dec -
+											input#nguoilon(type="text" value="0")
+											.btn-spin.btn-inc +
+								.group
+									label Trẻ em
+									.input
+										select.child-number
+											option 0
+											option 1
+											option 2
+											option 3
+											option 4
+											option 5
+											option 6
+											option 7
+											option 8
+											option 9
+											option 10
+								.group-yearold
+									label Độ tuổi của trẻ
+									#select-age-group
+								.btn-update2 Xác nhận
+				.form-group.frm-btnwrap
+					label &nbsp;
+					.frm-btn
+						button.searchbutton <i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm

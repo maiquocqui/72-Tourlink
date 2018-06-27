@@ -1,0 +1,114 @@
+.breadcrumb-section
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Hỗ trợ khách hàng
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Hỏi đáp
+.container
+	section.support-page.clearfix
+		h1.page-title Hỗ trợ khách hàng
+		nav.support-nav
+			ul
+				li.active
+					a(href="#!") Hỏi đáp
+				li
+					a(href="#!") Thông báo
+		.faq-filter
+			.amount Có
+				strong 1,190 
+				| câu hỏi
+			.search-faq
+				select
+					option Chủ đề
+					option Nội dung
+					option Tác giả
+				input(type="text")
+				button.searchbutton Tìm
+		table.qa-table
+			tr
+				th Number
+				th Chủ đề
+				th Tác giả
+				th Ngày
+			tr
+				td 1
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 2
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 3
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 4
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 5
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 6
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 7
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 8
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 9
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+			tr
+				td 10
+				td 
+					a(href="#!") Thủ tục làm visa như thế nào?
+				td username@gmail.com
+				td 12/12/2016
+		.btn-wrap
+			a.btn-sendmess(href="#!") Gửi câu hỏi
+		.send-mess
+			.module-title Gửi câu hỏi
+			.form-wrap
+				//- .form-group
+				//- 	input(type="text" placeholder="Họ và tên")
+				//- .form-group
+				//- 	input(type="text" placeholder="Email")
+				//- .form-group
+				//- 	input(type="text" placeholder="Số điện thoại")
+				.form-group
+					textarea(name="", cols="30", rows="4", placeholder="Nội dung")
+				.frm-btn
+					input(type="submit", value="Gửi")

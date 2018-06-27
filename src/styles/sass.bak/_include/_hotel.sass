@@ -1,0 +1,1133 @@
+.hotel-banner
+	+pos(rel,null)
+	&:before
+		content: ''
+		+pos(abs, 0 0 null 0)
+		height: 200px
+		background: linear-gradient(color-rgba($white,1),color-rgba($white,0))
+		z-index: 5
+=placelist
+	.place-list
+		margin-bottom: 20px
+		.row
+			// margin: 0px -10px
+		.col-12
+			// padding: 0px 10px
+			margin-bottom: 30px
+		.place-card
+			figure
+				+pos(rel,null)
+				+bor-rad(5px)
+				overflow: hidden
+				+transition(all,0.3s)
+				.place-img
+					display: block
+					img 
+						width: 100%
+						height: 250px
+						object-fit: cover
+						+media-breakpoint-down(lg)
+							height: 200px
+						+media-breakpoint-down(md)
+							height: 150px
+				figcaption
+					.place-name
+						a
+							+pos(abs, 0 null 0 0)
+							right: 0
+							background: color-rgba($black,0.3)
+							+flexbox
+							justify-content: center
+							align-items: center
+							align-content: center
+							+fs(28rem)
+							font-weight: 600
+							color: $white
+							+media-breakpoint-down(md)
+								+fs(18rem)
+				&:hover
+					box-shadow: 0 20px 30px -10px color-rgba($black,0.2)
+					margin-top: -5px
+.hotel-page
+	padding: 30px 0
+	// border-top: 1px solid darken($white,10%)
+	+placelist
+	.nav-tabs
+		margin: 0 0 30px
+		padding: 0
+		border: none
+		+media-breakpoint-down(sm)
+			display: block
+			white-space: nowrap
+			overflow: auto
+		.nav-link
+			margin: 0
+			padding: 0
+			border: none
+			+fs(18rem)
+			font-weight: 600
+			color: darken($white,30%)
+			+media-breakpoint-down(sm)
+				+fs(14rem)
+				display: inline-block
+				vertical-align: top
+			+ .nav-link
+				margin-left: 40px
+				+media-breakpoint-down(sm)
+					margin-left: 20px
+			&:hover
+				color: darken($white,60%)
+			&.active
+				color: $main
+	.hotel-list
+		.col-12
+			margin-bottom: 30px
+		.hotel-card
+			border: 1px solid darken($white,10%)
+			+bor-rad(5px)
+			// overflow: hidden
+			figure
+				+bor-rad(5px)
+				overflow: hidden
+				+transition(all,0.3s)
+				.hotel-img
+					display: block
+					+pos(rel,null)
+					img 
+						width: 100%
+					.hotel-rating
+						+pos(abs, null null 15px 0)
+						padding: 5px 10px
+						background: $blue
+						color: $white
+						font-weight: 500
+						+bor-rad(0 3px 3px 0)
+				figcaption
+					background: $white
+					padding: 20px 25px
+					.hotel-name
+						+fs(20rem)
+						font-weight: 600
+						line-height: 1.3
+						margin-bottom: 5px
+						a
+							color: $main
+					.hotel-star
+						color: $amber
+						margin-bottom: 10px
+						.fa
+							+ .fa
+								margin-left: 3px
+					.hotel-des
+						+fs(14rem)
+						color: darken($white,40%)
+				&:hover
+					box-shadow: 0 20px 30px -10px color-rgba($black,0.2)
+					margin-top: -5px
+					figcaption
+						.hotel-name
+							a
+								color: $blue
+	.hotel-info
+		margin-bottom: 30px
+		.hotel-rating
+			float: right
+			width: 150px
+			text-align: right
+			+fs(18rem)
+			padding: 10px 0
+			strong
+				+fs(28rem)
+				color: $blue
+				font-weight: 500
+		.hotel-name, .hotel-location
+			float: left
+			width: calc(100% - 150px)
+		.hotel-name
+			+fs(28rem)
+			line-height: 1.5
+		.hotel-location
+			color: darken($white,40%)
+			line-height: 1.5
+			margin-bottom: 5px
+			.fa
+				color: $blue
+			a
+				font-weight: 500
+				color: $main
+				&:hover
+					color: $blue
+		.hotel-star
+			color: $amber
+			display: inline-block
+			vertical-align: middle
+			+fs(16rem)
+			margin-left: 10px
+			.fa
+				margin-right: 3px
+	.favorite-service
+		+bor-rad(5px)
+		background: lighten($blue,45%)
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		padding: 20px
+		margin-bottom: 30px
+		.label
+			width: 250px
+			font-weight: 500
+			color: $blue
+		.service-list
+			width: calc(100% - 250px)
+			+flexbox
+			.service-card
+				width: 25%
+				padding: 0px 10px
+				text-align: center
+				.icon
+					margin-bottom: 10px
+				.des
+					+fs(14rem)
+					color: $main
+					font-weight: 500
+					max-width: 120px
+					margin: 0 auto
+	.room-list
+		.col-12
+			margin-bottom: 30px
+		.room-card
+			figure
+				// +flexbox
+				border: 1px solid darken($white,10%)
+				+bor-rad(5px)
+				overflow: hidden
+				+transition(all,0.3s)
+				.room-img
+					display: block
+					// width: 50%
+					overflow: hidden
+					+pos(rel,null)
+					img 
+						width: 100%
+						height: 180px
+						object-fit: cover
+						+bor-rad(5px 5px 0 0)
+						+transition(all,0.3s)
+					.btn-viewdetail
+						+pos(abs, 50% null null 50%)
+						+transform(translateX(-50%)translateY(-50%))
+						background: $white
+						color: $blue
+						border: 2px solid $blue
+						+bor-rad(50px)
+						line-height: 36px
+						padding: 0px 20px
+						// font-weight: 500
+						white-space: nowrap
+						+transition(all,0.3s)
+						opacity: 0
+						&:hover
+							background: $blue
+							color: $white
+				figcaption
+					// width: 50%
+					padding: 15px 15px 40px
+					+pos(rel,null)
+					.room-title
+						+fs(16rem)
+						font-weight: 600
+						margin-bottom: 5px
+						a
+							color: $main
+					.room-des
+						+fs(14rem)
+						color: darken($white,60%)
+					.btn-viewprice
+						+pos(abs, null 0 0 0)
+						background: darken($white,10%)
+						color: $main
+						text-align: center
+						// font-weight: 600
+						+fs(14rem)
+						padding: 10px 0
+				&:hover
+					box-shadow: 0 20px 30px -10px color-rgba($black,0.2)
+					margin-top: -5px
+					.room-img
+						img
+							filter: brightness(70%)
+							// +transform(scale3d(1.2,1.2,1))
+						.btn-viewdetail
+							opacity: 1
+					figcaption
+						.btn-viewprice
+							background: $blue
+							color: $white
+							&:hover
+								background: $dblue
+		
+		.room-group
+			+flexbox
+			flex-wrap: wrap
+			border: 1px solid darken($white,10%)
+			margin-bottom: 30px
+			.room-type
+				padding: 10px
+				+fs(14rem)
+				font-weight: 500
+				width: 100%
+				border-bottom: 1px solid darken($white,10%)
+			.room-intro
+				width: 400px
+				padding: 10px
+				background: darken($white,5%)
+				figure
+					+flexbox
+					flex-wrap: wrap
+				.room-img
+					display: block
+					width: 50%
+				figcaption
+					width: 50%
+					padding-left: 15px
+					.room-des
+						ul
+							li
+								// padding-left: 20px
+								+fs(14rem)
+								+pos(rel,null)
+								.fa
+									+pos(abs, 3px null null 0)
+								&:before
+									display: none
+			.room-booking
+				width: calc(100% - 400px)
+				border-left: 1px solid darken($white,10%)
+				.table-head
+					+fs(13rem)
+					font-weight: 700
+					background: darken($white,3%)
+					border-bottom: 1px solid darken($white,10%)
+					+flexbox
+					.baogom, .succhua, .giaphong, .sl, .datphong
+						font-weight: 700
+						padding: 10px
+					.succhua, .giaphong, .sl, .datphong
+						border-left: 1px solid darken($white,10%)
+				.baogom
+					width: calc(100% - 90px - 180px - 80px - 160px)
+				.succhua
+					width: 90px
+				.giaphong
+					width: 180px
+				.sl
+					width: 80px
+				.datphong
+					width: 160px
+				.table-room
+					+fs(13rem)
+					.room
+						+flexbox
+						// border-bottom: 1px solid darken($white,10%)
+						&:last-child
+							// border-bottom: none
+						&:hover
+							background: lighten($blue,45%)
+						.succhua, .giaphong, .sl, .datphong
+							border-left: 1px solid darken($white,10%)
+						.baogom, .succhua, .giaphong, .sl, .datphong
+							padding: 10px
+						.baogom
+							ul
+								li
+									// padding-left: 10px
+									// +fs(14rem)
+									// +pos(rel,null)
+									// &:before
+									// 	content: ''
+									// 	display: block
+									// 	width: 5px
+									// 	height: 5px
+									// 	+bor-rad(10px)
+									// 	background: darken($white,60%)
+									// 	+pos(abs, 7px null null 0)
+						.succhua
+							.fa
+								color: $blue
+						.giaphong
+							text-align: right
+							.old
+								+fs(13rem)
+								text-decoration: line-through
+								color: darken($white,40%)
+								line-height: 1
+							.new
+								+fs(18rem)
+								font-weight: 600
+								color: lighten($red,10%)
+								line-height: 1.5
+							.des
+								+fs(11rem)
+								color: darken($white,40%)
+						.sl
+							select
+								border: 1px solid darken($white,10%)
+								padding: 7px 10px
+						.datphong
+							.btn-book
+								display: block
+								background: $blue
+								color: $white
+								+fs(13rem)
+								+bor-rad(5px)
+								padding: 6px 0px
+								text-align: center
+								&:hover
+									background: darken($blue,10%)
+								&:before
+									content: '\f044'
+									margin-right: 5px
+	.product-tabs
+		// margin-bottom: 20px
+.hotel-room
+
+.hotel-compare
+	margin-bottom: 30px
+	.compare-table
+		+flexbox
+		.compare-field
+			width: 20%
+		.empty
+			border-bottom: 1px solid darken($white,10%)
+			height: 203px
+		.review, .area, .wifi, .breakfast, .button
+			height: 40px
+			+flexbox
+			align-items: center
+			align-content: center
+			padding: 0px 10px
+			+fs(14rem)
+			// font-weight: 500
+			border-bottom: 1px solid darken($white,10%)
+			.on
+				color: $blue
+				font-weight: 500
+			.off
+				color: darken($white,20%)
+				text-decoration: line-through
+				// font-weight: 700
+		.button
+			height: 60px
+			border: none
+		.compare-list
+			width: 80%
+			+flexbox
+			border-left: 1px solid darken($white,10%)
+			.compare-card
+				width: 25%
+				border-right: 1px solid darken($white,10%)
+				&.selected
+					border: 2px solid $blue
+					box-shadow: 0 10px 20px -10px color-rgba($black,0.5)
+				figure
+					.hotel-img
+						padding: 10px
+					figcaption
+						.hotel-name
+							// +fs(14rem)
+							height: 0.875*1.3*2
+							padding: 0px 10px
+							+fs(14rem)
+							font-weight: 500
+							line-height: 1.3
+							-webkit-line-clamp: 2
+							-webkit-box-orient: vertical
+							overflow: hidden
+							text-overflow: ellipsis
+							margin-bottom: 5px
+							a
+								color: $main
+						.hotel-star
+							color: $amber
+							+fs(13rem)
+							padding: 0px 10px
+							margin-bottom: 5px
+							.fa
+								+ .fa
+									margin-left: 3px
+						.compare-info
+							border-top: 1px solid darken($white,10%)
+							// border-bottom: 1px solid darken($white,20%)
+						.button
+							padding: 0px 10px
+						.btn-view
+							text-align: center
+							line-height: 40px
+							+bor-rad(5px)
+							background: $blue
+							color: $white
+							+fs(14rem)
+							// font-weight: 600
+							display: block
+							width: 100%
+							&:hover
+								background: lighten($blue,10%)
+.hotel-service
+	margin-bottom: 30px
+	.service-col
+		.service-title
+			+fs(16rem)
+			font-weight: 500
+			margin-bottom: 10px
+			.fa
+				font-weight: normal
+		ul.service-list
+			// padding: 10px
+			// +bor-rad(5px)
+			// background: darken($white,10%)
+			li
+				color: $main
+				margin-bottom: 5px
+				+fs(14rem)
+				font-weight: 500
+				span
+					display: block
+					color: darken($white,40%)
+.hotel-description
+	margin-bottom: 30px
+	.hotel-des
+		margin-bottom: 30px
+	.small-title
+		+fs(18rem)
+		font-weight: 700
+		margin-bottom: 10px
+	.specify-list
+		.specify-col
+			+flexbox
+			flex-wrap: wrap
+			margin-bottom: 20px
+			.icon
+				width: 50px
+			.content
+				width: calc(100% - 50px)
+				padding-left: 20px
+				border-left: 1px solid darken($white,10%)
+				+fs(14rem)
+				.title
+					font-weight: 500
+					margin-bottom: 5px
+				ul
+					padding-left: 0
+					list-style-type: none
+					+flexbox
+					flex-wrap: wrap
+					li
+						width: 33.33%
+						.ic
+							margin-right: 5px
+
+
+
+.hotel-picture
+	margin-bottom: 40px
+	.picture-slide
+		margin: 0px -10px
+		.item
+			padding: 0px 10px
+		.pic
+			+pos(rel,null)
+			overflow: hidden
+			display: block
+			color: $white
+			text-shadow: 0 3px 3px color-rgba($black,0.1)
+			img
+				+transition(all,0.3s)
+			&:hover
+				img
+					+transform(scale3d(1.1,1.1,1))
+			.caption
+				+pos(abs, null 0px 0px 0px)
+				padding: 10px
+				+fs(14rem)
+				font-weight: 500
+				background: linear-gradient(color-rgba($black,0),color-rgba($black,0.5))
+
+.hotel-detail-list
+	.hotel-card
+		margin-bottom: 20px
+		figure
+			border: 1px solid darken($white,10%)
+			+flexbox
+			+bor-rad(5px)
+			flex-wrap: wrap
+			+transition(all,0.3s)
+			&:hover
+				box-shadow: 0 10px 20px -10px color-rgba($black,0.3)
+			.hotel-img
+				display: block
+				width: 30%
+				+pos(rel,null)
+				height: 200px
+				img
+					width: 100%
+					height: 200px
+					+bor-rad(5px 0 0 5px)
+					object-fit: cover
+				.hotel-rating
+					+pos(abs, null null 20px 0)
+					background: $blue
+					color: $white
+					+fs(16rem)
+					font-weight: 500
+					padding: 5px 10px
+			figcaption
+				width: 70%
+				background: darken($white,3%)
+				+flexbox
+				+pos(rel,null)
+				.colleft
+					width: 70%
+					padding: 15px
+				.colright
+					width: 30%
+					background: $white
+					text-align: right
+				.hotel-name
+					font-weight: 500
+					+fs(16rem)
+					a
+						color: $main
+				.hotel-star
+					color: $amber
+					.fa
+						+ .fa
+							margin-left: 3px
+				.hotel-location
+					+fs(14rem)
+					color: darken($white,40%)
+					margin-bottom: 20px
+					.fa
+						color: $blue
+				.hotel-feature
+					+flexbox
+					+pos(rel,null)
+					margin-bottom: 10px
+					background: $white
+					// border: 1px solid $blue
+					+bor-rad(5px)
+					.label
+						width: 90px
+						background: darken($white,10%)
+						color: $main
+						+fs(13rem)
+						padding: 5px 10px
+						font-weight: 500
+					> .feature-list
+						+flexbox
+						align-items: center
+						align-content: center
+						width: calc(100% - 90px)
+						white-space: nowrap
+						overflow: hidden
+						+pos(rel,null)
+						padding: 0px 10px
+						&:after
+							content: ''
+							width: 20px
+							+pos(abs, 0 0 0 null)
+							background: linear-gradient(to right, color-rgba($white,0),color-rgba($white,1))
+							+bor-rad(5px)
+						li 
+							display: inline-block
+							+fs(13rem)
+							color: darken($white,40%)
+							.fa, strong
+								margin-right: 3px
+								color: $blue
+							+ li
+								margin-left: 10px
+					.popup-tooltip
+						+pos(abs, 120% null null 0)
+						background: color-rgba($black,0.8)
+						+bor-rad(3px)
+						padding: 15px
+						color: $white
+						z-index: 5
+						opacity: 0
+						visibility: hidden
+						&:before
+							content: ''
+							display: block
+							width: 0
+							height: 0
+							border: 5px solid
+							border-top: none
+							border-color: transparent transparent color-rgba($black,0.8) transparent
+							+pos(abs, -5px null null 10px)
+						.title
+							+fs(14rem)
+							margin-bottom: 10px
+						.feature-list
+							+flexbox
+							flex-wrap: wrap
+							min-width: 300px
+							li
+								width: 50%
+								+fs(14rem)
+								.fa
+									margin-right: 5px
+									color: $blue
+					&:hover
+						.popup-tooltip
+							visibility: visible
+							opacity: 1
+				.promotion
+					color: $white
+					font-weight: 500
+					display: inline-block
+					padding: 5px 30px
+					// margin: 15px -2px 15px 0
+					+pos(abs, 20px -10px null null)
+					&.sale
+						background: lighten($red,10%)
+				.hotel-price
+					padding: 0px 15px
+					margin-bottom: 20px
+					margin-top: 70px
+					.old
+						+fs(14rem)
+						font-weight: 500
+						color: darken($white,40%)
+						text-decoration: line-through
+					.new
+						color: lighten($red,10%)
+						+fs(20rem)
+						font-weight: 600
+				.btn-view
+					display: block
+					background: $blue
+					text-align: center
+					color: $white
+					text-transform: uppercase
+					+fs(14rem)
+					font-weight: 500
+					line-height: 36px
+					margin: 0px 15px
+					// +bor-rad(5px)
+					&:hover
+						background: darken($blue,10%)
+
+.hotel-review
+	margin-bottom: 40px
+.hotel-qa
+	margin-bottom: 40px
+	.qa-table
+		margin-bottom: 30px
+	.btn-wrap
+		text-align: right
+		padding-bottom: 30px
+.pages
+	ul.pagination
+		margin: 0
+		padding: 0
+		background: none
+		+bor-rad(0)
+		li
+			display: inline-block
+			+ li
+				margin-left: 5px
+			a, span
+				display: block
+				width: 36px
+				height: 36px
+				line-height: 36px
+				text-align: center
+				color: darken($white,40%)
+				font-weight: 500
+				+bor-rad(5px)
+			&:hover
+				a, span
+					background: darken($white,10%)
+			&.active
+				a, span
+					background: $blue
+					color: $white
+
+.other-car
+	margin-bottom: 40px
+	.car-list
+	.car
+		figure
+			.car-img
+				display: block
+			figcaption
+				padding: 10px 15px
+				background: darken($white,5%)
+				.car-name
+					font-weight: 500
+					a
+						color: $main
+						&:hover
+							color: $blue
+.other-golf
+	margin-bottom: 40px
+	.golf
+		figure
+			.golf-img
+				display: block
+			figcaption
+				background: darken($white,5%)
+				padding: 10px 15px
+				.golf-name
+					font-weight: 500
+					+fs(14rem)
+					margin-bottom: 10px
+					a
+						color: $main
+						&:hover
+							color: blue
+				.golf-location, time
+					+fs(13rem)
+					&:before
+						content: '\f124'
+						margin-right: 5px
+						color: $blue
+				time
+					display: block
+					&:before
+						content: '\f017'
+.other-hotel
+	margin-bottom: 40px
+	.hotel
+		figure
+			.hotel-img
+				display: block
+			figcaption
+				background: darken($white,5%)
+				padding: 10px 15px
+				.hotel-name
+					font-weight: 500
+					+fs(14rem)
+					margin-bottom: 10px
+					a
+						color: $main
+						&:hover
+							color: blue
+				.hotel-location, time
+					+fs(13rem)
+					&:before
+						content: '\f124'
+						margin-right: 5px
+						color: $blue
+				time
+					display: block
+					&:before
+						content: '\f017'
+
+.other-tour
+	margin-bottom: 40px
+	.tour
+		figure
+			.tour-img
+				display: block
+			figcaption
+				background: darken($white,5%)
+				padding: 10px 15px
+				.tour-name
+					font-weight: 500
+					+fs(14rem)
+					margin-bottom: 10px
+					a
+						color: $main
+						&:hover
+							color: blue
+				.tour-destination, time
+					+fs(13rem)
+					&:before
+						content: '\f124'
+						margin-right: 5px
+						color: $blue
+				time
+					display: block
+					&:before
+						content: '\f017'
+.hotel-booking
+	display: none
+	padding: 0px 15px
+	border-top: 1px solid darken($white,10%)
+	.col-12
+		margin-bottom: 0 !important
+	.booking-form
+		+bor-rad(5px)
+		// border: 1px solid darken($white,10%)
+		// padding: 10px
+	.form-title
+		+fs(16rem)
+		font-weight: 500
+		margin: 0 0 15px
+	.form-group
+		margin-bottom: 10px !important
+		label
+			+fs(13rem)
+			margin-bottom: 3px
+			a
+				color: $main
+		input, select, textarea
+			width: 100%
+			+bor-rad(3px)
+			+fs(14rem)
+			padding: 10px 15px
+			border: 1px solid darken($white,10%)
+			&::-webkit-input-placeholder
+				color: $main
+				opacity: 0.5
+		select
+			padding: 9px 15px
+		ul
+			+flexbox
+			flex-wrap: wrap
+			li
+				width: 50%
+				label
+					+fs(14rem)
+	.booking-for
+		margin-bottom: 10px
+	.sub-form
+		background: darken($white,3%)
+		padding: 10px
+		+bor-rad(5px)
+		margin-bottom: 10px
+		display: none
+	.form-des
+		+fs(14rem)
+		color: darken($white,60%)
+		margin-bottom: 10px
+	.module-title
+		+fs(14rem)
+		margin-bottom: 10px
+		color: darken($white,60%)
+	.btn-showform
+		+fs(14rem)
+		color: $blue
+		margin-bottom: 5px
+		cursor: pointer
+		+transition(all,0.3s)
+		&:hover
+			color: $red
+		&:before 
+			content: '\f055'
+			margin-right: 5px
+	.require-form
+		.form-wrap
+			+bor-rad(5px)
+			border: 1px solid darken($white,10%)
+			padding: 10px
+			margin-bottom: 10px
+			display: none
+			.form-group
+				border-bottom: 1px solid darken($white,10%)
+				padding-bottom: 5px
+				&:last-child
+					border: none
+					padding-bottom: 0
+	.duadon
+		margin-bottom: 10px
+	.form-duadon
+		display: none
+	.frm-btn
+		text-align: right
+		+ .total-money
+			margin-top: 10px
+	input[type='submit']
+		display: inline-block
+		line-height: 36px
+		padding: 0px 20px
+		+bor-rad(5px)
+		background: $blue
+		border: none
+		color: $white
+		// text-transform: uppercase
+		&:hover
+			background: darken($blue,10%)
+	.total-money
+		margin-bottom: 10px
+		text-align: right
+		strong
+			color: lighten($red,10%)
+			+fs(18rem)
+	.btn-wrap
+		padding: 0px 15px
+		margin-bottom: 20px
+		text-align: center
+		// .btn-back
+		// 	float: left
+		// 	color: $blue
+		// 	+fs(14rem)
+		// 	// font-weight: 600
+		// 	line-height: 40px
+		// 	&:hover
+		// 		color: $red
+		// 	&:before
+		// 		content: '\f104'
+		// 		margin-right: 5px
+		.btn-continue
+			display: inline-block
+			// float: left
+			+bor-rad(5px)
+			line-height: 40px
+			padding: 0px 25px
+			color: $white
+			background: $blue
+			// font-weight: 600
+			&:hover
+				background: darken($blue,10%)
+			&:after
+				content: '\f105'
+				margin-left: 5px
+	.booking-info
+		// +bor-rad(5px)
+		padding: 10px 0
+		// +flexbox
+		// justify-content: center
+		.booking-date
+			margin: 0 auto
+			+flexbox
+			justify-content: center
+			padding: 10px 0 20px
+			border-bottom: 1px solid darken($white,10%)
+			.from
+				width: 220px
+				+flexbox
+				justify-content: center
+				+pos(rel,null)
+				&:after
+					content: '\f105'
+					+pos(abs, 50% 0 null null)
+					+transform(translateY(-50%))
+					+fs(24rem)
+					line-height: 1
+					// color: $blue
+			.to
+				width: 220px
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+			.date
+				+fs(36rem)
+				line-height: 1
+				font-weight: 600
+				// color: darken($white,60%)
+				color: $blue
+			.des
+				+fs(12rem)
+				line-height: 1.3
+				color: darken($white,40%)
+				+flexbox
+				white-space: nowrap
+				align-items: center
+				align-content: center
+				padding-left: 10px
+		.room-info
+			padding: 10px 0 5px
+			.room-name
+				// +fs(16rem)
+				font-weight: 500
+				margin-bottom: 5px
+			.room-des
+				ul
+					li
+						padding-left: 15px
+						+pos(rel,null)
+						+fs(13rem)
+						color: darken($white,40%)
+						&:before
+							content: ''
+							display: block
+							width: 6px
+							height: 6px
+							+bor-rad(50px)
+							background: darken($white,60%)
+							+pos(abs, 7px null null 0)
+	.booking-amount
+		+bor-rad(5px)
+		margin-bottom: 20px
+		border: 1px solid darken($white,10%)
+		.group
+			padding: 10px
+			+flexbox
+			border-bottom: 1px solid darken($white,10%)
+			&:last-child
+				border-bottom: none
+			.label
+				width: calc(100% - 150px)
+				+fs(14rem)
+				font-weight: 500
+				.des
+					+fs(12rem)
+					color: darken($white,40%)
+			.value
+				width: 150px
+				text-align: right
+				.price
+					.old
+						+fs(12rem)
+						text-decoration: line-through
+						color: darken($white,40%)
+					.new
+						font-weight: 600
+						// color: $red
+		.group
+			.payment-method
+				font-weight: 600
+				color: $blue
+		.total-amount
+			background: darken($white,5%)
+			.value
+				font-weight: 600
+				color: lighten($red,10%)
+				+fs(18rem)
+
+.other-service
+	margin-bottom: 30px
+	.service-list
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			&:before
+				content: ''
+				+fs(24rem)
+				font-family: 'fontawesome'
+			&:hover
+				color: $blue
+		.slick-prev
+			left: -30px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -30px
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -15px
+		.item
+			padding: 0px 15px
+	.service
+		background: darken($white,5%)
+		figure
+			figcaption
+				padding:  10px 15px
+				.service-name
+					+fs(14rem)
+					font-weight: 500
+					a
+						color: $black
+						&:hover
+							color: $blue
+			&:hover
+				.service-name
+					a
+						color: $blue

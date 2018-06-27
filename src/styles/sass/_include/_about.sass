@@ -1,0 +1,89 @@
+.about-page
+	// padding: 50px 0
+	+media-breakpoint-down(md)
+		padding: 30px 0
+
+.about-section
+	+pos(rel,null)
+	&.s2
+		.about-img
+			left: 50%
+			right: 0
+		.about-content
+			padding: 50px 30px 50px 0px
+		+media-breakpoint-down(md)
+			.col-12
+				&:nth-child(1)
+					order: 1
+				&:nth-child(2)
+					order: 2
+	.about-img
+		+pos(abs, 0 50% 0 0)
+		overflow: hidden
+		+media-breakpoint-down(md)
+			+pos(static,unset unset unset null)
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.logo
+		img
+			height: 50px
+	.about-content
+		+pos(rel,null)
+		z-index: 1
+		padding: 50px 0px 50px 30px
+		min-height: 500px
+		+flexbox
+		flex-wrap: wrap
+		// justify-content: center
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(md)
+			padding: 30px 0 10px
+			min-height: unset
+	.content
+		width: 100%
+	+media-breakpoint-down(md)
+		.col-12
+			&:nth-child(1)
+				order: 2
+			&:nth-child(2)
+				order: 1
+
+.partner-page
+	padding: 50px 0
+	.partner-list
+		.partner-col
+			margin-bottom: 10px
+			figure
+				.partner-img
+					+flexbox
+					height: 150px
+					+bor-rad(5px)
+					border: 1px solid darken($white,10%)
+					justify-content: center
+					align-items: center
+					align-content: center
+					overflow: hidden
+					img
+						max-width: 70%
+						max-width: 70%
+						+transition(all,0.5s)
+				figcaption
+					.partner-name
+						text-align: center
+						+fs(15rem)
+						padding: 10px 0
+						font-weight: 600
+						a
+							color: $main
+				&:hover
+					.partner-img
+						border-color: darken($white,60%)
+						img
+							+transform(scale3d(1.2,1.2,1))
+					figcaption
+						.partner-name
+							a
+								color: $blue

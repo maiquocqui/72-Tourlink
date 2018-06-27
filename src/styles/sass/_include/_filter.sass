@@ -1,0 +1,121 @@
+.btn-showfilter
+	display: none
+	+pos(fix, null null -1px 15px)
+	+fs(13rem)
+	padding: 0px 20px
+	line-height: 36px
+	+bor-rad(5px 5px 0 0)
+	box-shadow: 0px 0px 15px color-rgba($black,0.1)
+	border: 1px solid darken($white,10%)
+	background: $white
+	z-index: 100
+	font-weight: 600
+	text-transform: uppercase
+	+media-breakpoint-down(md)
+		display: block
+	.fa
+		+fs(16rem)
+		margin-right: 10px
+.filter-wrap
+	+bor-rad(5px)
+	border: 1px solid darken($white,10%)
+	padding: 15px
+	margin-bottom: 30px
+	+media-breakpoint-down(md)
+		+pos(fix, 50px 0 0px 0)
+		background: $white
+		z-index: 900
+		overflow: auto
+		margin: 0
+		+bor-rad(0)
+		border: none
+		visibility: hidden
+		opacity: 0
+		+transition(all,0.5s)
+		&.open
+			visibility: visible
+			opacity: 1
+	.filter-title
+		+fs(13rem)
+		text-transform: uppercase
+		font-weight: 600
+		border-bottom: 1px solid darken($white,15%)
+		padding: 10px 15px
+		margin: -15px -15px 15px
+		background: darken($white,3%)
+		+media-breakpoint-down(md)
+			&:before
+				content: '\f104'
+				margin-right: 10px
+	.filter-group
+		margin-bottom: 10px
+		padding-bottom: 10px
+		border-bottom: 1px solid darken($white,10%)
+		&:last-child
+			border-bottom: none
+		&:last-child
+			margin-bottom: 0
+		.title
+			+fs(13rem)
+			font-weight: 500
+			margin-bottom: 10px
+		.filter-search
+			input
+				width: 100%
+				+bor-rad(3px)
+				border: 1px solid darken($white,15%)
+				padding: 8px 15px
+		.filter-star
+			a
+				display: block
+				color: darken($white,20%)
+				margin-bottom: 5px
+				.fa
+					+ .fa
+						margin-left: 5px
+				&:hover, 
+				&.active
+					.fa.fa-star
+						color: $amber
+					.fa.fa-star-o
+						color: darken($white,40%)
+		.filter-area
+			a
+				display: block
+				padding-left: 25px
+				color: darken($white,40%)
+				+pos(rel,null)
+				+fs(13rem)
+				margin-bottom: 5px
+				&:before
+					content: ''
+					display: block
+					width: 14px
+					height: 14px
+					+bor-rad(2px)
+					border: 1px solid darken($white,20%)
+					+pos(abs, 3px null null 0)
+				&:after
+					content: '\f00c'
+					display: block
+					width: 14px
+					height: 14px
+					line-height: 12px
+					text-align: center
+					color: lighten($red,10%)
+					+bor-rad(3px)
+					border: 1px solid transparent
+					+pos(abs, 3px null null 0)
+					opacity: 0
+				&:hover
+					color: $main
+				&.active
+					color: $main
+					&:after
+						opacity: 1
+		.filter-sort
+			select
+				width: 100%
+				+bor-rad(3px)
+				border: 1px solid darken($white,15%)
+				padding: 7px 15px

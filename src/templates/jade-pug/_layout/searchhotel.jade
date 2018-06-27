@@ -1,0 +1,87 @@
+section#search.search-panel.clearfix
+	.container
+		.searchwrap
+			.row
+				.form-wrap
+					.row
+						.form-group.place
+							label Địa điểm, khách sạn...
+							input(type="text" placeholder="")
+						.form-group.date
+							label Ngày nhận phòng
+							input#btn-datepick(type="text" placeholder="" name="daterange")
+							include calendar
+						.form-group.date
+							label Ngày trả phòng
+							input#btn-datepick(type="text" placeholder="" name="daterange")
+							include calendar
+						.form-group.advance
+							label Tìm kiếm nâng cao
+							input#advance-search(type="text" placeholder="" name="advance")
+							.dropdown-menu.advance-search
+								.group
+									label Phòng
+									.input
+										.input-number
+											.btn-spin.btn-dec -
+											input#phong(type="text" value="0")
+											.btn-spin.btn-inc +
+								.group
+									label Người lớn
+									.input
+										.input-number
+											.btn-spin.btn-dec -
+											input#nguoilon(type="text" value="0")
+											.btn-spin.btn-inc +
+								.group
+									label Trẻ em
+									//- .input
+										.input-number.child-number
+											.btn-spin.btn-dec -
+											input#treem(type="text" value="0")
+											.btn-spin.btn-inc +
+									.input
+										select.child-number
+											option 0
+											option 1
+											option 2
+											option 3
+											option 4
+											option 5
+											option 6
+											option 7
+											option 8
+											option 9
+											option 10
+								.group-yearold
+									label Độ tuổi của trẻ
+									#select-age-group
+									//- select
+										option 1
+										option 2
+										option 3
+										option 4
+										option 5
+										option 6
+										option 7
+										option 8
+										option 9
+										option 10
+										option 11
+										option 12
+										option 13
+										option 14
+										option 15
+										option 16
+										option 17
+								//- .group
+									label Em bé
+									.input-number
+										.btn-spin.btn-dec -
+										input#treem(type="text" value="0")
+										.btn-spin.btn-inc +
+								.btn-update Xác nhận
+				.form-group.frm-btnwrap
+					label &nbsp;
+					.frm-btn
+						button.searchbutton <i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm

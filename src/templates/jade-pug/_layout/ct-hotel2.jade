@@ -1,0 +1,306 @@
+.container
+	//- include searchhotel
+	section.hotel-page.clearfix
+		h1.home-title Kết quả tìm kiếm "
+			strong FLC
+			|"
+		.row
+			.col-12.col-lg-3
+				.btn-showfilter <i class="fa fa-filter" aria-hidden="true"></i> Bộ lọc
+				.filter-wrap.clearfix
+					.filter-title Bộ lọc
+					.filter-group
+						.title Tên khách sạn
+						.filter-option
+							.filter-search
+								input(type="text")
+					.filter-group
+						.title Số sao
+						.filter-option
+							.filter-star
+								a.active(href="#")
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+								a(href="#")
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star-o
+								a(href="#")
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star-o
+									i.fa.fa-star-o
+								a(href="#")
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star-o
+									i.fa.fa-star-o
+									i.fa.fa-star-o
+								a(href="#")
+									i.fa.fa-star
+									i.fa.fa-star-o
+									i.fa.fa-star-o
+									i.fa.fa-star-o
+									i.fa.fa-star-o
+					.filter-group
+						.title Khu vực
+						.filter-option
+							.filter-area
+								a(href="#") Phía Nam
+								a(href="#") Phía Bắc
+								a(href="#") Ngoại ô
+								a.active(href="#") Khu trung tâm
+								a.active(href="#") Cạnh bãi biển
+					.filter-group
+						.title Loại hình
+						.filter-option
+							.filter-area
+								a.active(href="#") Khách sạn
+								a.active(href="#") Resort
+								a(href="#") Pool Villa
+								a(href="#") Căn hộ
+					.filter-group
+						.title Sắp xếp
+						.filter-option
+							.filter-sort
+								select
+									option(value="") Mặc định
+									option(value="") Giá từ thấp đến cao
+									option(value="") Giá từ cao xuống thấp
+									option(value="") Đánh giá cao
+			.col-12.col-lg-9
+				.hotel-detail-list
+					.hotel-card
+						figure
+							a.hotel-img(href="#")
+								img(src="img/hotel/2.jpg", alt="")
+								.hotel-rating 8.6 Xuất sắc
+							figcaption
+								.colleft.clearfix
+									h2.hotel-name
+										a(href="#") FLC Luxury Hotel
+									.hotel-star
+										<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+									.hotel-location <i class="fa fa-map-marker" aria-hidden="true"></i> TP.Quy Nhơn, T.Bình Định
+									//- .hotel-des Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet asperiores amet, dolore voluptatibus ut deserunt ullam animi molestiae ea.
+									.hotel-feature
+										.label Phục vụ
+										ul.feature-list
+											li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+											li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+												li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+									.hotel-feature.hotel-service
+										.label Lựa chọn
+										ul.feature-list
+											li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+											li <strong>+3</strong>ưu đãi khác
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+												li <i class="fa fa-file-text-o" aria-hidden="true"></i> Có hóa đơn thuế
+												li <i class="fa fa-money" aria-hidden="true"></i> Thanh toán tiền mặt
+												li <i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí hủy phòng
+								.colright.clearfix
+									//- .hotel-rating Rất tốt 
+										strong 8,5
+									.promotion.sale Giảm 6%
+									.hotel-price
+										.old 1.000.000 đ
+										.new 700.000 đ
+									a.btn-view(href="#") Đặt ngay
+					.hotel-card
+						figure
+							a.hotel-img(href="#")
+								img(src="img/hotel/2.jpg", alt="")
+								.hotel-rating 8.6 Xuất sắc
+							figcaption
+								.colleft.clearfix
+									h2.hotel-name
+										a(href="#") FLC Luxury Hotel
+									.hotel-star
+										<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+									.hotel-location <i class="fa fa-map-marker" aria-hidden="true"></i> TP.Quy Nhơn, T.Bình Định
+									//- .hotel-des Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet asperiores amet, dolore voluptatibus ut deserunt ullam animi molestiae ea.
+									.hotel-feature
+										.label Phục vụ
+										ul.feature-list
+											li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+											li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+												li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+									.hotel-feature.hotel-service
+										.label Lựa chọn
+										ul.feature-list
+											li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+											li <strong>+3</strong>ưu đãi khác
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+												li <i class="fa fa-file-text-o" aria-hidden="true"></i> Có hóa đơn thuế
+												li <i class="fa fa-money" aria-hidden="true"></i> Thanh toán tiền mặt
+												li <i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí hủy phòng
+								.colright.clearfix
+									//- .hotel-rating Rất tốt 
+										strong 8,5
+									.promotion.sale Giảm 6%
+									.hotel-price
+										.old 1.000.000 đ
+										.new 700.000 đ
+									a.btn-view(href="#") Đặt ngay
+					.hotel-card
+						figure
+							a.hotel-img(href="#")
+								img(src="img/hotel/2.jpg", alt="")
+								.hotel-rating 8.6 Xuất sắc
+							figcaption
+								.colleft.clearfix
+									h2.hotel-name
+										a(href="#") FLC Luxury Hotel
+									.hotel-star
+										<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+									.hotel-location <i class="fa fa-map-marker" aria-hidden="true"></i> TP.Quy Nhơn, T.Bình Định
+									//- .hotel-des Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet asperiores amet, dolore voluptatibus ut deserunt ullam animi molestiae ea.
+									
+									.hotel-feature
+										.label Phục vụ
+										ul.feature-list
+											li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+											li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+												li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+									.hotel-feature.hotel-service
+										.label Lựa chọn
+										ul.feature-list
+											li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+											li <strong>+3</strong>ưu đãi khác
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+												li <i class="fa fa-file-text-o" aria-hidden="true"></i> Có hóa đơn thuế
+												li <i class="fa fa-money" aria-hidden="true"></i> Thanh toán tiền mặt
+												li <i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí hủy phòng
+								.colright.clearfix
+									//- .hotel-rating Rất tốt 
+										strong 8,5
+									//- .promotion.sale Giảm 6%
+									.hotel-price
+										.old 1.000.000 đ
+										.new 700.000 đ
+									a.btn-view(href="#") Đặt ngay
+					.hotel-card
+						figure
+							a.hotel-img(href="#")
+								img(src="img/hotel/2.jpg", alt="")
+								.hotel-rating 8.6 Xuất sắc
+							figcaption
+								.colleft.clearfix
+									h2.hotel-name
+										a(href="#") FLC Luxury Hotel
+									.hotel-star
+										<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+									.hotel-location <i class="fa fa-map-marker" aria-hidden="true"></i> TP.Quy Nhơn, T.Bình Định
+									//- .hotel-des Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet asperiores amet, dolore voluptatibus ut deserunt ullam animi molestiae ea.
+									
+									.hotel-feature
+										.label Phục vụ
+										ul.feature-list
+											li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+											li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+												li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+									.hotel-feature.hotel-service
+										.label Lựa chọn
+										ul.feature-list
+											li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+											li <strong>+3</strong>ưu đãi khác
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+												li <i class="fa fa-file-text-o" aria-hidden="true"></i> Có hóa đơn thuế
+												li <i class="fa fa-money" aria-hidden="true"></i> Thanh toán tiền mặt
+												li <i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí hủy phòng
+								.colright.clearfix
+									//- .hotel-rating Rất tốt 
+										strong 8,5
+									.promotion.sale Giảm 6%
+									.hotel-price
+										.old 1.000.000 đ
+										.new 700.000 đ
+									a.btn-view(href="#") Đặt ngay
+					.hotel-card
+						figure
+							a.hotel-img(href="#")
+								img(src="img/hotel/2.jpg", alt="")
+								.hotel-rating 8.6 Xuất sắc
+							figcaption
+								.colleft.clearfix
+									h2.hotel-name
+										a(href="#") FLC Luxury Hotel
+									.hotel-star
+										<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+									.hotel-location <i class="fa fa-map-marker" aria-hidden="true"></i> TP.Quy Nhơn, T.Bình Định
+									//- .hotel-des Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet asperiores amet, dolore voluptatibus ut deserunt ullam animi molestiae ea.
+									
+									.hotel-feature
+										.label Phục vụ
+										ul.feature-list
+											li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+											li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-wifi" aria-hidden="true"></i> Wifi
+												li <i class="fa fa-cutlery" aria-hidden="true"></i> Bữa sáng
+									.hotel-feature.hotel-service
+										.label Lựa chọn
+										ul.feature-list
+											li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+											li <strong>+3</strong>ưu đãi khác
+										.popup-tooltip
+											.title Tại đây có phục vụ cho khách lưu trú:
+											ul.feature-list
+												li <i class="fa fa-car" aria-hidden="true"></i> Bãi đỗ xe
+												li <i class="fa fa-file-text-o" aria-hidden="true"></i> Có hóa đơn thuế
+												li <i class="fa fa-money" aria-hidden="true"></i> Thanh toán tiền mặt
+												li <i class="fa fa-retweet" aria-hidden="true"></i> Miễn phí hủy phòng
+								.colright.clearfix
+									//- .hotel-rating Rất tốt 
+										strong 8,5
+									//- .promotion.sale Giảm 6%
+									.hotel-price
+										.old 1.000.000 đ
+										.new 700.000 đ
+									a.btn-view(href="#") Đặt ngay
+				.pages
+					ul.pagination
+						li.active
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4

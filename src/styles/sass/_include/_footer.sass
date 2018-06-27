@@ -1,0 +1,168 @@
+footer
+	padding: 40px 0px 0
+	background: $blue
+	.footer-col
+		margin-bottom: 40px
+	.sitelogo
+		margin-bottom: 20px
+		+media-breakpoint-down(xs)
+			text-align: center
+		a
+			display: block
+		img 
+			filter: grayscale(100%) brightness(300%)
+	.about
+		margin-bottom: 15px
+		color: $white
+		font-weight: 300
+		+fs(14rem)
+		+media-breakpoint-down(md)
+			+fs(14rem)
+		+media-breakpoint-down(xs)
+			text-align: center
+			+fs(13rem)
+			line-height: 2
+	.social
+		+media-breakpoint-down(xs)
+			text-align: center
+		a
+			display: inline-block
+			width: 40px
+			height: 40px
+			// +bor-rad(50px)
+			line-height: 40px
+			text-align: center
+			+fs(32rem)
+			color: $white
+			background: color-rgba($white,0.3)
+			// border: 1px solid $white
+			+ a
+				margin-left: 10px
+			&:hover
+				background: $white
+				color: $blue
+	.title
+		+fs(16rem)
+		font-weight: 500
+		color: $white
+		margin: 15px 0
+		+media-breakpoint-down(md)
+			+fs(16rem)
+		+media-breakpoint-down(xs)
+			text-align: center
+	.footerlink
+		a
+			display: block
+			+fs(14rem)
+			font-weight: 300
+			color: $white
+			margin-bottom: 10px
+			+media-breakpoint-down(md)
+				+fs(13rem)
+			+media-breakpoint-down(xs)
+				text-align: center
+			&:before
+				content: '\f0da'
+				margin-right: 10px
+				+media-breakpoint-down(xs)
+					display: none
+	.subscribe
+		padding-bottom: 10px
+		.module-title
+			color: $white
+			margin-bottom: 15px
+			font-weight: 300
+			+fs(14rem)
+			+media-breakpoint-down(xs)
+				text-align: center
+		.subscribefrm
+			+bor-rad(50px)
+			border: 2px solid $white
+			+flexbox
+			input 
+				line-height: 40px
+				background: none
+				color: $white
+				border: none
+				margin: 0
+				padding: 0 15px
+				width: calc(100% - 90px)
+				&::-webkit-input-placeholder
+					color: $white
+					opacity: 0.8
+			.subscribebutton
+				text-align: center
+				width: 90px
+				line-height: 40px
+				color: $white
+				font-weight: 600
+	.copyright
+		+fs(11rem)
+		color: $white
+		margin-top: -30px
+		margin-bottom: 30px
+		a
+			color: $white
+		+media-breakpoint-down(xs)
+			text-align: center
+.home-partner
+	background: darken($white,10%)
+	padding: 10px 0
+	.partner-list
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translate(0,-50%))
+			+fs(0)
+			z-index: 1
+			color: darken($white,40%)
+			&:hover
+				color: $main
+			&:before
+				content: ''
+				font-family: 'fontawesome'
+				+fs(24rem)
+		.slick-prev
+			left: -15px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -15px
+			&:before
+				content: '\f105'
+		.item
+			padding: 0px 10px
+		.partner
+			+flexbox
+			justify-content: center
+			align-items: center
+			align-content: center0
+			height: 70px
+			img
+				max-width: 90%
+				max-height: 40%
+.up
+	+pos(fix, null 20px 20px null)
+	z-index: 100
+	width: 50px
+	height: 50px
+	line-height: 50px
+	+bor-rad(50px)
+	text-align: center
+	background: lighten($blue,20%)
+	color: $white
+	+fs(24rem)
+	box-shadow: 0 10px 20px -10px color-rgba($black,0.1)
+	opacity: 0
+	+transition(all,0.5s)
+	cursor: pointer
+	+media-breakpoint-down(xs)
+		width: 34px
+		height: 34px
+		line-height: 34px
+		+fs(18rem)
+		right: 15px
+		bottom: 15px
+	&.active
+		opacity: 1
+	&:hover
+		background: lighten($blue,10%)

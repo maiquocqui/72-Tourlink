@@ -1,0 +1,1835 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="theme-color" content="#003767">
+    <title>Tourlink</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/addons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endinject -->
+  </head>
+  <body class="default">
+    <div id="wrapper" class="fullpage">
+      <header>
+        <div class="container">
+          <section class="headertop clearfix">
+            <div class="btn-showmenu d-xl-none"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="overlay"></div>
+            <div class="sitelogo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+            <div class="colright clearfix">
+              <nav class="menu">
+                <ul class="menulink">
+                  <li class="active"><a href="#">Khách sạn</a></li>
+                  <li><a href="#">Sân golf</a></li>
+                  <li><a href="#">Tour</a></li>
+                  <li><a href="#">Vận chuyển</a></li>
+                  <li><a href="#">Visa</a></li>
+                </ul>
+              </nav>
+              <div class="language clearfix">
+                <div class="dropdown"><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/vn.png" alt=""></a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="group">
+                      <div class="group-title">Ngôn ngữ gợi ý</div>
+                      <ul>
+                        <li class="active"><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Việt</div></a></li>
+                      </ul>
+                    </div>
+                    <div class="group">
+                      <div class="group-title">Tất cả ngôn ngữ</div>
+                      <ul>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Việt</div></a></li>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Anh</div></a></li>
+                        <li><a href="#">
+                            <div class="icon"><img src="img/icon/vn.png" alt=""></div>
+                            <div class="text">Tiếng Nhật</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="currency clearfix">
+                <div class="dropdown"><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                     
+                    ₫</a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="group">
+                      <div class="group-title">Tiền tệ được đề nghị</div>
+                      <ul>
+                        <li class="active"><a href="#">
+                            <div class="icon label">₫</div>
+                            <div class="text">Việt Nam Đồng</div></a></li>
+                      </ul>
+                    </div>
+                    <div class="group">
+                      <div class="group-title">Tiền tệ phổ biến</div>
+                      <ul>
+                        <li><a href="#">
+                            <div class="icon label">₫</div>
+                            <div class="text">Việt Nam Đồng</div></a></li>
+                      </ul>
+                    </div>
+                    <div class="group">
+                      <div class="group-title">Tất cả các loại tiền tệ</div>
+                      <ul>
+                        <li><a href="#">
+                            <div class="icon label">₫</div>
+                            <div class="text">Việt Nam Đồng</div></a></li>
+                        <li><a href="#">
+                            <div class="icon label">$</div>
+                            <div class="text">Đô la Mỹ</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="login clearfix">
+                <div class="dropdown show"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Đăng nhập</a>
+                  <div aria-labelledby="dropdownMenuLink" class="dropdown-menu">
+                    <div class="login-panel clearfix">
+                      <nav class="login-nav clearfix">
+                        <ul>
+                          <li class="active"><a href="dangnhap.html">Đăng nhập</a></li>
+                          <li><a href="dangky.html">Đăng ký</a></li>
+                        </ul>
+                      </nav>
+                      <div class="loginfrm-wrap">
+                        <div class="form-group">
+                          <label><i class="material-icons">email</i></label>
+                          <input placeholder="Địa chỉ email">
+                        </div>
+                        <div class="form-group">
+                          <label><i class="material-icons">lock</i></label>
+                          <input placeholder="Mật khẩu">
+                        </div>
+                        <div class="checkbox remember-pw">
+                          <input id="rememberpw" type="checkbox" name="rmbpw">
+                          <label for="rememberpw">Lưu mật khẩu</label>
+                        </div>
+                        <div class="frm-btn">
+                          <input type="submit" value="Đăng nhập">
+                        </div>
+                        <div class="forget-pw"><a href="#">Quên mật khẩu?</a></div>
+                        <div class="social-login">
+                          <div class="module-title">Đăng nhập bằng</div>
+                          <div class="social-list"><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i>Google</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart clearfix">
+                <div class="cart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng <span class="cart-amount">(2)</span></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <main>
+        <section class="breadcrumb-wrap breadcrumb-hotelct clearfix">
+          <section id="search" class="search-panel clearfix">
+            <div class="container">
+              <div class="searchwrap">
+                <div class="row">
+                  <div class="form-wrap">
+                    <div class="row">
+                      <div class="form-group place">
+                        <label>Địa điểm, khách sạn...</label>
+                        <input placeholder="">
+                      </div>
+                      <div class="form-group date">
+                        <label>Ngày nhận phòng</label>
+                        <input id="btn-datepick" placeholder="" name="daterange">
+                        <div aria-labelledby="dropdownMenuLink" class="dropdown-menu date-picker">
+                          <div class="btn-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                          <div class="btn-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                          <div class="month-list">
+                            <div class="item">
+                              <div class="month">11/2017</div>
+                              <table class="date-in-month">
+                                <thead>
+                                  <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td>01</td>
+                                    <td>02</td>
+                                    <td>03</td>
+                                    <td>04</td>
+                                  </tr>
+                                  <tr>
+                                    <td>05</td>
+                                    <td>06</td>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                  </tr>
+                                  <tr>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                  </tr>
+                                  <tr>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td> </td>
+                                    <td> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="item">
+                              <div class="month">12/2017</div>
+                              <table class="date-in-month">
+                                <thead>
+                                  <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="sp">01</td>
+                                    <td>02</td>
+                                  </tr>
+                                  <tr>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                    <td>06</td>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                  </tr>
+                                  <tr>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                  </tr>
+                                  <tr>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                  </tr>
+                                  <tr>
+                                    <td>31</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="item">
+                              <div class="month">01/2018</div>
+                              <table class="date-in-month">
+                                <thead>
+                                  <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> </td>
+                                    <td>01</td>
+                                    <td>02</td>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                    <td>06</td>
+                                  </tr>
+                                  <tr>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                  </tr>
+                                  <tr>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                  </tr>
+                                  <tr>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                  </tr>
+                                  <tr>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group date">
+                        <label>Ngày trả phòng</label>
+                        <input id="btn-datepick" placeholder="" name="daterange">
+                        <div aria-labelledby="dropdownMenuLink" class="dropdown-menu date-picker">
+                          <div class="btn-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                          <div class="btn-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                          <div class="month-list">
+                            <div class="item">
+                              <div class="month">11/2017</div>
+                              <table class="date-in-month">
+                                <thead>
+                                  <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td>01</td>
+                                    <td>02</td>
+                                    <td>03</td>
+                                    <td>04</td>
+                                  </tr>
+                                  <tr>
+                                    <td>05</td>
+                                    <td>06</td>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                  </tr>
+                                  <tr>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                  </tr>
+                                  <tr>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td> </td>
+                                    <td> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="item">
+                              <div class="month">12/2017</div>
+                              <table class="date-in-month">
+                                <thead>
+                                  <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="sp">01</td>
+                                    <td>02</td>
+                                  </tr>
+                                  <tr>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                    <td>06</td>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                  </tr>
+                                  <tr>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                  </tr>
+                                  <tr>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                  </tr>
+                                  <tr>
+                                    <td>31</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="item">
+                              <div class="month">01/2018</div>
+                              <table class="date-in-month">
+                                <thead>
+                                  <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> </td>
+                                    <td>01</td>
+                                    <td>02</td>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                    <td>06</td>
+                                  </tr>
+                                  <tr>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                  </tr>
+                                  <tr>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                  </tr>
+                                  <tr>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                  </tr>
+                                  <tr>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group advance">
+                        <label>Tìm kiếm nâng cao</label>
+                        <input id="advance-search" placeholder="" name="advance">
+                        <div class="dropdown-menu advance-search">
+                          <div class="group">
+                            <label>Phòng</label>
+                            <div class="input">
+                              <div class="input-number">
+                                <div class="btn-spin btn-dec">-</div>
+                                <input id="phong" value="0">
+                                <div class="btn-spin btn-inc">+</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="group">
+                            <label>Người lớn</label>
+                            <div class="input">
+                              <div class="input-number">
+                                <div class="btn-spin btn-dec">-</div>
+                                <input id="nguoilon" value="0">
+                                <div class="btn-spin btn-inc">+</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="group">
+                            <label>Trẻ em</label>
+                            <div class="input">
+                              <select class="child-number">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="group-yearold">
+                            <label>Độ tuổi của trẻ</label>
+                            <div id="select-age-group"></div>
+                          </div>
+                          <div class="btn-update">Xác nhận</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group frm-btnwrap">
+                    <label>&nbsp;</label>
+                    <div class="frm-btn">
+                      <button class="searchbutton"><i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="breadcrumb-section">
+          <div class="container">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books"><span itemprop="name">Trang chủ</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books/sciencefiction"><span itemprop="name">Khách sạn</span></a>
+                <meta itemprop="position" content="2">
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="container">
+          <section class="hotel-page product-page clearfix">
+            <h1 class="product-main-name"> 
+              <div class="tag hotel">Hotel</div>Hyatt Regency Danang Resort And Spa
+            </h1>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="slide-wrap">
+                  <div class="product-slide">
+                    <div class="item"><a href="img/hotel/p1.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p1.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p2.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p3.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p1.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p1.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p4.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p4.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p5.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p5.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p6.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p6.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p7.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p7.jpg" alt=""></a></div>
+                    <div class="item"><a href="img/hotel/p8.jpg" data-fancybox="gal1" class="img"><img src="img/hotel/p8.jpg" alt=""></a></div>
+                  </div>
+                  <div class="product-nav">
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p1.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p2.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p3.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p4.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p5.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p6.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p7.jpg" alt=""></div>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img/hotel/p8.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="product-info">
+                  <div class="info-table">
+                    <div class="group">
+                      <div class="label">Được đánh giá</div>
+                      <div class="value point"><strong>8.5 </strong>điểm</div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Số sao</div>
+                      <div class="value"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Khu vực</div>
+                      <div class="value location">TP.Đà Nẵng, Việt Nam</div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Địa chỉ</div>
+                      <div class="value address">05 Trường Sa, Hoa Hai Ward <a href="https://www.google.com/maps/place/200+V%C3%B5+Nguy%C3%AAn+Gi%C3%A1p,+Ph%C6%B0%E1%BB%9Bc+M%E1%BB%B9,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vietnam/@16.0685128,108.2430507,17z/data=!3m1!4b1!4m5!3m4!1s0x314217840b580369:0x585a6fa989a51dfb!8m2!3d16.0685077!4d108.2452394" data-fancybox>Xem bản đồ</a></div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Số điện thoại</div>
+                      <div class="value phone"><a href="tel:+84 236 398 1234">+84 236 398 1234</a></div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Trang chủ</div>
+                      <div class="value weblink"> <a href="#!">https://danang.regency.hyatt.com/en/hotel/home.html</a></div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Loại</div>
+                      <div class="value type-tag"><a href="#">Resort</a><a href="#">Pool Villa</a></div>
+                    </div>
+                    <div class="group">
+                      <div class="label">Giá chỉ từ</div>
+                      <div class="value price"><strong>2.000.000 đ</strong></div>
+                    </div>
+                    <div class="share"><img src="img/share.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-service clearfix">
+              <div class="label">Các dịch vụ bạn yêu thích</div>
+              <div class="service-list clearfix">
+                <div class="service-card">
+                  <div class="icon"><img src="img/icon/beach.png" alt=""></div>
+                  <div class="des">Cách bãi biển 100m</div>
+                </div>
+                <div class="service-card">
+                  <div class="icon"><img src="img/icon/wifi.png" alt=""></div>
+                  <div class="des">Miễn phí wifi tất cả các phòng</div>
+                </div>
+                <div class="service-card">
+                  <div class="icon"><img src="img/icon/cleaner.png" alt=""></div>
+                  <div class="des">Dịch vụ phòng hàng ngày</div>
+                </div>
+                <div class="service-card">
+                  <div class="icon"><img src="img/icon/bar.png" alt=""></div>
+                  <div class="des">Quầy bar</div>
+                </div>
+              </div>
+            </div>
+            <div id="product-tabs">
+              <ul class="tabs">
+                <li><a href="#tab-1">Bảng giá / chi tiết</a></li>
+                <li> <a href="#tab-2">Đánh giá</a></li>
+                <li> <a href="#tab-3">Hỏi đáp</a></li>
+              </ul>
+              <div id="tab-1" class="tab-content">
+                <section class="hotel-room clearfix">
+                  <h2 class="page-title">Chọn phòng</h2>
+                  <div class="room-list pc-room-list clearfix">
+                    <div class="room-group">
+                      <div class="room-type">Phòng Studio 1 phòng ngủ (1 Bedroom Studio)</div>
+                      <div class="room-intro">
+                        <figure><a href="#" class="room-img"><img src="img/room/1.jpg" alt=""></a>
+                          <figcaption>
+                            <div class="room-des">
+                              <ul>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/beach.png" alt=""></div>Hướng phòng: biển
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bath.png" alt=""></div>Phòng tắm: có bồn tắm
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>2 giường
+                                </li>
+                              </ul>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="room-booking">
+                        <div class="table-head">
+                          <div class="baogom">Bao gồm</div>
+                          <div class="succhua">Sức chứa</div>
+                          <div class="giaphong">Giá phòng / đêm</div>
+                          <div class="sl">SL</div>
+                          <div class="datphong"></div>
+                        </div>
+                        <div class="table-room">
+                          <div class="room">
+                            <div class="baogom">
+                              <ul>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/cafe.png" alt=""></div>Nước uống chào đón
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/food.png" alt=""></div>Phục vụ ăn sáng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/clean.png" alt=""></div>Phục vụ dọn phòng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/cancel.png" alt=""></div>Chính sách hủy phòng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>Extra bed
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="succhua">2 x <i class="fa fa-user" aria-hidden="true"></i></div>
+                            <div class="giaphong"> 
+                              <div class="old">2.000.000 đ</div>
+                              <div class="new">1.500.000 đ</div>
+                              <div class="des">Thuế 10%, phí dịch vụ 5%</div>
+                            </div>
+                            <div class="sl">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                              </select>
+                            </div>
+                            <div class="datphong"><a href="#!" class="btn-book">Đặt phòng ngay</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <section class="hotel-booking">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="booking-info clearfix">
+                              <div class="booking-date">
+                                <div class="from">
+                                  <div class="date">07</div>
+                                  <div class="des">Thứ Năm<br>Thg 9 2017</div>
+                                </div>
+                                <div class="to">
+                                  <div class="date">09</div>
+                                  <div class="des">Thứ Bảy<br>Thg 9 2017</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="booking-form clearfix">
+                              <div class="main-form clearfix">
+                                <div class="form-title">Thông tin đặt phòng</div>
+                                <div class="form-wrap">
+                                  <div class="row">
+                                    <div class="form-group col-12">
+                                      <label for="#">Họ và tên</label>
+                                      <input>
+                                    </div>
+                                    <div class="form-group col-12">
+                                      <label for="#">Email</label>
+                                      <input>
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                      <label for="#">Số điện thoại di động</label>
+                                      <input>
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                      <label for="#">Quốc gia cư trú</label>
+                                      <select>
+                                        <option value="#">Việt Nam</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="require-form clearfix">
+                              <div class="form-title">Yêu cầu đặc biệt</div>
+                              <div class="form-des">Chúng tôi sẽ báo cho khách sạn hoặc chủ nhà ngay sau khi bạn đặt phòng!</div>
+                              <div class="btn-showform">Thêm yêu cầu đặc biệt của bạn</div>
+                              <div class="form-wrap">
+                                <div class="module-title">Vui lòng lưu ý tất cả các yêu cầu chỉ được đáp ứng tùy theo khách sạn.</div>
+                                <div class="form-group">
+                                  <ul>
+                                    <li class="checkbox">
+                                      <input id="yk1" type="checkbox" name="yk">
+                                      <label for="yk1">Phòng không hút thuốc</label>
+                                    </li>
+                                    <li class="checkbox">
+                                      <input id="yk2" type="checkbox" name="yk">
+                                      <label for="yk3">Phòng 2 giường</label>
+                                    </li>
+                                    <li class="checkbox">
+                                      <input id="yk3" type="checkbox" name="yk">
+                                      <label for="yk3">Phòng tầng cao</label>
+                                    </li>
+                                    <li class="checkbox">
+                                      <input id="yk4" type="checkbox" name="yk">
+                                      <label for="yk4">Phòng yên tĩnh</label>
+                                    </li>
+                                    <li class="checkbox">
+                                      <input id="yk5" type="checkbox" name="yk">
+                                      <label for="yk5">Phòng giường lớn</label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="duadon checkbox">
+                                  <input id="duadon" type="checkbox" name="duadon">
+                                  <label id="btn-duadon" for="duadon">Tôi muốn đăng ký đưa đón sân bay</label>
+                                </div>
+                                <div class="form-duadon">
+                                  <div class="module-title">Chú thích: Nhận phòng sớm hoặc Đưa đón sân bay có thể sẽ tính thêm phụ phí. Xin vui lòng liên hệ khách sạn để xác nhận. Vui lòng nhập nội dung lời nhắn bằng tiếng Anh hoặc tiếng Việt</div>
+                                  <div class="form-group">
+                                    <textarea name="" cols="30" rows="3" placeholder="Nhập số chuyến bay và thời gian hạ cánh. Yêu cầu của bạn không được đảm bảo hoàn toàn, xin vui lòng xác nhận lại với khách sạn."></textarea>
+                                  </div>
+                                </div>
+                                <div class="module-title">Vui lòng nhập nội dung lời nhắn bằng tiếng Anh Hoặc tiếng Việt</div>
+                                <div class="form-group">
+                                  <textarea name="" cols="30" rows="3"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="receive-form clearfix">
+                              <div class="form-title">Bạn đã biết khi nào sẽ đến nhận phòng chưa?</div>
+                              <div class="form-wrap">
+                                <div class="module-title">Chọn thời gian đến dự kiến để chúng tôi thông báo với khách sạn hoặc chủ nhà</div>
+                                <div class="row">
+                                  <div class="form-group col-12 col-md-6">
+                                    <select name="">
+                                      <option value="">Tôi chưa biết</option>
+                                      <option>0:00 - 1:00</option>
+                                      <option>1:00 - 2:00</option>
+                                      <option>2:00 - 3:00</option>
+                                      <option>3:00 - 4:00</option>
+                                      <option>4:00 - 5:00</option>
+                                      <option>5:00 - 6:00</option>
+                                      <option>6:00 - 7:00</option>
+                                      <option>7:00 - 8:00</option>
+                                      <option>8:00 - 9:00</option>
+                                      <option>9:00 - 10:00</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="total-money">Tổng tiền: <strong>5.000.000 đ</strong></div>
+                          </div>
+                        </div>
+                        <div class="btn-wrap clearfix"><a href="#!" class="btn-continue">Thêm vào giỏ hàng</a></div>
+                      </section>
+                    </div>
+                    <div class="room-group">
+                      <div class="room-type">Phòng Studio 1 phòng ngủ (1 Bedroom Studio)</div>
+                      <div class="room-intro">
+                        <figure><a href="#" class="room-img"><img src="img/room/1.jpg" alt=""></a>
+                          <figcaption>
+                            <div class="room-des">
+                              <ul>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/beach.png" alt=""></div>Hướng phòng: biển
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bath.png" alt=""></div>Phòng tắm: có bồn tắm
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>2 giường
+                                </li>
+                              </ul>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="room-booking">
+                        <div class="table-head">
+                          <div class="baogom">Bao gồm</div>
+                          <div class="succhua">Sức chứa</div>
+                          <div class="giaphong">Giá phòng / đêm</div>
+                          <div class="sl">SL</div>
+                          <div class="datphong"></div>
+                        </div>
+                        <div class="table-room">
+                          <div class="room">
+                            <div class="baogom">
+                              <ul>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/cafe.png" alt=""></div>Nước uống chào đón
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/food.png" alt=""></div>Phục vụ ăn sáng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/clean.png" alt=""></div>Phục vụ dọn phòng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/cancel.png" alt=""></div>Chính sách hủy phòng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>Extra bed
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="succhua">2 x <i class="fa fa-user" aria-hidden="true"></i></div>
+                            <div class="giaphong"> 
+                              <div class="old">2.000.000 đ</div>
+                              <div class="new">1.500.000 đ</div>
+                              <div class="des">Thuế 10%, phí dịch vụ 5%</div>
+                            </div>
+                            <div class="sl">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                              </select>
+                            </div>
+                            <div class="datphong"><a href="#!" class="btn-book">Đặt phòng ngay</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-group">
+                      <div class="room-type">Phòng Studio 1 phòng ngủ (1 Bedroom Studio)</div>
+                      <div class="room-intro">
+                        <figure><a href="#" class="room-img"><img src="img/room/1.jpg" alt=""></a>
+                          <figcaption>
+                            <div class="room-des">
+                              <ul>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/beach.png" alt=""></div>Hướng phòng: biển
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bath.png" alt=""></div>Phòng tắm: có bồn tắm
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>2 giường
+                                </li>
+                              </ul>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="room-booking">
+                        <div class="table-head">
+                          <div class="baogom">Bao gồm</div>
+                          <div class="succhua">Sức chứa</div>
+                          <div class="giaphong">Giá phòng / đêm</div>
+                          <div class="sl">SL</div>
+                          <div class="datphong"></div>
+                        </div>
+                        <div class="table-room">
+                          <div class="room">
+                            <div class="baogom">
+                              <ul>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/cafe.png" alt=""></div>Nước uống chào đón
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/food.png" alt=""></div>Phục vụ ăn sáng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/clean.png" alt=""></div>Phục vụ dọn phòng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/cancel.png" alt=""></div>Chính sách hủy phòng
+                                </li>
+                                <li> 
+                                  <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>Extra bed
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="succhua">2 x <i class="fa fa-user" aria-hidden="true"></i></div>
+                            <div class="giaphong"> 
+                              <div class="old">2.000.000 đ</div>
+                              <div class="new">1.500.000 đ</div>
+                              <div class="des">Thuế 10%, phí dịch vụ 5%</div>
+                            </div>
+                            <div class="sl">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                              </select>
+                            </div>
+                            <div class="datphong"><a href="#!" class="btn-book">Đặt phòng ngay</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-room-list">
+                    <div class="row">
+                      <article class="col-12 col-md-6">
+                        <div class="room-card">
+                          <figure>
+                            <div class="room-img"><img src="img/room/1.jpg" alt=""></div>
+                            <figcaption>
+                              <div class="room-name">Phòng Superior giường đôi</div>
+                              <div class="room-des">
+                                <ul>
+                                  <li>
+                                    <div class="ic ic16"> <img src="img/iconpack/bed.png" alt=""></div>2 giường
+                                  </li>
+                                  <li> 
+                                    <div class="ic ic16"> <img src="img/iconpack/cafe.png" alt=""></div>Nước uống chào đón
+                                  </li>
+                                  <li> 
+                                    <div class="ic ic16"> <img src="img/iconpack/food.png" alt=""></div>Phục vụ ăn sáng
+                                  </li>
+                                  <li> 
+                                    <div class="ic ic16"> <img src="img/iconpack/clean.png" alt=""></div>Phục vụ dọn phòng
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="room-policy">
+                                <ul>
+                                  <li><a href="#!">Chính sách hủy phòng</a></li>
+                                </ul>
+                              </div>
+                              <div class="room-book">
+                                <select>
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select><a href="#!" class="btn-book">Đặt phòng</a>
+                              </div>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+                <section class="hotel-service clearfix">
+                  <h2 class="page-title">Dịch vụ thiết yếu gần nhất</h2>
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="service-col">
+                        <div class="service-title">
+                          <div class="ic ic32"><img src="img/iconpack/plane.png" alt=""></div>Sân bay gần đây nhất
+                        </div>
+                        <ul class="service-list">
+                          <li>Sân bay Đà Nẵng<span>5,6 km</span></li>
+                          <li>Sân bay Quốc tế Phú Bài (HUI)<span>68,7 km</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="service-col">
+                        <div class="service-title">
+                          <div class="ic ic32"><img src="img/iconpack/bus.png" alt=""></div>Phương tiện công cộng
+                        </div>
+                        <ul class="service-list">
+                          <li>Trạm xe buýt<span>5,6 km</span></li>
+                          <li>Ga tàu điện<span>68,7 km</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="service-col">
+                        <div class="service-title"> 
+                          <div class="ic ic32"><img src="img/iconpack/hospital.png" alt=""></div>Bệnh viện
+                        </div>
+                        <ul class="service-list">
+                          <li>Bệnh viện Đà Nẵng<span>5,6 km</span></li>
+                          <li>Bệnh viện quân y 175<span>68,7 km</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="service-col">
+                        <div class="service-title">
+                          <div class="ic ic32"><img src="img/iconpack/atm.png" alt=""></div>ATM gần nhất
+                        </div>
+                        <ul class="service-list">
+                          <li>ATM Vietcombank<span>5,6 km</span></li>
+                          <li>ATM Sacombank<span>68,7 km</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="hotel-description clearfix">
+                  <h2 class="page-title">Mô tả chi tiết</h2>
+                  <div class="hotel-des content">
+                    <p>Khiêm tốn nằm trong trung tâm của Bãi Biển Mỹ Khê, A La Carte Da Nang Beach Hotel là điểm lý tưởng cho du khách muốn khám phá Đà Nẵng. Chỉ cách sân bay 6km, nên từ sân bay rất dễ để đi đến khách sạn 4 sao này. Với vị trí thuận lợi, khách sạn dễ dàng tiếp cận những điểm tham quan du lịch nổi tiếng của thành phố.</p>
+                    <p>Tại A La Carte Da Nang Beach Hotel, mọi sự cố gắng đều nhằm mục đích khiến cho du khách hài lòng. Để làm được điều đó, khách sạn sẽ cung cấp dịch vụ và tiện nghi tốt nhất. Khách sạn trang bị một loạt thiết bị trực tuyến để nhằm thỏa mãn cả vị khách khó tính nhất.</p>
+                    <p>Tất cả nơi ăn chốn ở của khách đều có trang bị tiện nghi chu đáo để bảo đảm khách có cảm giác dễ chịu không nơi nào sánh được. Trong suốt một ngày, bạn có thể tận hưởng không khí thư giãn của khu vui chơi trẻ em, phòng trò chơi, spa, câu lạc bộ trẻ em, tắm hơi. A La Carte Da Nang Beach Hotel là nơi bạn có thể dừng chân ở một khách sạn chất lượng tại Đà Nẵng.</p>
+                  </div>
+                  <div class="small-title">Đặc điểm chi tiết</div>
+                  <div class="specify-list clearfix">
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/wifi.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Truy cập internet </div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/modem.png" alt=""></div>Wifi miễn phí tất cả các phòng
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/network.png" alt=""></div>Wifi công cộng
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/swimming.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Hoạt động thư giãn</div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/party.png" alt=""></div>Câu lạc bộ đêm
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/weightlifting.png" alt=""></div>Phòng gym
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/swimming.png" alt=""></div>hồ bơi
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/garden.png" alt=""></div>Sân vườn
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/food.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Ăn uống</div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/meal.png" alt=""></div>Dịch vụ phòng (24 giờ)
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/cafe.png" alt=""></div>Quán cà phê
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/food2.png" alt=""></div>Quán ăn
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/bar.png" alt=""></div>Quầy bar
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/meal.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Tiện nghi và dịch vụ</div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/laundry.png" alt=""></div>dịch vụ giặt là
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/man.png" alt=""></div>nhân viên hướng dẫn
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/clean.png" alt=""></div>dịch vụ phòng
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/safe.png" alt=""></div>két sắt
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/atm.png" alt=""></div>atm
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/exchange.png" alt=""></div>thu đổi ngoại tệ
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/golf.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Thể thao</div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/golf.png" alt=""></div>sân golf
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/hat.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Dành cho trẻ em</div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/children.png" alt=""></div>Câu lạc bộ trẻ em
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/swimming.png" alt=""></div>Hồ bơi trẻ em
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specify-col">
+                      <div class="icon">
+                        <div class="ic ic32"><img src="img/iconpack/shield.png" alt=""></div>
+                      </div>
+                      <div class="content">
+                        <div class="title">Phục vụ</div>
+                        <ul>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/cctv.png" alt=""></div>An ninh (24 giờ)
+                          </li>
+                          <li> 
+                            <div class="ic ic16"> <img src="img/iconpack/elevator.png" alt=""></div>thang máy
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="hotel-compare clearfix">
+                  <h2 class="page-title">So sánh với các khách sạn tương tự</h2>
+                  <div class="compare-table clearfix">
+                    <div class="compare-field">
+                      <div class="empty"></div>
+                      <div class="review">Đánh giá của khách</div>
+                      <div class="area">Khu vực lân cận</div>
+                      <div class="wifi">Wifi</div>
+                      <div class="breakfast">Bữa sáng</div>
+                      <div class="button"></div>
+                    </div>
+                    <div class="compare-list">
+                      <div class="compare-card selected">
+                        <figure>
+                          <div class="hotel-img"><img src="img/hotel/1.jpg" alt=""></div>
+                          <figcaption>
+                            <h3 class="hotel-name"><a href="#">A La Carte Da Nang Beach Hotel</a></h3>
+                            <div class="hotel-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                            <div class="compare-info">
+                              <div class="review">Xuất sắc 8.5 <span>(1579 nhận xét)</span></div>
+                              <div class="area">Phước Mỹ</div>
+                              <div class="wifi">Miễn phí Wifi</div>
+                              <div class="breakfast">
+                                <div class="on">Phục vụ bữa sáng</div>
+                              </div>
+                            </div>
+                            <div class="button"><a href="#" class="btn-view">Đặt phòng</a></div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="compare-card">
+                        <figure>
+                          <div class="hotel-img"><img src="img/hotel/1.jpg" alt=""></div>
+                          <figcaption>
+                            <h3 class="hotel-name"><a href="#">A La Carte Da Nang Beach Hotel</a></h3>
+                            <div class="hotel-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                            <div class="compare-info">
+                              <div class="review">Xuất sắc 8.5 <span>(1579 nhận xét)</span></div>
+                              <div class="area">Phước Mỹ</div>
+                              <div class="wifi">Miễn phí Wifi</div>
+                              <div class="breakfast">
+                                <div class="off">Phục vụ bữa sáng</div>
+                              </div>
+                            </div>
+                            <div class="button"><a href="#" class="btn-view">Xem nơi này</a></div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="compare-card">
+                        <figure>
+                          <div class="hotel-img"><img src="img/hotel/1.jpg" alt=""></div>
+                          <figcaption>
+                            <h3 class="hotel-name"><a href="#">A La Carte Da Nang Beach Hotel</a></h3>
+                            <div class="hotel-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                            <div class="compare-info">
+                              <div class="review">Xuất sắc 8.5 <span>(1579 nhận xét)</span></div>
+                              <div class="area">Phước Mỹ</div>
+                              <div class="wifi">Miễn phí Wifi</div>
+                              <div class="breakfast">
+                                <div class="off">Phục vụ bữa sáng</div>
+                              </div>
+                            </div>
+                            <div class="button"><a href="#" class="btn-view">Xem nơi này</a></div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <div class="compare-card">
+                        <figure>
+                          <div class="hotel-img"><img src="img/hotel/1.jpg" alt=""></div>
+                          <figcaption>
+                            <h3 class="hotel-name"><a href="#">A La Carte Da Nang Beach Hotel</a></h3>
+                            <div class="hotel-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                            <div class="compare-info">
+                              <div class="review">Xuất sắc 8.5 <span>(1579 nhận xét)</span></div>
+                              <div class="area">Phước Mỹ</div>
+                              <div class="wifi">Miễn phí Wifi</div>
+                              <div class="breakfast">
+                                <div class="off">Phục vụ bữa sáng</div>
+                              </div>
+                            </div>
+                            <div class="button"><a href="#" class="btn-view">Xem nơi này</a></div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div id="tab-2" class="tab-content">
+                <section class="hotel-review clearfix">
+                  <h2 class="page-title">Đánh giá</h2>
+                  <div class="point-wrap">
+                    <div class="flex flex-wrap clearfix">
+                      <div class="point-average">
+                        <div class="module-title">Đánh giá trung bình</div>
+                        <div class="point">4.0</div>
+                        <div class="favorite">
+                          <ul class="star-list">
+                            <li class="star active"> <a href="#!"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li class="star active"> <a href="#!"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li class="star active"> <a href="#!"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li class="star active"> <a href="#!"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li class="star"><a href="#!"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="amount">(10 đánh giá)</div>
+                      </div>
+                      <div class="point-detail">
+                        <div class="point-row">
+                          <div class="level">5 <i class="fa fa-star" aria-hidden="true"></i></div>
+                          <div class="percen">
+                            <div class="current-percen w50"></div>
+                          </div>
+                          <div class="status">50% Rất hài lòng</div>
+                        </div>
+                        <div class="point-row">
+                          <div class="level">4 <i class="fa fa-star" aria-hidden="true"></i></div>
+                          <div class="percen">
+                            <div class="current-percen w30"></div>
+                          </div>
+                          <div class="status">30% Hài lòng</div>
+                        </div>
+                        <div class="point-row">
+                          <div class="level">3 <i class="fa fa-star" aria-hidden="true"></i></div>
+                          <div class="percen">
+                            <div class="current-percen w20"></div>
+                          </div>
+                          <div class="status">20% Bình thường</div>
+                        </div>
+                        <div class="point-row">
+                          <div class="level">2 <i class="fa fa-star" aria-hidden="true"></i></div>
+                          <div class="percen">
+                            <div class="current-percen w0"></div>
+                          </div>
+                          <div class="status">0% Dưới trung bình</div>
+                        </div>
+                        <div class="point-row">
+                          <div class="level">1 <i class="fa fa-star" aria-hidden="true"></i></div>
+                          <div class="percen">
+                            <div class="current-percen w0"></div>
+                          </div>
+                          <div class="status">0% Thất vọng</div>
+                        </div>
+                      </div>
+                      <div class="comment-input">
+                        <div class="form-group w100">
+                          <textarea name="" cols="30" rows="3" placeholder="Nội dung bình luận..."></textarea>
+                        </div>
+                        <div class="btnwrap">
+                          <input type="submit" value="Gửi bình luận">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div id="tab-3" class="tab-content">
+                <section class="hotel-qa clearfix product-faq">
+                  <table class="qa-table">
+                    <tr>
+                      <th>Number</th>
+                      <th>Chủ đề</th>
+                      <th>Tác giả</th>
+                      <th>Ngày</th>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>1</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>2</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>3</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>4</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>5</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>6</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>7</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>8</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>9</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="qa-title">
+                      <td>10</td>
+                      <td>Thủ tục đặt tour như thế nào?</td>
+                      <td>username@gmail.com</td>
+                      <td>12/12/2016</td>
+                    </tr>
+                    <tr class="qa-answer">
+                      <td colspan="4">
+                        <div class="qa-content">
+                          <div class="author">Admin</div>
+                          <time>13h54 16/11/2017</time>
+                          <div class="content">
+                            <p>Hello </p>
+                            <p>there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. </p>
+                            <p>Thank you .. ^^</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="btn-wrap"><a href="#!" class="btn-sendmess">Gửi câu hỏi</a></div>
+                  <div class="send-mess">
+                    <div class="module-title">Gửi câu hỏi</div>
+                    <div class="form-wrap">
+                      <div class="form-group">
+                        <textarea name="" cols="30" rows="4" placeholder="Nội dung"></textarea>
+                      </div>
+                      <div class="frm-btn">
+                        <input type="submit" value="Gửi">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <section class="other-service clearfix">
+              <h2 class="page-title">Dịch vụ liên quan</h2>
+              <div class="service-list">
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/car/1.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Dịch vụ cho thuê xe 4 chỗ</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/hotel/p1.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Khách sạn Mường Thanh Đà Nẵng</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/golf/2.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Sân golf Montgomery</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/car/2.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Dịch vụ cho thuê xe 7 chỗ</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/tour/danang1.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Du lịch Bà Nà Hill</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/golf/3.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Sân golf Đà Nẵng</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service">
+                    <figure><a href="#" class="service-img">
+                        <div class="img"><img src="img/tour/saigon2.jpg" alt=""></div></a>
+                      <figcaption>
+                        <div class="service-name"><a href="#">Cùng thưởng thức ẩm thực miền Trung</a></div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-5">
+              <section class="footer-col clearfix">
+                <div class="sitelogo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+                <div class="about content">Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy, nhưng đa số được biến đổi bằng cách thêm các yếu tố hài hước, các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa.</div>
+                <div class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+              </section>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <section class="footer-col clearfix">
+                <div class="title">Sitemap</div>
+                <nav class="footerlink"><a href="#">Giới thiệu</a><a href="#">Hỗ trợ khách hàng</a><a href="#">Dịch vụ</a><a href="#">Đối tác & khách hàng</a><a href="#">FAQs</a><a href="#">Liên hệ</a></nav>
+              </section>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <section class="footer-col clearfix">
+                <div class="title">Đăng ký nhận bản tin</div>
+                <div class="subscribe">
+                  <div class="module-title">Enter your email address and we’ll send you our regular promotional emails, packed with special offers, great deals, and huge discounts.</div>
+                  <div class="subscribefrm">
+                    <input placeholder="Nhập email...">
+                    <button class="subscribebutton">Gửi</button>
+                  </div>
+                </div>
+              </section>
+              <div class="copyright">© 2017 Tourlink. All rights reserved.</div>
+            </div>
+          </div>
+        </div>
+        <div class="up"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+        <section class="home-partner clearfix">
+          <div class="container">
+            <div class="partner-list">
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/1.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/2.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/3.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/4.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/5.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/6.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/7.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/8.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/1.png" alt=""></a></div>
+              <div class="item"><a href="#!" class="partner"><img src="img/partner/2.png" alt=""></a></div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <!-- inject:js -->
+    <script src="js/addons.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endinject -->
+  </body>
+</html></html>

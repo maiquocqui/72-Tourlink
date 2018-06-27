@@ -1,0 +1,658 @@
+.container
+	//- .visa-step
+		.step.active
+			.number 1
+			.name Reservation process
+		.step
+			.number 2
+			.name Expected issue date
+		.step
+			.number 3
+			.name Visa Type
+		.step
+			.number 4
+			.name Booking detail
+	.visa-page
+		.page-group
+			.page-title Reservation process
+			.visa-process 
+				ul 
+					li Fill out the secure online application form
+					li Confirm and pay for service fee
+					li Get visa approval letter via email
+		.page-group
+			.page-title Expected issue date
+			.expected-date
+				.embassy.dropdown
+					a.btn-embassy.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						| Vietnamese Holidays
+					include calendar
+				table.embassy-table
+					tr
+						th Documents to be submitted Date of arrival
+						th Procedures
+						th Issued date
+					tr
+						td 2017 - 10 - 06 (Fri)
+						td 2 nights 3 days
+						td 2017 - 10 - 18 (Wed)
+					tr
+						td 2017 - 10 - 06 (Fri)
+						td 1 nights 2 days
+						td 2017 - 10 - 18 (Wed)
+					tr
+						td 2017 - 10 - 06 (Fri)
+						td 1 days
+						td 2017 - 10 - 18 (Wed)
+		.page-group
+			.page-title Visa Type
+			.visa-form.clearfix
+				//- .small-title <i class="fa fa-th-list" aria-hidden="true"></i> Visa type
+				#product-tabs.visa-type
+					ul.tabs
+						li 
+							a(href="#tab-b1") Visa Type
+						li 
+							a(href="#tab-b2") Q&A
+					#tab-b1.tab-content
+						.order-form
+							#visadate
+								ul.visa-tabs
+									li
+										a(href="#tab-1") 1 days
+									li
+										a(href="#tab-2") 1 nights 2 days
+									li
+										a(href="#tab-3") 2 nights 3 days
+								#tab-1
+									.table-wrap
+										table.visa-table
+											thead
+												tr
+													//- th object
+													th Visa type
+													th Visa validity period
+													th Maximum stay date
+													th Procedures
+													th Price
+													th Apply
+											tbody
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Single - 1 month
+													td 30 days
+													td 1 days
+													td 
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Single - 3 month
+													td 90 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 1 month
+													td 30 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 3 months
+													td 87 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 6 months (only for USA)
+													td 180 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 12 months (only for USA)
+													td 360 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Single - 1 month
+													td 30 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Single - 3 month
+													td 90 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 1 month
+													td 30 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 3 months
+													td 87 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 6 months (only for USA)
+													td 180 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 12 months (only for USA)
+													td 360 days
+													td 1 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+								#tab-2
+									.table-wrap
+										table.visa-table
+											thead
+												tr
+													//- th object
+													th Visa type
+													th Visa validity period
+													th Maximum stay date
+													th Procedures
+													th Price
+													th Apply
+											tbody
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Single - 1 month
+													td 30 days
+													td 1 nights 2 days
+													td 
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Single - 3 month
+													td 90 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 1 month
+													td 30 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 3 months
+													td 87 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 6 months (only for USA)
+													td 180 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 12 months (only for USA)
+													td 360 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Single - 1 month
+													td 30 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Single - 3 month
+													td 90 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 1 month
+													td 30 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 3 months
+													td 87 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 6 months (only for USA)
+													td 180 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 12 months (only for USA)
+													td 360 days
+													td 1 nights 2 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+								#tab-3
+									.table-wrap
+										table.visa-table
+											thead
+												tr
+													//- th object
+													th Visa type
+													th Visa validity period
+													th Maximum stay date
+													th Procedures
+													th Price
+													th Apply
+											tbody
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Single - 1 month
+													td 30 days
+													td 2 nights 3 days
+													td 
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Single - 3 month
+													td 90 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 1 month
+													td 30 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 3 months
+													td 87 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 6 months (only for USA)
+													td 180 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Arrival Visa
+													td Multiple - 12 months (only for USA)
+													td 360 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Single - 1 month
+													td 30 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Single - 3 month
+													td 90 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 1 month
+													td 30 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 3 months
+													td 87 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 6 months (only for USA)
+													td 180 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+												tr
+													//- td Common general
+													td Embassy Visa
+													td Multiple - 12 months (only for USA)
+													td 360 days
+													td 2 nights 3 days
+													td
+														.total 120,000
+													td 
+														a.btn-book(href="#") Apply
+					#tab-b2.tab-content
+						.product-faq
+							table.qa-table
+								tr
+									th Number
+									th Chủ đề
+									th Tác giả
+									th Ngày
+								tr.qa-title
+									td 1
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 2
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 3
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 4
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 5
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 6
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 7
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 8
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 9
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+								tr.qa-title
+									td 10
+									td Thủ tục đặt tour như thế nào?
+									td username@gmail.com
+									td 12/12/2016
+								tr.qa-answer
+									td(colspan="4")
+										.qa-content
+											.author Admin
+											time 13h54 16/11/2017
+											.content
+												p Hello 
+												p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+												p Thank you .. ^^
+							.btn-wrap
+								a.btn-sendmess(href="#!") Gửi câu hỏi
+							.send-mess
+								.module-title Gửi câu hỏi
+								.form-wrap
+									//- .form-group
+									//- 	input(type="text" placeholder="Họ và tên")
+									//- .form-group
+									//- 	input(type="text" placeholder="Email")
+									//- .form-group
+									//- 	input(type="text" placeholder="Số điện thoại")
+									.form-group
+										textarea(name="", cols="30", rows="4", placeholder="Nội dung")
+									.frm-btn
+										input(type="submit", value="Gửi")
+				.visa-notice.content
+					h6 
+						.ic.ic32(style="vertical-align: top")
+							img(src="img/iconpack/bulb.png", alt="")
+						//- strong Expert Tips
+					ul
+						li A coppy the passport signed by the applicant (Valid for at least 6 months).
+							br
+							br
+						li If your visa type does not macth your purpose of entry, it may be a problem when you are staying in the country.
+							br
+							br
+						li Print out the letter and the entry-and-exit form.
+							br
+							br
+						li Prepare 2 passport sized photos 4x6cm and an amount of USD for stamping fee ($25 for single entry; $50 for multiple entry visa). $95 USD for 6 months multiple entries visa to less than 1 year multiple entries. $135 for 1 year multiple.
+							br
+							br
+						li Put all above mentioned things along with your passport in a package, then show them to visa arrival officer at Vietnam arrival airports.
+							br
+							|(To save your time at the airports, you are recommended to use our airport fast track service)
+							br
+							br
+						li If you apply visa embassy, you must bring the letter to local embassy or agency. At a Vietnam Embassy, the visa procedure will take around few days to process. Visa fees will depend on the type of visa for which you are applying. 
+
+
+						
+		//- .cartbtn-wrap
+			//- a.btn-backstep(href="#") Back
+			a.btn-nextstep(href="#") Continue

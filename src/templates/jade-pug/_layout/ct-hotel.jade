@@ -1,0 +1,144 @@
+.container
+	//- include searchhotel
+	section.hotel-page.clearfix
+		h1.home-title 
+			strong Các địa điểm du lịch 
+			|nổi tiếng
+		.place-list.clearfix
+			.row
+				.col-12.col-md-6
+					.place-card
+						figure
+							a.place-img(href="#")
+								img(src="img/place/danang.jpg", alt="")
+							figcaption
+								h3.place-name
+									a(href="#") Đà Nẵng
+				.col-12.col-md-3
+					.place-card
+						figure
+							a.place-img(href="#")
+								img(src="img/place/hanoi.jpg", alt="")
+							figcaption
+								h3.place-name
+									a(href="#") Hà Nội
+				.col-12.col-md-3
+					.place-card
+						figure
+							a.place-img(href="#")
+								img(src="img/place/hue.jpg", alt="")
+							figcaption
+								h3.place-name
+									a(href="#") Huế
+				.col-12.col-md-3
+					.place-card
+						figure
+							a.place-img(href="#")
+								img(src="img/place/nhatrang.jpg", alt="")
+							figcaption
+								h3.place-name
+									a(href="#") Nha Trang
+				.col-12.col-md-3
+					.place-card
+						figure
+							a.place-img(href="#")
+								img(src="img/place/saigon.jpg", alt="")
+							figcaption
+								h3.place-name
+									a(href="#") Hồ Chí Minh
+				.col-12.col-md-6
+					.place-card
+						figure
+							a.place-img(href="#")
+								img(src="img/place/vungtau.jpg", alt="")
+							figcaption
+								h3.place-name
+									a(href="#") Vũng Tàu
+		h1.home-title 
+			strong Khách sạn 
+			|nổi tiếng
+		nav#myTab.nav.nav-tabs(role='tablist')
+			a#nav-tab1.nav-item.nav-link.active(data-toggle='tab', href='#tab1', role='tab', aria-controls='tab1', aria-expanded='true') Khách sạn
+			a#nav-tab2.nav-item.nav-link(data-toggle='tab', href='#tab2', role='tab', aria-controls='tab2') Resort
+			a#nav-tab3.nav-item.nav-link(data-toggle='tab', href='#tab3', role='tab', aria-controls='tab3') Pool Villa
+			a#nav-tab4.nav-item.nav-link(data-toggle='tab', href='#tab4', role='tab', aria-controls='tab4') Căn hộ
+		#nav-tabContent.tab-content
+			#tab1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-tab1')
+				.hotel-list.clearfix
+					.row
+						.col-12.col-md-6.col-lg-4
+							.hotel-card
+								figure
+									a.hotel-img(href="#")
+										img(src="img/hotel/1.jpg", alt="")
+										.hotel-rating 8.6 Xuất sắc
+									figcaption
+										h2.hotel-name
+											a(href="#") FLC Luxury Hotel
+										.hotel-star
+											<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+										.hotel-des Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero tempora delectus dolores aliquam iusto! Dolores repellendus est illo cumque corrupti.
+						.col-12.col-md-6.col-lg-4
+							.hotel-card
+								figure
+									a.hotel-img(href="#")
+										img(src="img/hotel/2.jpg", alt="")
+										.hotel-rating 8.6 Xuất sắc
+									figcaption
+										h2.hotel-name
+											a(href="#") FLC Luxury Hotel
+										.hotel-star
+											<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+										.hotel-des Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero tempora delectus dolores aliquam iusto! Dolores repellendus est illo cumque corrupti.
+						.col-12.col-md-6.col-lg-4
+							.hotel-card
+								figure
+									a.hotel-img(href="#")
+										img(src="img/hotel/3.jpg", alt="")
+										.hotel-rating 8.6 Xuất sắc
+									figcaption
+										h2.hotel-name
+											a(href="#") FLC Luxury Hotel
+										.hotel-star
+											<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+										.hotel-des Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero tempora delectus dolores aliquam iusto! Dolores repellendus est illo cumque corrupti.
+						.col-12.col-md-6.col-lg-4
+							.hotel-card
+								figure
+									a.hotel-img(href="#")
+										img(src="img/hotel/4.jpg", alt="")
+										.hotel-rating 8.6 Xuất sắc
+									figcaption
+										h2.hotel-name
+											a(href="#") FLC Luxury Hotel
+										.hotel-star
+											<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+										.hotel-des Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero tempora delectus dolores aliquam iusto! Dolores repellendus est illo cumque corrupti.
+						.col-12.col-md-6.col-lg-4
+							.hotel-card
+								figure
+									a.hotel-img(href="#")
+										img(src="img/hotel/5.jpg", alt="")
+										.hotel-rating 8.6 Xuất sắc
+									figcaption
+										h2.hotel-name
+											a(href="#") FLC Luxury Hotel
+										.hotel-star
+											<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+										.hotel-des Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero tempora delectus dolores aliquam iusto! Dolores repellendus est illo cumque corrupti.
+						.col-12.col-md-6.col-lg-4
+							.hotel-card
+								figure
+									a.hotel-img(href="#")
+										img(src="img/hotel/6.jpg", alt="")
+										.hotel-rating 8.6 Xuất sắc
+									figcaption
+										h2.hotel-name
+											a(href="#") FLC Luxury Hotel
+										.hotel-star
+											<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+										.hotel-des Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero tempora delectus dolores aliquam iusto! Dolores repellendus est illo cumque corrupti.
+										
+			#tab2.tab-pane.fade(role='tabpanel', aria-labelledby='nav-tab2') ...
+			#tab3.tab-pane.fade(role='tabpanel', aria-labelledby='nav-tab3') ...
+			#tab4.tab-pane.fade(role='tabpanel', aria-labelledby='nav-tab4') ...

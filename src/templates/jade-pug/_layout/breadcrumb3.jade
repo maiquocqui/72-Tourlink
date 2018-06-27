@@ -1,0 +1,21 @@
+section.breadcrumb-wrap.breadcrumb-wrap2.clearfix
+	.breadcrumb-banner
+		img(src="img/breadcrumb/9.jpg", alt="")
+	.container
+		//- h3.pagename 
+	include searchtour
+.breadcrumb-section
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tour
+				meta(itemprop='position', content='2')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tour nước ngoài
+				meta(itemprop='position', content='2')

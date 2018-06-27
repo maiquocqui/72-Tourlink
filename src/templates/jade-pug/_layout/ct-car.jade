@@ -1,0 +1,636 @@
+.container
+	section.car-page.product-page.clearfix
+		h1.page-title Thuê xe 
+		.row
+			.col-12.col-lg-6
+				.slide-wrap
+					.product-slide
+						.item
+							a.img(href="img/car/p1.jpg" data-fancybox="gal1")
+								img(src="img/car/p1.jpg", alt="")
+						.item
+							a.img(href="img/car/p2.jpg" data-fancybox="gal1")
+								img(src="img/car/p2.jpg", alt="")
+						.item
+							a.img(href="img/car/p4.jpg" data-fancybox="gal1")
+								img(src="img/car/p4.jpg", alt="")
+						.item
+							a.img(href="img/car/p6.jpg" data-fancybox="gal1")
+								img(src="img/car/p6.jpg", alt="")
+						.item
+							a.img(href="img/car/p8.jpg" data-fancybox="gal1")
+								img(src="img/car/p8.jpg", alt="")
+						.item
+							a.img(href="img/car/p9.jpg" data-fancybox="gal1")
+								img(src="img/car/p9.jpg", alt="")
+						.item
+							a.img(href="img/car/p10.jpg" data-fancybox="gal1")
+								img(src="img/car/p10.jpg", alt="")
+					.product-nav
+						.item
+							.img
+								img(src="img/car/p1.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p2.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p4.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p6.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p8.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p9.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p10.jpg", alt="")
+			.col-12.col-lg-6
+				.product-info
+					.info-table
+						.content
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum, consequatur provident aspernatur repudiandae, repellat dolores sit fuga qui ipsum quisquam ipsa totam molestiae consectetur, illum tenetur ipsam expedita. Aspernatur, facilis totam, inventore assumenda aperiam veritatis voluptatibus impedit doloribus, voluptatum id veniam nihil ducimus voluptates reprehenderit! Consequuntur et consequatur reiciendis.
+							p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et corporis eos maiores, rerum laudantium minima voluptas quod accusamus dicta itaque amet quasi quisquam saepe ipsam natus, facere enim. Eaque, veniam.
+						.share
+							img(src="img/share.png", alt="")
+		#bookcar.modal.modal-bookcar.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h5#exampleModalLabel.modal-title Nhập thông tin
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body 
+						.row
+							.col-12.col-md-6
+								.calendar
+									.month-select
+										.prev <i class="fa fa-chevron-left" aria-hidden="true"></i>
+										.next <i class="fa fa-chevron-right" aria-hidden="true"></i>
+										.month 11/2017
+										//- .selectbox
+											select
+												option Năm 2017
+											select
+												option 11
+									table.date-in-month
+										thead
+											tr
+												th Su
+												th Mo
+												th Tu
+												th We
+												th Th
+												th Fr
+												th Sa
+										tbody
+											tr
+												td 
+												td 
+												td 
+												td.disable 01
+												td.disable 02
+												td.disable 03
+												td.disable 04
+											tr
+												td.disable 05
+												td.disable 06
+												td.disable 07
+												td.disable 08
+												td.disable 09
+												td 10
+													.price 200$
+												td 11
+													.price 200$
+											tr
+												td 12
+													.price 200$
+												td 13
+													.price 200$
+												td 14
+													.price 200$
+												td.active 15
+													.price 200$
+												td 16
+													.price 200$
+												td 17
+													.price 200$
+												td 18
+													.price 200$
+											tr
+												td 19
+													.price 200$
+												td 20
+													.price 200$
+												td 21
+													.price 200$
+												td 22
+													.price 200$
+												td 23
+													.price 200$
+												td 24
+													.price 200$
+												td 25
+													.price 200$
+											tr
+												td 26
+													.price 200$
+												td 27
+													.price 200$
+												td 28
+													.price 200$
+												td 29
+													.price 200$
+												td 30
+													.price 200$
+												td 
+												td 
+							.col-12.col-md-6
+								.booking-info
+									.module-title Tùy chọn
+									.row
+										.col-12.col-md-4
+											.form-group
+												label Ngày
+												input(type="text" value="15/11/2017" disabled)
+										.col-12.col-md-4
+											.form-group
+												label Loại xe
+												input(type="text" value="16 chỗ" disabled)
+										.col-12.col-md-4
+											.form-group
+												label Số người
+												select
+													option 1
+													option 2
+													option 3
+													option 4
+													option 5
+													option 6
+													option 7
+													option 8
+													option 9
+													option 10
+										.col-12
+											.form-group
+												label Thời gian
+												.datetime
+													select(name="")
+														option(value="") 13h
+													|-
+													select(name="")
+														option(value="") 00
+													//- |-
+													//- select(name="")
+														option(value="") 2017
+										.col-12
+											.form-group
+												label Địa điểm
+												input(type="text" value="")
+										.col-12
+											.form-group
+												label Ghi chú
+												textarea(name="", cols="30", rows="3")
+									//- .frm-btn
+										input(type="submit", value="Nhận báo giá")
+									.total-money Tổng tiền: <strong>5.000.000 đ</strong>
+						.btn-wrap
+							a.btn-continue(href="#") Thêm vào giỏ hàng
+		#product-tabs
+			ul.tabs
+				li 
+					a(href="#tab-1") Bảng giá chi tiết
+				li 
+					a(href="#tab-2") Đánh giá
+				li 
+					a(href="#tab-3") Hỏi đáp
+			#tab-1.tab-content
+				.car-detail-list
+					.car-filter
+						.location-select
+							select(name="")
+								option(value="") Tất cả
+								option(value="") Đà nẵng
+								option(value="") Hồ Chí Minh
+								option(value="") Hà Nội
+								option(value="") Hà tĩnh
+								option(value="") Nhà Trang
+								option(value="") Đà Lạt
+								option(value="") Quy Nhơn
+						.filter-option
+							a.active(href="#") Tất cả
+							a(href="#!") Xe 7 chỗ
+							a(href="#!") Xe 16 chỗ
+							a(href="#!") Xe 29 chỗ
+							a(href="#!") Xe 4 chỗ cao cấp
+							a(href="#!") Xe Limousine
+					table.car-table
+						tr
+							th Tên sản phẩm
+							th Giá
+						tr
+							td Đà Nẵng → (Banah Hill hoặc Hội An) → Đà Nẵng
+							td 
+								.price 1.500.000 đ
+								a.btn-bookcar(href="#!" data-toggle="modal" data-target="#bookcar") Đặt xe
+						tr
+							td Cho thuê 6 giờ tại thành phố Đà Nẵng
+							td 
+								.price 2.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Thuê 6 giờ tại thành phố Hồ Chí Minh
+							td 
+								.price 5.000.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Đà Nẵng → (Banah Hill hoặc Hội An) → Đà Nẵng
+							td 
+								.price 1.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Cho thuê 6 giờ tại thành phố Đà Nẵng
+							td 
+								.price 2.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Thuê 6 giờ tại thành phố Hồ Chí Minh
+							td 
+								.price 5.000.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Đà Nẵng → (Banah Hill hoặc Hội An) → Đà Nẵng
+							td 
+								.price 1.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Cho thuê 6 giờ tại thành phố Đà Nẵng
+							td 
+								.price 2.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Thuê 6 giờ tại thành phố Hồ Chí Minh
+							td 
+								.price 5.000.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Đà Nẵng → (Banah Hill hoặc Hội An) → Đà Nẵng
+							td 
+								.price 1.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Cho thuê 6 giờ tại thành phố Đà Nẵng
+							td 
+								.price 2.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Thuê 6 giờ tại thành phố Hồ Chí Minh
+							td 
+								.price 5.000.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Đà Nẵng → (Banah Hill hoặc Hội An) → Đà Nẵng
+							td 
+								.price 1.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Cho thuê 6 giờ tại thành phố Đà Nẵng
+							td 
+								.price 2.500.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+						tr
+							td Thuê 6 giờ tại thành phố Hồ Chí Minh
+							td 
+								.price 5.000.000 đ
+								a.btn-bookcar(href="#!") Đặt xe
+			#tab-2.tab-content
+				.product-review
+					h2.page-title Đánh giá
+					.point-wrap
+						.flex.flex-wrap.clearfix
+							.point-average
+								.module-title Đánh giá trung bình
+								.point 4.0
+								.favorite
+									ul.star-list
+										li.star.active 
+											a(href="#!") <i class="fa fa-star" aria-hidden="true"></i>
+										li.star.active 
+											a(href="#!") <i class="fa fa-star" aria-hidden="true"></i>
+										li.star.active 
+											a(href="#!") <i class="fa fa-star" aria-hidden="true"></i>
+										li.star.active 
+											a(href="#!") <i class="fa fa-star" aria-hidden="true"></i>
+										li.star
+											a(href="#!") <i class="fa fa-star" aria-hidden="true"></i>
+								.amount (10 đánh giá)
+							.point-detail
+								.point-row
+									.level 5 <i class="fa fa-star" aria-hidden="true"></i>
+									.percen
+										.current-percen.w50
+									.status 50% Rất hài lòng
+								.point-row
+									.level 4 <i class="fa fa-star" aria-hidden="true"></i>
+									.percen
+										.current-percen.w30
+									.status 30% Hài lòng
+								.point-row
+									.level 3 <i class="fa fa-star" aria-hidden="true"></i>
+									.percen
+										.current-percen.w20
+									.status 20% Bình thường
+								.point-row
+									.level 2 <i class="fa fa-star" aria-hidden="true"></i>
+									.percen
+										.current-percen.w0
+									.status 0% Dưới trung bình
+								.point-row
+									.level 1 <i class="fa fa-star" aria-hidden="true"></i>
+									.percen
+										.current-percen.w0
+									.status 0% Thất vọng
+							.comment-input
+								//- .form-group
+									input(type="text", placeholder="Họ tên*")
+								//- .form-group
+									input(type="text", placeholder="Email")
+								.form-group.w100
+									textarea(name="", cols="30", rows="3", placeholder="Nội dung bình luận...")
+								.btnwrap
+									input(type="submit", value="Gửi bình luận")
+			#tab-3.tab-content
+				.product-faq
+					table.qa-table
+						tr
+							th Number
+							th Chủ đề
+							th Tác giả
+							th Ngày
+						tr.qa-title
+							td 1
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 2
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 3
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 4
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 5
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 6
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 7
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 8
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 9
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+						tr.qa-title
+							td 10
+							td Thủ tục đặt tour như thế nào?
+							td username@gmail.com
+							td 12/12/2016
+						tr.qa-answer
+							td(colspan="4")
+								.qa-content
+									.author Admin
+									time 13h54 16/11/2017
+									.content
+										p Hello 
+										p there is peak seasons in the period (we will send 3 million digits of peak seasons to invoices) and the gala dinners are not obligatory and will not be included in the invoices. 
+										p Thank you .. ^^
+					.btn-wrap
+						a.btn-sendmess(href="#!") Gửi câu hỏi
+					.send-mess
+						.module-title Gửi câu hỏi
+						.form-wrap
+							//- .form-group
+							//- 	input(type="text" placeholder="Họ và tên")
+							//- .form-group
+							//- 	input(type="text" placeholder="Email")
+							//- .form-group
+							//- 	input(type="text" placeholder="Số điện thoại")
+							.form-group
+								textarea(name="", cols="30", rows="4", placeholder="Nội dung")
+							.frm-btn
+								input(type="submit", value="Gửi")
+		
+		.other-service.clearfix
+			h2.page-title Dịch vụ liên quan
+			.service-list
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/car/1.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Dịch vụ cho thuê xe 4 chỗ
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/hotel/p1.jpg", alt="")
+								//- .img
+								//- 	img(src="img/hotel/p2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/hotel/p3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/hotel/p4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Khách sạn Mường Thanh Đà Nẵng
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/golf/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Sân golf Montgomery
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Dịch vụ cho thuê xe 7 chỗ
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/tour/danang1.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/dalat.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/hontam.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/saigon2.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Du lịch Bà Nà Hill
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/golf/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Sân golf Đà Nẵng
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/tour/saigon2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/dalat.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/hontam.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/saigon2.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Cùng thưởng thức ẩm thực miền Trung

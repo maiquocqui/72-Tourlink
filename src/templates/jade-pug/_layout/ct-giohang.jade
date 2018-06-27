@@ -1,0 +1,187 @@
+include bookingheader
+
+.container
+	section.booking-step.clearfix
+		.step.active
+			.number 1
+			.name Giỏ hàng
+		.step
+			.number 2
+			.name Nhập thông tin & thanh toán
+		.step
+			.number 3
+			.name Hoàn tất
+	.cart-page
+		h1.page-title Giỏ hàng
+		table.cart-table.pc-cart-table
+			tr
+				th Tên sản phẩm
+				th Chi tiết đặt chỗ
+				th Người
+				th Số tiền
+				th Số tiền chiết khấu
+				th Số tiền thanh toán
+				th
+			tr
+				td.type(colspan="7") Khách sạn
+			tr
+				td 
+					.name Hyatt Regency Danang Resort và Spa
+					time 2017-09-25 (Thứ Hai) ~ 2017-09-26 (Thứ Ba) [1 Đêm]
+				td Hyatt Phòng Khách Standard Single (1 Phòng) - Bao gồm ăn sáng	
+				td Người lớn 1
+				td 2.700.000 đ
+				td 0 đ
+				td.money 2.700.000 đ
+				td
+					a.remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+			tr
+				td.type(colspan="7") Sân golf
+			tr
+				td 
+					.name [Hồ Chí Minh] Sân gôn Thanh Sơnn 
+					time 2017-10-22 (CN)
+				td Chiều 18 lỗ 
+				td Người lớn 2
+				td 2.600.000 đ
+				td 0 đ
+				td.money 2.600.000 đ
+				td
+					a.remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+			tr
+				td 
+					.name [Hồ Chí Minh] Sân gôn Thanh Sơnn 
+					time 2017-10-22 (CN)
+				td 18 lỗ hổng
+				td Người lớn 2
+				td 2.600.000 đ
+				td 0 đ
+				td.money 2.600.000 đ
+				td
+					a.remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+			tr
+				td.type(colspan="7") Tour
+			tr
+				td 
+					.name [Solo] Buổi sáng Đón khách tại Morning Barn Hill 
+					time 2017-09-21 (Thứ năm)
+				td 2 lần khởi hành 
+				td Người lớn 2
+				td 2.200.000 đ
+				td 0 đ
+				td.money 2.200.000 đ
+				td
+					a.remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+		table.mobile-cart-table
+			tr
+				th Khách sạn
+				td
+					.product-name
+						.name Hyatt Regency Danang Resort và Spa
+						time 2017-09-25 (Thứ Hai) ~ 2017-09-26 (Thứ Ba) [1 Đêm]
+					.product-detail
+						ul
+							li
+								strong Chi tiết:
+								br
+								| Hyatt Phòng Khách Standard Single (1 Phòng) - Bao gồm ăn sáng
+						
+							li
+								strong Người:
+								br
+								| 2 người lớn, 1 trẻ em
+						
+							li
+								strong Số tiền:
+								br
+								| 2.700.000 đ
+						
+							li
+								strong Số tiền thanh toán:
+								.product-price 2.700.000 đ
+					.remove <i class="fa fa-trash-o" aria-hidden="true"></i>
+				td
+					.product-name
+						.name Hyatt Regency Danang Resort và Spa
+						time 2017-09-25 (Thứ Hai) ~ 2017-09-26 (Thứ Ba) [1 Đêm]
+					.product-detail
+						ul
+							li
+								strong Chi tiết:
+								br
+								| Hyatt Phòng Khách Standard Single (1 Phòng) - Bao gồm ăn sáng
+						
+							li
+								strong Người:
+								br
+								| 2 người lớn, 1 trẻ em
+						
+							li
+								strong Số tiền:
+								br
+								| 2.700.000 đ
+						
+							li
+								strong Số tiền thanh toán:
+								.product-price 2.700.000 đ
+					.remove <i class="fa fa-trash-o" aria-hidden="true"></i>
+			tr
+				th Sân golf
+				td
+					.product-name
+						.name Hyatt Regency Danang Resort và Spa
+						time 2017-09-25 (Thứ Hai) ~ 2017-09-26 (Thứ Ba) [1 Đêm]
+					.product-detail
+						ul
+							li
+								strong Chi tiết:
+								br
+								| Hyatt Phòng Khách Standard Single (1 Phòng) - Bao gồm ăn sáng
+						
+							li
+								strong Người:
+								br
+								| 2 người lớn, 1 trẻ em
+						
+							li
+								strong Số tiền:
+								br
+								| 2.700.000 đ
+						
+							li
+								strong Số tiền thanh toán:
+								.product-price 2.700.000 đ
+					.remove <i class="fa fa-trash-o" aria-hidden="true"></i>
+			tr
+				th Tour
+				td
+					.product-name
+						.name Hyatt Regency Danang Resort và Spa
+						time 2017-09-25 (Thứ Hai) ~ 2017-09-26 (Thứ Ba) [1 Đêm]
+					.product-detail
+						ul
+							li
+								strong Chi tiết:
+								br
+								| Hyatt Phòng Khách Standard Single (1 Phòng) - Bao gồm ăn sáng
+						
+							li
+								strong Người:
+								br
+								| 2 người lớn, 1 trẻ em
+						
+							li
+								strong Số tiền:
+								br
+								| 2.700.000 đ
+						
+							li
+								strong Số tiền thanh toán:
+								.product-price 2.700.000 đ
+					.remove <i class="fa fa-trash-o" aria-hidden="true"></i>
+		.total-amount Tổng tiền:
+			strong 10.100.000 đ
+		.btn-wrap.clearfix
+			a.btn-back(href="#!") Quay về
+			a.btn-continue(href="#!") Tiếp tục
+include bookingfooter

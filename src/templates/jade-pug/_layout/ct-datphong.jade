@@ -1,0 +1,175 @@
+include bookingheader
+
+.container
+	section.booking-step.clearfix
+		.step.finish
+			.number 1
+			.name Chọn phòng
+		.step.active
+			.number 2
+			.name Chi tiết đặt phòng
+		.step
+			.number 3
+			.name Thông tin thanh toán
+		.step
+			.number 4
+			.name Hoàn tất đặt phòng
+	section.booking-page.clearfix
+		h1.page-title Thông tin chi tiết đặt phòng
+		.row
+			.col-12.col-lg-7
+				.hotel-info.clearfix
+					figure
+						.hotel-img
+							img(src="img/picture/1.jpg", alt="")
+						figcaption
+							.hotel-name
+								a(href="#") A La Carte Da Nang Beach Hotel
+							.hotel-star
+								<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+							.hotel-location <i class="fa fa-map-marker" aria-hidden="true"></i> 200 Võ Nguyên Giáp, Quận Sơn Trà, Tp. Đà Nẵng, Việt Nam, Phước Mỹ, Đà Nẵng, Việt Nam 59000
+							.hotel-des
+								ul
+									li 
+										.label Khu vực lân cận :
+										.value Phước Mỹ, Đà Nẵng
+									li 
+										.label Nhận phòng :
+										.value 07 Tháng Chín 2017
+									li 
+										.label Trả phòng :
+										.value 09 Tháng Chín 2017
+									li 
+										.label Sức chứa :
+										.value Tối đa 2 người lớn
+									li 
+										.label Thông tin đặt phòng :
+										.value 2 đêm, 1 phòng, 2 Người lớn
+									li 
+										.label Phòng :
+										.value 1 x Phòng Studio 1 phòng ngủ (1 Bedroom Studio)
+							.btn-changeroom Đổi phòng
+				.hotel-feature.clearfix
+					.hotel-rating Xuất sắc 
+						strong 8.3
+					.hotel-service
+						.title Các dịch vụ bạn yêu thích
+						ul
+							li Cách bãi biển 100 m
+							li miễn phí wifi tất cả các phòng
+							li dịch vụ phòng hàng ngày
+							li quầy bar
+							li quán bar cạnh hồ bơi
+							li phòng sauna
+							li bể bơi sân thượng
+							li tiệc bể bơi
+							li dịch vụ cafe ăn sáng
+				.booking-form.clearfix
+					.main-form.clearfix
+						.form-title Thông tin của bạn
+						.form-wrap
+							.row
+								.form-group.col-12
+									label(for="#") Họ và tên
+									input(type="text")
+								.form-group.col-12
+									label(for="#") Email
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label(for="#") Số điện thoại di động
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label(for="#") Quốc gia cư trú
+									select
+										option(value="#") Việt Nam
+					.booking-for.checkbox
+						input#otherperson(type="checkbox", name="otherperson")
+						label#btn-bookfor(for="otherperson") Tôi đặt phòng giúp người khác
+					.sub-form.clearfix#booking-for-form
+						.form-title Thông tin Khách hàng
+						.form-wrap
+							.row
+								.form-group.col-12
+									label(for="#") Họ và tên
+									input(type="text")
+								.form-group.col-12.col-md-6
+									label(for="#") Quốc gia cư trú
+									select
+										option(value="#") Việt Nam
+					.require-form.clearfix
+						.form-title Yêu cầu đặc biệt
+						.form-des Chúng tôi sẽ báo cho khách sạn hoặc chủ nhà ngay sau khi bạn đặt phòng!
+						.btn-showform Thêm yêu cầu đặc biệt của bạn
+						.form-wrap
+							.module-title Vui lòng lưu ý tất cả các yêu cầu chỉ được đáp ứng tùy theo khách sạn.
+							.form-group
+								ul
+									li.checkbox
+										input#yk1(type="checkbox", name="yk")
+										label(for="yk1") Phòng không hút thuốc
+									li.checkbox
+										input#yk2(type="checkbox", name="yk")
+										label(for="yk3") Phòng 2 giường
+									li.checkbox
+										input#yk3(type="checkbox", name="yk")
+										label(for="yk3") Phòng tầng cao
+									li.checkbox
+										input#yk4(type="checkbox", name="yk")
+										label(for="yk4") Phòng yên tĩnh
+									li.checkbox
+										input#yk5(type="checkbox", name="yk")
+										label(for="yk5") Phòng giường lớn
+							.duadon.checkbox
+								input#duadon(type="checkbox", name="duadon")
+								label#btn-duadon(for="duadon") Tôi muốn đăng ký đưa đón sân bay
+							.form-duadon
+								.module-title Chú thích: Nhận phòng sớm hoặc Đưa đón sân bay có thể sẽ tính thêm phụ phí. Xin vui lòng liên hệ khách sạn để xác nhận. Vui lòng nhập nội dung lời nhắn bằng tiếng Anh hoặc tiếng Việt
+								.form-group
+									textarea(name="", cols="30", rows="3", placeholder="Nhập số chuyến bay và thời gian hạ cánh. Yêu cầu của bạn không được đảm bảo hoàn toàn, xin vui lòng xác nhận lại với khách sạn.")
+							.module-title Vui lòng nhập nội dung lời nhắn bằng tiếng Anh Hoặc tiếng Việt
+							.form-group
+								textarea(name="", cols="30", rows="3")
+					.receive-form.clearfix
+						.form-title Bạn đã biết khi nào sẽ đến nhận phòng chưa?
+						.form-wrap
+							.module-title Chọn thời gian đến dự kiến để chúng tôi thông báo với khách sạn hoặc chủ nhà
+							.row
+								.form-group.col-12.col-md-6
+									select(name="")
+										option(value="") Tôi chưa biết
+				.btn-wrap.clearfix
+					a.btn-continue(href="#") Tiếp tục
+			.col-12.col-lg-5
+				section.booking-info.clearfix
+					.booking-date
+						.from
+							.date 07
+							.des Thứ Năm
+								br
+								|Thg 9 2017
+						.to
+							.date 09
+							.des Thứ Bảy
+								br
+								|Thg 9 2017
+					.room-info
+						.room-name 1x Phòng Studio 1 phòng ngủ (1 Bedroom Studio)
+						.room-des
+							ul
+								li 44 m²
+								li Giá đã bao gồm: Nước uống chào đón
+								li Khuyến mãi trong thời gian có hạn. Giá phòng bao gồm giảm giá 25%!
+								li Chính sách hủy phòng
+								li Đừng bỏ lỡ! Chỉ còn 2 phòng có giá này ở Agoda!
+				section.booking-amount.clearfix
+					.group
+						.label Giá tiền (1 phòng x 2 đêm)
+						.value 
+							.price
+								.old 6.666.666 đ
+								.new 5.000.000 đ
+					.group.total-amount
+						.label Giá tiền
+							.des Giá đã bao gồm phí dịch vụ 5%, thuế 10%
+						.value 5.175.000 đ
+include bookingfooter

@@ -1,0 +1,394 @@
+.product-page
+	margin: 40px 0
+	padding: 0
+	.product-main-name
+		+fs(24rem)
+		font-weight: 600
+		color: $black
+		line-height: 1.5
+		margin-bottom: 20px
+		+pos(rel,null)
+		.tag
+			+fs(14rem)
+			display: inline-block
+			vertical-align: middle
+			color: $white
+			padding: 3px 15px
+			+bor-rad(5px)
+			margin-right: 10px
+			display: none
+			&.hotel
+				background: lighten($red,10%)
+			&.tour
+				background: lighten($purple,10%)
+			&.golf
+				background: lighten($green,10%)
+	.slide-wrap
+		margin-bottom: 30px
+	.product-slide
+		margin-bottom: 4px
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			color: $white
+			text-shadow: 0 3px 10px color-rgba($black,0.5)
+			&:before
+				content: ''
+				+fs(28rem)
+		.slick-prev
+			left: 15px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 15px
+			&:before
+				content: '\f105'
+		.item
+			.img
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				width: 100%
+				img
+					width: 100%
+					max-width: 100%
+					height: 350px
+					object-fit: cover
+					+media-breakpoint-down(xs)
+						height: 280px
+	.product-nav
+		overflow: hidden
+		.slick-list
+			margin: 0px -2px
+		.item
+			padding: 0px 2px
+			.img
+				cursor: pointer
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				width: 100%
+				img
+					width: 100%
+					max-width: 100%
+					height: 60px
+					object-fit: cover
+					border: 2px solid transparent
+					+transition(all,0.3s)
+					+media-breakpoint-down(xs)
+						height: 40px
+			&.slick-current
+				.img
+					img
+						border: 2px solid $blue
+
+.product-info
+	+bor-rad(5px)
+	border: 1px solid darken($white,10%)
+	background: darken($white,2%)
+	padding: 20px
+	margin-bottom: 30px
+	min-height: calc(100% - 30px)
+	+media-breakpoint-down(xs)
+		padding: 15px
+	.info-table
+		.group
+			+flexbox
+			align-items: center
+			align-content: center
+			padding: 10px 0
+			border-bottom: 1px solid darken($white,10%)
+			+fs(13rem)
+			&:last-child
+				border-bottom: none
+			.label
+				width: 130px
+				font-weight: 500
+				+media-breakpoint-down(xs)
+					width: 100px
+			.value
+				width: calc(100% - 130px)
+				+media-breakpoint-down(xs)
+					width: calc(100% - 100px)
+				&.point
+					strong
+						+fs(18rem)
+						color: $blue
+				&.address
+					a
+						display: block
+				&.type-tag
+					a
+						display: inline-block
+						line-height: 1
+						padding: 3px 5px
+						+fs(12rem)
+						font-weight: 500
+						color: $blue
+						background: lighten($blue,45%)
+						border: 1px solid lighten($blue,20%)
+						+bor-rad(3px)
+						+ a
+							margin-left: 5px
+				&.price
+					strong
+						font-weight: 500
+						color: lighten($red,10%)
+						+fs(22rem)
+						margin-left: 5px
+						+media-breakpoint-down(xs)
+							+fs(18rem)
+							font-weight: 600
+				&.weblink
+					display: block
+					text-overflow: ellipsis
+					overflow: hidden
+					white-space: nowrap
+			.fa-star
+				color: $amber
+			a
+				color: $blue
+				&:hover
+					color: lighten($red,10%)
+		.btn-book
+			display: inline-block
+			background: $blue
+			color: $white
+			+fs(14rem)
+			+bor-rad(5px)
+			padding: 8px 20px
+			text-align: center
+			margin-top: 20px
+			&:hover
+				background: darken($blue,10%)
+			&:before
+				content: '\f044'
+				margin-right: 5px
+		.share
+			margin-top: 20px
+.product-faq
+	margin-bottom: 30px
+	.qa-table
+		margin-bottom: 30px
+		+media-breakpoint-down(xs)
+			th, td
+				&:last-child, &:nth-child(3)
+					display: none
+		.qa-title
+			cursor: pointer
+			&.active
+				background: lighten($blue,45%)
+		.qa-answer
+			td
+				padding: 0px
+				border-bottom: none
+				background: lighten($blue,45%)
+			.qa-content
+				display: none
+				padding: 20px
+				border-bottom: 1px solid darken($white,10%)
+			.author
+				display: inline-block
+				color: $blue
+				font-weight: 600
+				+fs(13rem)
+			time
+				display: inline-block
+				// font-weight: 500
+				+fs(13rem)
+				color: darken($white,40%)
+				&:before
+					content: '-'
+					margin: 0px 5px
+			.content
+				margin-top: 10px
+	.btn-wrap 
+		text-align: right
+		padding-bottom: 30px
+
+.product-content
+	margin-bottom: 40px
+.product-tabs, #product-tabs
+	margin-bottom: 40px
+	.r-tabs-accordion-title
+		+media-breakpoint-down(md)
+			padding: 8px 15px
+			+bor-rad(3px)
+			background: darken($white,3%)
+			font-weight: 600
+			+fs(16rem)
+			+pos(rel,null)
+			margin-bottom: 10px
+			&:after
+				content: '\f107'
+				+pos(abs, 8px 15px null null)
+			&.r-tabs-state-active
+				background: lighten($blue,40%)
+				color: $blue
+				&:after
+					+transform(scale(1,-1))
+		a
+			display: block
+			color: inherit
+	.tab-content
+		+media-breakpoint-down(md)
+			padding: 0px
+			// border: 1px solid darken($white,10%)
+			margin-bottom: 10px
+			// +bor-rad(3px)
+		.page-title
+			+media-breakpoint-down(md)
+				+fs(13rem)
+				border-left: none
+				padding-left: 0
+				margin-bottom: 10px
+		.r-tabs-accordion-title
+			+media-breakpoint-down(md)
+				padding: 5px 10px
+				+bor-rad(3px)
+				background: none
+				border: 1px dashed darken($white,10%)
+				font-weight: 500
+				+fs(14rem)
+				+pos(rel,null)
+				margin-bottom: 10px
+				color: darken($white,60%)
+				&:after
+					content: '\f107'
+					+pos(abs, 5px 15px null null)
+				&.r-tabs-state-active
+					background: darken($white,3%)
+					color: $main
+					&:after
+						+transform(scale(1,-1))
+			a
+				display: block
+				color: inherit
+.pc-table
+	+media-breakpoint-down(md)
+		display: none
+.mobile-table
+	display: none
+	+media-breakpoint-down(md)
+		display: block
+.mobile-golf-table
+	+bor-rad(5px)
+	overflow: hidden
+	border: 1px solid darken($white,10%)
+	width: 100%
+	tbody
+		display: block
+		width: 100%
+	tr
+		display: block
+		width: 100%
+		th, td
+			display: block
+			+fs(13rem)
+			border-bottom: 1px solid darken($white,10%)
+		th
+			+fs(13rem)
+			padding: 8px 10px
+			background: darken($white,3%)
+		td
+			padding: 10px
+			.product-name
+				+fs(14rem)
+				font-weight: 700
+				margin-bottom: 5px
+			.product-des
+				ul
+					list-style: disc
+					list-style-type: disc
+					li
+						+flexbox
+						flex-wrap: wrap
+						margin-bottom: 0
+						border-bottom: 1px dashed darken($white,10%)
+						padding: 5px 0
+						+pos(rel,null)
+						&:last-child
+							border-bottom: none
+						span
+							width: 100%
+							line-height: 1
+			.product-price
+				font-weight: 600
+				color: $red
+				width: calc(100% - 80px)
+			.btn-book
+				width: 80px
+				line-height: 26px
+				background: $blue
+				color: $white
+				+bor-rad(3px)
+				text-align: center
+				+pos(abs, 8px 0px null null)
+
+.pc-room-list
+	+media-breakpoint-down(lg)
+		display: none
+.mobile-room-list
+	display: none
+	+media-breakpoint-down(lg)
+		display: block
+	article
+		margin-bottom: 30px
+	.room-card
+		+bor-rad(5px)
+		border: 1px solid darken($white,10%)
+		background: $white
+		overflow: hidden
+		figure
+			.room-img
+				display: block
+				img
+					width: 100%
+			figcaption
+				padding: 15px 20px
+				.room-name
+					+fs(16rem)
+					font-weight: 600
+					margin-bottom: 10px
+				.room-des
+					margin-bottom: 10px
+					ul
+						li
+							+fs(14rem)
+							color: darken($white,60%)
+				.room-policy
+					margin-bottom: 10px
+					a
+						color: $blue
+						&:hover
+							color: $red
+				.room-book
+					border-top: 1px dashed darken($white,10%)
+					padding-top: 10px
+					+flexbox
+					align-items: center
+					align-content: center
+					justify-content: space-between
+					select
+						padding: 3px 10px
+						+bor-rad(3px)
+						border: 1px solid darken($white,10%)
+					.btn-book
+						display: block
+						background: $blue
+						color: $white
+						+fs(13rem)
+						+bor-rad(5px)
+						padding: 6px 20px
+						text-align: center
+						&:hover
+							background: darken($blue,10%)
+
+.tab-map
+	+media-breakpoint-down(xs)
+		iframe
+			height: 300px

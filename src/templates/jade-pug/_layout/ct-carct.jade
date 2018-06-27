@@ -1,0 +1,325 @@
+.container
+	section.car-page.product-page.clearfix
+		h1.product-main-name [Đà Nẵng] Thuê xe 16 chỗ đi Hội An
+		.row
+			.col-12.col-lg-6
+				.slide-wrap
+					.product-slide
+						.item
+							a.img(href="img/car/p1.jpg" data-fancybox="gal1")
+								img(src="img/car/p1.jpg", alt="")
+						.item
+							a.img(href="img/car/p2.jpg" data-fancybox="gal1")
+								img(src="img/car/p2.jpg", alt="")
+						.item
+							a.img(href="img/car/p4.jpg" data-fancybox="gal1")
+								img(src="img/car/p4.jpg", alt="")
+						.item
+							a.img(href="img/car/p6.jpg" data-fancybox="gal1")
+								img(src="img/car/p6.jpg", alt="")
+						.item
+							a.img(href="img/car/p8.jpg" data-fancybox="gal1")
+								img(src="img/car/p8.jpg", alt="")
+						.item
+							a.img(href="img/car/p9.jpg" data-fancybox="gal1")
+								img(src="img/car/p9.jpg", alt="")
+						.item
+							a.img(href="img/car/p10.jpg" data-fancybox="gal1")
+								img(src="img/car/p10.jpg", alt="")
+					.product-nav
+						.item
+							.img
+								img(src="img/car/p1.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p2.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p4.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p6.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p8.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p9.jpg", alt="")
+						.item
+							.img
+								img(src="img/car/p10.jpg", alt="")
+			.col-12.col-lg-6
+				.product-info
+					.info-table
+						.group
+							.label Thời gian
+							.value.time 6 tiếng
+						.group
+							.label Khu vực
+							.value.location TP.Đà Nẵng, Việt Nam
+						.group
+							.label Địa chỉ đích
+							.value.address Phố cổ Hội An
+								a(href="https://www.google.com/maps/place/200+V%C3%B5+Nguy%C3%AAn+Gi%C3%A1p,+Ph%C6%B0%E1%BB%9Bc+M%E1%BB%B9,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vietnam/@16.0685128,108.2430507,17z/data=!3m1!4b1!4m5!3m4!1s0x314217840b580369:0x585a6fa989a51dfb!8m2!3d16.0685077!4d108.2452394" data-fancybox) Xem bản đồ
+						//- .group
+							.label Số điện thoại
+							.value.phone
+								a(href="tel:+84 236 398 1234") +84 236 398 1234
+						.group
+							.label Giá chỉ từ
+							.value.price
+								strong 2.000.000 đ
+						a.btn-book(href="#" data-toggle="modal" data-target="#bookcar") Đặt xe
+						.share
+							img(src="img/share.png", alt="")
+		#bookcar.modal.modal-bookcar.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						h5#exampleModalLabel.modal-title Nhập thông tin
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body 
+						.row
+							.col-12.col-md-6
+								.calendar
+									.month-select
+										.prev <i class="fa fa-chevron-left" aria-hidden="true"></i>
+										.next <i class="fa fa-chevron-right" aria-hidden="true"></i>
+										.month 11/2017
+										.selectbox
+											select
+												option Năm 2017
+											select
+												option 11
+									table.date-in-month
+										thead
+											tr
+												th Su
+												th Mo
+												th Tu
+												th We
+												th Th
+												th Fr
+												th Sa
+										tbody
+											tr
+												td 
+												td 
+												td 
+												td.disable 01
+												td.disable 02
+												td.disable 03
+												td.disable 04
+											tr
+												td.disable 05
+												td.disable 06
+												td.disable 07
+												td.disable 08
+												td.disable 09
+												td 10
+													.price 200$
+												td 11
+													.price 200$
+											tr
+												td 12
+													.price 200$
+												td 13
+													.price 200$
+												td 14
+													.price 200$
+												td.active 15
+													.price 200$
+												td 16
+													.price 200$
+												td 17
+													.price 200$
+												td 18
+													.price 200$
+											tr
+												td 19
+													.price 200$
+												td 20
+													.price 200$
+												td 21
+													.price 200$
+												td 22
+													.price 200$
+												td 23
+													.price 200$
+												td 24
+													.price 200$
+												td 25
+													.price 200$
+											tr
+												td 26
+													.price 200$
+												td 27
+													.price 200$
+												td 28
+													.price 200$
+												td 29
+													.price 200$
+												td 30
+													.price 200$
+												td 
+												td 
+							.col-12.col-md-6
+								.booking-info
+									.module-title Tùy chọn
+									.row
+										.col-12.col-md-4
+											.form-group
+												label Ngày
+												input(type="text" value="15/11/2017" disabled)
+										.col-12.col-md-4
+											.form-group
+												label Loại xe
+												input(type="text" value="16 chỗ" disabled)
+										.col-12.col-md-4
+											.form-group
+												label Số người
+												select
+													option 1
+													option 2
+													option 3
+													option 4
+													option 5
+													option 6
+													option 7
+													option 8
+													option 9
+													option 10
+										.col-12
+											.form-group
+												label Thời gian
+												.datetime
+													select(name="")
+														option(value="") 13h
+													|-
+													select(name="")
+														option(value="") 00
+													//- |-
+													//- select(name="")
+														option(value="") 2017
+										.col-12
+											.form-group
+												label Địa điểm
+												input(type="text" value="")
+										.col-12
+											.form-group
+												label Ghi chú
+												textarea(name="", cols="30", rows="3")
+									.frm-btn
+										input(type="submit", value="Nhận báo giá")
+									.total-money Tổng tiền: <strong>5.000.000 đ</strong>
+						.btn-wrap
+							a.btn-continue(href="#") Thêm vào giỏ hàng
+		.other-service.clearfix
+			h2.page-title Dịch vụ liên quan
+			.service-list
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/car/1.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Dịch vụ cho thuê xe 4 chỗ
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/hotel/p1.jpg", alt="")
+								//- .img
+								//- 	img(src="img/hotel/p2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/hotel/p3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/hotel/p4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Khách sạn Mường Thanh Đà Nẵng
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/golf/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Sân golf Montgomery
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Dịch vụ cho thuê xe 7 chỗ
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/tour/danang1.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/dalat.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/hontam.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/saigon2.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Du lịch Bà Nà Hill
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/golf/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/3.jpg", alt="")
+								//- .img
+								//- 	img(src="img/car/4.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Sân golf Đà Nẵng
+				.item
+					.service
+						figure
+							a.service-img(href="#")
+								.img
+									img(src="img/tour/saigon2.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/dalat.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/hontam.jpg", alt="")
+								//- .img
+								//- 	img(src="img/tour/saigon2.jpg", alt="")
+							figcaption
+								.service-name
+									a(href="#") Cùng thưởng thức ẩm thực miền Trung

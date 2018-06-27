@@ -1,0 +1,15 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Tourlink'
+	- var bodyclass = ''
+
+block css
+
+block body 
+	include _layout/header
+	//- include _layout/banner
+	main
+		//- include _layout/breadcrumb
+		include _layout/ct-faq
+	include _layout/footer
